@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "semantic-release",
+    "release:dry": "semantic-release --dry-run"
   },
   "dependencies": {
     "phosphor-react": "^1.4.1",
