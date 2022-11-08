@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/allbertuu/portfolio-web/compare/v1.1.0...v1.1.1) (2022-11-08)
+
+
+### Bug Fixes
+
+* fix import scrollWindowToTop ([dcb499f](https://github.com/allbertuu/portfolio-web/commit/dcb499fc2f9d5dee0d1ef513f9e34afaf7804589))
+
 # [1.1.0](https://github.com/allbertuu/portfolio-web/compare/v1.0.0...v1.1.0) (2022-11-08)
 
 
