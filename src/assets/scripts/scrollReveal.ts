@@ -16,25 +16,3 @@ export const initScrollReveal = () => {
     sr.reveal('.intervalCardReveal', { interval: 500 });
     sr.reveal('.intervalCardRevealSmall', { interval: 300 });
 };
-
-export const scrollToSectionId = (id: string) => {
-    if (!id) {
-        throw new Error('Informe o ID da seção.');
-    }
-
-    const el = document.getElementById(id);
-    if (el) {
-        el.scrollIntoView({
-            behavior: 'smooth',
-        });
-    } else {
-        throw new Error('ID de seção informado não existe na árvore DOM.');
-    }
-};
-
-export const scrollWindowToTop = () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-    });
-};
