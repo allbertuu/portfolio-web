@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/allbertuu/portfolio-web/compare/v1.0.0...v1.1.0) (2022-11-08)
+
+
+### Bug Fixes
+
+* add greater font size to body ([1d64812](https://github.com/allbertuu/portfolio-web/commit/1d648127f008119baf24e724bf4cc3668878e35e))
+
+
+### Features
+
+* add more words to keywords meta tag ([c12823d](https://github.com/allbertuu/portfolio-web/commit/c12823d7d32389ffcb6c14e49a32dcca6ff75e29))
+
 # 1.0.0 (2022-11-08)
 
 
