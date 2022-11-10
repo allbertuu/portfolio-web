@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+## TEMPORARY - Delete before deploy
+readme.md
+App.tsx
