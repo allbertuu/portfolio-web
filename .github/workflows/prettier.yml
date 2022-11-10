@@ -18,5 +18,5 @@ jobs:
       - name: Prettify code
         uses: creyD/prettier_action@v4.2
         with:
-          prettier_options: --write **/*.{js,jsx,ts,tsx,md}
+          prettier_options: --write **/*.{js,jsx,ts,tsx,tailwind.config.cjs,json,html,md}
           commit_message: "style: run prettier"
