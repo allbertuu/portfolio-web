@@ -1,4 +1,5 @@
-name: Prettier
+name: Continuous Integration
+
 on:
   push:
     branches:
@@ -6,20 +7,15 @@ on:
 
 jobs:
   prettier:
-    name: Prettier
-
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          ref: ${{ github.head_ref }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/*'
-        
-      - name: Prettier Action
+      - name: Prettify code
         uses: creyD/prettier_action@v4.2
+        with:
+          prettier_options: --write **/*.{js,jsx,ts,tsx,md}
