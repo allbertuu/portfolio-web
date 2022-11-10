@@ -1,5 +1,15 @@
 {
     "compilerOptions": {
+        "baseUrl": "./src/",
+        "paths": {
+          "@styles/*": ["styles/*"],
+          "@atoms/*": ["components/atoms/*"],
+          "@organisms/*": ["components/organisms/*"],
+          "@molecules/*": ["components/molecules/*"],
+          "@imgs/*": ["assets/imgs/*"],
+          "@scripts/*": ["assets/scripts/*"],
+          "@utils/*": ["assets/utils/*"],
+        },
         "target": "ESNext",
         "useDefineForClassFields": true,
         "lib": ["DOM", "DOM.Iterable", "ESNext"],
