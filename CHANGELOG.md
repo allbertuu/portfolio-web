@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/allbertuu/portfolio-web/compare/v1.1.1...v1.2.0) (2022-11-11)
+
+
+### Features
+
+* add selection pseudo tag on body ([8daa29f](https://github.com/allbertuu/portfolio-web/commit/8daa29faafed16b84c9227365c6ebea2afe093b9))
+* add styles to scrollbar and improve responsiveness ([3dc7d1c](https://github.com/allbertuu/portfolio-web/commit/3dc7d1cfbe78b344cc0bdaee02aacb134034100d))
+* **vite.config:** add vite-tsconfig-paths plugin ([b782f01](https://github.com/allbertuu/portfolio-web/commit/b782f0157a78673101f7c550fc1ec48972c76834))
+
 ## [1.1.1](https://github.com/allbertuu/portfolio-web/compare/v1.1.0...v1.1.1) (2022-11-08)
 
 ### Bug Fixes
