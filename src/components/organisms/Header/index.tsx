@@ -58,7 +58,7 @@ export const Header: FunctionComponent<any> = () => {
     return (
         <header
             className="flex items-center justify-around md:fixed md:top-0 h-[4.375rem]
-            px-5 py-4 w-full z-10 text-lg border-b border-b-red-500 bg-slate-700 shadow-lg"
+            px-8 py-4 w-full z-10 text-lg border-b border-b-red-500 bg-slate-700 shadow-lg"
         >
             <div className="flex items-center gap-2 pointer-events-none">
                 <img src={imgLogo} alt="Logo vermelha" className="h-9" />
@@ -66,7 +66,7 @@ export const Header: FunctionComponent<any> = () => {
             </div>
 
             <nav className="hidden md:block">
-                <ul className="flex gap-6">
+                <ul className="flex gap-2">
                     {sectionList.map((section) => (
                         <li
                             key={section.id}
