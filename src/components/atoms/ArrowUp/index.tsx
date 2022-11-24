@@ -7,9 +7,9 @@ import {
 import { ArrowUp as ArrowUpIcon } from 'phosphor-react';
 import { scrollWindowToTop } from '@utils/index';
 
-export const ArrowUp: FunctionComponent<
-    ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ ...props }) => {
+interface ArrowUpProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+
+const ArrowUp: FunctionComponent<ArrowUpProps> = ({ ...props }) => {
     const [arrowUpVisibility, setArrowUpVisibility] = useState(false);
 
     useEffect(() => {
@@ -36,7 +36,9 @@ export const ArrowUp: FunctionComponent<
                     : 'hidden'
             }
         >
-            <ArrowUpIcon className="text-3xl" />
+            <ArrowUpIcon weight="bold" className="text-2xl" />
         </button>
     );
 };
+
+export default ArrowUp;
