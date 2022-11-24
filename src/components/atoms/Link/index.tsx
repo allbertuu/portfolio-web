@@ -1,7 +1,7 @@
 import { classNames } from '@utils/index';
-import { FunctionComponent, HTMLAttributes } from 'react';
+import { AnchorHTMLAttributes, FunctionComponent } from 'react';
 
-interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
+interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     secondary?: boolean;
 }
 
@@ -13,7 +13,6 @@ const Link: FunctionComponent<LinkProps> = ({
     return (
         <a
             {...props}
-            href="#"
             className={classNames(
                 props.className ? props.className : '',
                 secondary ? 'after:bg-slate-600' : 'after:bg-red-500',
