@@ -8,7 +8,7 @@
             "@molecules/*": ["components/molecules/*"],
             "@imgs/*": ["assets/imgs/*"],
             "@scripts/*": ["assets/scripts/*"],
-            "@utils/*": ["assets/utils/*"]
+            "@utils/*": ["utils/*"]
         },
         "target": "ESNext",
         "useDefineForClassFields": true,
