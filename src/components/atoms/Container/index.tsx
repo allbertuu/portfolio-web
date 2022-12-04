@@ -1,14 +1,14 @@
 import { classNames } from '@utils/index';
 import { FunctionComponent, HTMLAttributes } from 'react';
 
-interface ContainerProps extends HTMLAttributes<HTMLHeadingElement> {}
+interface ContainerProps extends HTMLAttributes<HTMLDivElement> {}
 
 const Container: FunctionComponent<ContainerProps> = ({
     children,
     ...props
 }) => {
     return (
-        <h3
+        <div
             {...props}
             className={classNames(
                 props.className || '',
@@ -16,7 +16,7 @@ const Container: FunctionComponent<ContainerProps> = ({
             )}
         >
             {children}
-        </h3>
+        </div>
     );
 };
 
