@@ -11,7 +11,7 @@ const SectionTitle: FunctionComponent<SectionTitleProps> = ({
         <h3
             {...props}
             className={classNames(
-                props.className ? props.className : '',
+                props.className || '',
                 'text-2xl lg:text-4xl',
             )}
         >
