@@ -11,7 +11,7 @@ const Container: FunctionComponent<ContainerProps> = ({
         <h3
             {...props}
             className={classNames(
-                props.className ? props.className : '',
+                props.className || '',
                 'container mx-auto px-8',
             )}
         >
