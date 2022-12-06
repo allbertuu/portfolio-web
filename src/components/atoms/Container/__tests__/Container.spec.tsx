@@ -19,4 +19,18 @@ describe('render Container correctly', () => {
         render(<Container />);
         expect(screen.getByTestId('container').tagName).toBe('DIV');
     });
+
+    it('should be able to insert children into the component', () => {
+        render(
+            <Container>
+                <p>Hello World</p>
+            </Container>,
+        );
+        expect(screen.getByTestId('container')).not.toBeEmptyDOMElement();
+    });
+
+    it('should be able to add props/attributes of a generic HTMLElement', () => {
+        render(<Container id="teste" />);
+        expect(screen.getByTestId('container').id).toBe('teste');
+    });
 });
