@@ -1,7 +1,6 @@
 import { classNames } from '@utils/index';
-import { FunctionComponent, HTMLAttributes } from 'react';
-
-interface ContainerProps extends HTMLAttributes<HTMLDivElement> {}
+import { FunctionComponent } from 'react';
+import { ContainerProps } from './types';
 
 const Container: FunctionComponent<ContainerProps> = ({
     children,
@@ -14,6 +13,7 @@ const Container: FunctionComponent<ContainerProps> = ({
                 props.className || '',
                 'container mx-auto px-8',
             )}
+            data-testid="container"
         >
             {children}
         </div>
