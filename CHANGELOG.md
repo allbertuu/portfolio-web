@@ -1,21 +1,19 @@
 # [1.3.0](https://github.com/allbertuu/portfolio-web/compare/v1.2.0...v1.3.0) (2022-12-04)
 
-
 ### Bug Fixes
 
-* **atoms:** fix Link props and its types ([5822c2b](https://github.com/allbertuu/portfolio-web/commit/5822c2b83e0703b8c0c8574e77826564593341e7))
-* change Container renderization of h3 to div ([c9f16d8](https://github.com/allbertuu/portfolio-web/commit/c9f16d8355f098023bdc284b64b84c5ac11f95f4))
-* change index.scss to global.scss ([8842ae1](https://github.com/allbertuu/portfolio-web/commit/8842ae19c8cbefacbe5f06ea25409d07b0c1610c))
-* **tsconfig.json:** rename utils folder path ([75874e8](https://github.com/allbertuu/portfolio-web/commit/75874e84782a9b7706241f368e70c3577fca77ff))
-
+-   **atoms:** fix Link props and its types ([5822c2b](https://github.com/allbertuu/portfolio-web/commit/5822c2b83e0703b8c0c8574e77826564593341e7))
+-   change Container renderization of h3 to div ([c9f16d8](https://github.com/allbertuu/portfolio-web/commit/c9f16d8355f098023bdc284b64b84c5ac11f95f4))
+-   change index.scss to global.scss ([8842ae1](https://github.com/allbertuu/portfolio-web/commit/8842ae19c8cbefacbe5f06ea25409d07b0c1610c))
+-   **tsconfig.json:** rename utils folder path ([75874e8](https://github.com/allbertuu/portfolio-web/commit/75874e84782a9b7706241f368e70c3577fca77ff))
 
 ### Features
 
-* add ArrowUp styles as I wanted and fix behavior ([c3a46d1](https://github.com/allbertuu/portfolio-web/commit/c3a46d114c3c8147e240c0c46f36314f57d10dac))
-* **components:** add Container atom ([ecfa560](https://github.com/allbertuu/portfolio-web/commit/ecfa560d8d5d0483578ca0ffedc4f2f6de51d876))
-* **components:** add Link atom ([ddfe152](https://github.com/allbertuu/portfolio-web/commit/ddfe152090b60aa8c2a756344d150504c32829ad))
-* **components:** add SectionTitle atom ([3c2d7aa](https://github.com/allbertuu/portfolio-web/commit/3c2d7aa41dc05cf5c89fc7e2dfa69738858f8dac))
-* **utils:** add classNames function ([5956b34](https://github.com/allbertuu/portfolio-web/commit/5956b3490fdb769e0444027b4bc9ec41e0c2761e))
+-   add ArrowUp styles as I wanted and fix behavior ([c3a46d1](https://github.com/allbertuu/portfolio-web/commit/c3a46d114c3c8147e240c0c46f36314f57d10dac))
+-   **components:** add Container atom ([ecfa560](https://github.com/allbertuu/portfolio-web/commit/ecfa560d8d5d0483578ca0ffedc4f2f6de51d876))
+-   **components:** add Link atom ([ddfe152](https://github.com/allbertuu/portfolio-web/commit/ddfe152090b60aa8c2a756344d150504c32829ad))
+-   **components:** add SectionTitle atom ([3c2d7aa](https://github.com/allbertuu/portfolio-web/commit/3c2d7aa41dc05cf5c89fc7e2dfa69738858f8dac))
+-   **utils:** add classNames function ([5956b34](https://github.com/allbertuu/portfolio-web/commit/5956b3490fdb769e0444027b4bc9ec41e0c2761e))
 
 # [1.2.0](https://github.com/allbertuu/portfolio-web/compare/v1.1.1...v1.2.0) (2022-11-11)
 
