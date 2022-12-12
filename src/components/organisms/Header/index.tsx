@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from 'react';
+import { FunctionComponent, HTMLAttributes } from 'react';
 import { scrollToSectionId } from '@utils/index';
 import imgLogo from '@imgs/logo.svg';
 import {
@@ -14,10 +14,9 @@ interface Section {
     icon: JSX.Element;
 }
 
-export const Header: FunctionComponent<any> = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const headerHeight = 70;
+interface HeaderProps extends HTMLAttributes<HTMLElement> {}
 
+const Header: FunctionComponent<HeaderProps> = ({ ...props }) => {
     const sectionList: Section[] = [
         {
             id: 's-about-me',
@@ -41,24 +40,12 @@ export const Header: FunctionComponent<any> = () => {
         },
     ];
 
-    useEffect(() => {
-        const scrollListener = () => {
-            window.scrollY > headerHeight
-                ? setIsScrolled(true)
-                : setIsScrolled(false);
-        };
-
-        window.addEventListener('scroll', scrollListener);
-
-        return () => {
-            window.removeEventListener('scroll', scrollListener);
-        };
-    }, []);
-
     return (
         <header
-            className="flex items-center justify-around md:fixed md:top-0 h-[4.375rem]
-            px-8 py-4 w-full z-10 text-lg border-b border-b-red-500 bg-slate-700 shadow-lg"
+            {...props}
+            className="flex items-center justify-around md:fixed md:top-0
+            px-8 py-4 w-full z-10 text-lg border-b-[2px] border-b-red-500
+            bg-slate-700 shadow-lg"
         >
             <div className="flex items-center gap-2 pointer-events-none">
                 <img src={imgLogo} alt="Logo vermelha" className="h-9" />
@@ -66,14 +53,14 @@ export const Header: FunctionComponent<any> = () => {
             </div>
 
             <nav className="hidden md:block">
-                <ul className="flex gap-2">
+                <ul className="flex gap-4">
                     {sectionList.map((section) => (
                         <li
                             key={section.id}
                             onClick={() => scrollToSectionId(section.id)}
                             role="button"
                             className="relative text-center cursor-pointer overflow-hidden
-                            rounded-md py-1 px-4 transition-all duration-500 z-0
+                            rounded py-[2px] px-2 transition-all duration-500 z-0
                             before:w-0 before:h-[400%] before:absolute before:left-1/2
                             before:right-1/2 before:transform before:-translate-y-1/2
                             before:-translate-x-1/2 before:rotate-[20deg]
@@ -88,3 +75,5 @@ export const Header: FunctionComponent<any> = () => {
         </header>
     );
 };
+
+export default Header;

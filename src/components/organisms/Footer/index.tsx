@@ -1,27 +1,22 @@
 import { FunctionComponent, HTMLAttributes } from 'react';
 import imgLogo from '@imgs/logo.svg';
 import { sociais } from '@scripts/aboutMe';
+import Container from '@atoms/Container';
 
-export const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
+const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
     ...props
 }) => {
     return (
-        <footer
-            {...props}
-            className="hidden border-t border-t-red-500 shadow-lg p-5"
-        >
-            <div className="container mx-auto px-4">
+        <footer {...props} className="border-t border-t-red-500 shadow-lg p-5">
+            <Container>
                 <div className="flex justify-around">
-                    <div className="flex gap-1">
-                        <p>Idealizado e desenvolvido por</p>
-
-                        <a
-                            href={sociais.linkedin}
-                            className="hover:text-red-500"
-                        >
-                            Alberto Santos
+                    <p className="flex items-center">
+                        <a href="#" className="hover:text-red-500">
+                            albertodeveloper.com
                         </a>
-                    </div>
+                        <i className="text-2xl -mb-1 mr-1">&copy;</i>
+                        <p>2022 - Todos os direitos reservados.</p>
+                    </p>
 
                     <div className="flex items-center gap-2">
                         <p>Powered by</p>
@@ -29,7 +24,9 @@ export const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
                         <img src={imgLogo} alt="Logo branca" className="h-7" />
                     </div>
                 </div>
-            </div>
+            </Container>
         </footer>
     );
 };
+
+export default Footer;

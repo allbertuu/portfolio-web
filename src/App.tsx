@@ -1,12 +1,8 @@
-import ArrowUp from '@atoms/ArrowUp';
-import Container from '@atoms/Container';
-import Link from '@atoms/Link';
-import SectionTitle from '@atoms/SectionTitle';
-import Card from '@molecules/Card';
-import Footer from '@organisms/Footer';
-import Header from '@organisms/Header';
-import OngoingPage from 'components/pages/Ongoing';
-import { GithubLogo } from 'phosphor-react';
+import { ArrowUp, Container, SectionTitle } from '@atoms/index';
+import { Card } from '@molecules/index';
+import { Header } from '@organisms/index';
+import OngoingPage from './components/pages/Ongoing/index';
+import { GithubLogo, Link } from 'phosphor-react';
 
 function App() {
     const i = true;
