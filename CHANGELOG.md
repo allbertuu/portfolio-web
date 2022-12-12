@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/allbertuu/portfolio-web/compare/v1.3.0...v1.4.0) (2022-12-12)
+
+
+### Features
+
+* add OngoingPage ([338df83](https://github.com/allbertuu/portfolio-web/commit/338df83426c9ccbf12b954846acd1bb3a5cadeb7))
+* **atoms:** improve and update Link ([74dfe40](https://github.com/allbertuu/portfolio-web/commit/74dfe404e881a2e17bafbcffef176f8d14e0f473))
+* **scripts:** add instagram user ([d506738](https://github.com/allbertuu/portfolio-web/commit/d506738fdfb9a951e39e876e809d9cd607acece6))
+
 # [1.3.0](https://github.com/allbertuu/portfolio-web/compare/v1.2.0...v1.3.0) (2022-12-04)
 
 ### Bug Fixes
