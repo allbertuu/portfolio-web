@@ -13,7 +13,7 @@ interface OngoingPageProps {}
 
 const OngoingPage: FunctionComponent<OngoingPageProps> = () => {
     return (
-        <main className="container text-white/90 max-w-[1000px] mx-auto px-6 min-h-screen flex flex-col justify-center">
+        <main className="container text-white/90 max-w-[800px] mx-auto px-6 py-8 min-h-screen flex flex-col justify-center">
             <div className="text-center">
                 <h1 className="text-2xl mb-4 px-2 py-0 bg-red-500 w-fit mx-auto">
                     Calma aí! Pega um café primeiro{' '}
@@ -105,7 +105,7 @@ const OngoingPage: FunctionComponent<OngoingPageProps> = () => {
                     </div>
                 </p>
 
-                <p className="text-lg fixed underline bottom-4 left-0 right-0">
+                <p className="text-lg mt-10 md:mt-0 md:fixed underline md:bottom-4 md:left-0 md:right-0">
                     Nunca desista dos seus sonhos.
                 </p>
             </div>
