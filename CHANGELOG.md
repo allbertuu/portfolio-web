@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/allbertuu/portfolio-web/compare/v1.4.0...v1.5.0) (2022-12-16)
+
+
+### Bug Fixes
+
+* **Ongoing:** fix layout colapse ([d74cb85](https://github.com/allbertuu/portfolio-web/commit/d74cb85af8e162d05c4a423f23fb92e6023a622a))
+
+
+### Features
+
+* **Link:** add hover opacity to svg sibling ([d7af9a3](https://github.com/allbertuu/portfolio-web/commit/d7af9a35b24a6593a8215d5a16f530eb66ce5606))
+
 # [1.4.0](https://github.com/allbertuu/portfolio-web/compare/v1.3.0...v1.4.0) (2022-12-12)
 
 ### Features
