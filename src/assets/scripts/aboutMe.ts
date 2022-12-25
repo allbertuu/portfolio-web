@@ -1,4 +1,4 @@
-export const sociais = {
+export const socials = {
     linkedin: 'https://www.linkedin.com/in/albertov-albuquerque',
     github: 'https://github.com/allbertuu',
     instagram: {
