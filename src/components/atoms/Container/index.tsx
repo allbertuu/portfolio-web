@@ -1,8 +1,8 @@
 import { classNames } from '@utils/index';
 import { FunctionComponent } from 'react';
-import { ContainerProps } from './types';
+import { IContainerProps } from './types';
 
-const Container: FunctionComponent<ContainerProps> = ({
+const Container: FunctionComponent<IContainerProps> = ({
     children,
     ...props
 }) => {

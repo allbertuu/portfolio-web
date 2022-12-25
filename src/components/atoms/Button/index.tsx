@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
-import { ButtonProps } from './types';
+import { IButtonProps } from './types';
 
-const Button: FunctionComponent<ButtonProps> = ({ children, ...props }) => {
+const Button: FunctionComponent<IButtonProps> = ({ children, ...props }) => {
     return (
         <button {...props} role={'button'}>
             {children}

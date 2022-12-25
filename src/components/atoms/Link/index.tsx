@@ -1,8 +1,8 @@
 import { classNames } from '@utils/index';
 import { FunctionComponent } from 'react';
-import { LinkProps } from './types';
+import { ILinkProps } from './types';
 
-const Link: FunctionComponent<LinkProps> = ({
+const Link: FunctionComponent<ILinkProps> = ({
     secondary,
     children,
     ...props

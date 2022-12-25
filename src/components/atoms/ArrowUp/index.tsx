@@ -1,13 +1,7 @@
-import {
-    ButtonHTMLAttributes,
-    FunctionComponent,
-    useEffect,
-    useState,
-} from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import { ArrowUp as ArrowUpIcon } from 'phosphor-react';
 import { classNames, scrollWindowToTop } from '@utils/index';
-
-interface ArrowUpProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+import { ArrowUpProps } from './types';
 
 const ArrowUp: FunctionComponent<ArrowUpProps> = ({ ...props }) => {
     const [arrowUpVisibility, setArrowUpVisibility] = useState(false);

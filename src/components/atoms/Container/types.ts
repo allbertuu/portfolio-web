@@ -1,3 +1,3 @@
 import { HTMLAttributes } from 'react';
 
-export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {}
+export interface IContainerProps extends HTMLAttributes<HTMLDivElement> {}
