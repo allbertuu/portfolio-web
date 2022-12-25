@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { scrollToSectionId } from '@utils/index';
+import { classNames, scrollToSectionId } from '@utils/index';
 import imgLogo from '@imgs/logo.svg';
 import {
     EnvelopeSimple,
@@ -14,22 +14,42 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
         {
             id: 's-about-me',
             name: 'Sobre mim',
-            icon: <IdentificationCard size={28} />,
+            icon: (
+                <IdentificationCard
+                    weight="fill"
+                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
+                />
+            ),
         },
         {
             id: 's-projects',
             name: 'Projetos',
-            icon: <Folders size={28} />,
+            icon: (
+                <Folders
+                    weight="fill"
+                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
+                />
+            ),
         },
         {
             id: 's-skills',
             name: 'Habilidades',
-            icon: <Lightning size={28} />,
+            icon: (
+                <Lightning
+                    weight="fill"
+                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
+                />
+            ),
         },
         {
             id: 's-contact-me',
             name: 'Me mande um e-mail',
-            icon: <EnvelopeSimple size={28} />,
+            icon: (
+                <EnvelopeSimple
+                    weight="fill"
+                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
+                />
+            ),
         },
     ];
 
@@ -52,14 +72,16 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
                             key={section.id}
                             onClick={() => scrollToSectionId(section.id)}
                             role="link"
-                            className="relative text-center cursor-pointer overflow-hidden
-                            rounded py-[2px] px-2 transition-all duration-500 z-0
-                            before:w-0 before:h-[400%] before:absolute before:left-1/2
-                            before:right-1/2 before:transform before:-translate-y-1/2
-                            before:-translate-x-1/2 before:rotate-[20deg]
-                            before:transition-all before:duration-1000 before:block
-                            before:-z-10 before:bg-red-500 hover:before:w-[130%] hover:shadow-xl hover:shadow-red-500/60"
+                            className={classNames(
+                                'relative text-center cursor-pointer overflow-hidden rounded py-[2px] px-2',
+                                'transition-shadow duration-500 z-0',
+                                'before:w-0 before:h-[400%] before:absolute before:left-1/2 before:right-1/2 before:transform before:-translate-y-1/2 before:-translate-x-1/2 before:rotate-[20deg] before:transition-all before:duration-1000 before:block',
+                                'before:-z-10 before:bg-red-500',
+                                'hover:before:w-[130%] hover:shadow-xl hover:shadow-red-500/60',
+                                '[&>svg]:hover:text-white [&>svg]:transition-all [&>svg]:duration-300',
+                            )}
                         >
+                            {section.icon}
                             {section.name}
                         </li>
                     ))}
