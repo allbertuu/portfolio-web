@@ -4,9 +4,6 @@ import { GithubLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react';
 import { FunctionComponent } from 'react';
 import { IMySocialsProps } from './types';
 
-/**
- * Um container com botões que levam à minhas redes
- */
 const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
     const baseStyles = classNames(
         'font-bold',
