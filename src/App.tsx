@@ -13,24 +13,42 @@ function App() {
         <>
             <Header />
 
-            <main className="mt-[4.375rem]">
-                <section className="pb-10">
+            <main className="mt-[4.375rem] overflow-hidden">
+                <section className="pb-10 shadow-xl border-b border-b-slate-50/10">
                     <Container>
                         <div className="grid grid-cols-1 lg:grid-cols-2 h-[85vh] gap-8 items-center justify-items-center">
-                            <div className="relative px-4 text-center lg:text-left">
-                                <h1 className="text-3xl lg:text-6xl font-bold mb-1">
-                                    Alberto Santos
+                            {/* Container Presentation */}
+                            <div className="relative px-4 text-center lg:text-left ">
+                                <h3 className="originLeftReveal intervalReveal text-muted/80 lg:text-xl">
+                                    Olá! Eu me chamo,
+                                </h3>
+                                <h1 className="originLeftReveal intervalReveal text-3xl lg:text-6xl font-bold mb-1">
+                                    Alberto Santos.
                                 </h1>
 
-                                <h2 className="text-xl lg:text-3xl font-light italic">
-                                    Desenvolvedor Frontend Web e Mobile
+                                <h2 className="originLeftReveal intervalReveal text-xl lg:text-3xl italic text-muted">
+                                    Desenvolvedor <strong>Frontend Web</strong> e <strong>Mobile</strong>
                                 </h2>
-                                {/* <p>Será um prazer te acompanhar por aqui</p> */}
+                                {/* Container My Socials */}
+                                <MySocials className="mt-4" />
                             </div>
-
-                            <div className="px-4">Meu banner</div>
+                            {/* Container My Logo */}
+                            <div className="px-4 hidden lg:block">
+                                <img
+                                    src={imgLogo}
+                                    alt="Logo vermelha"
+                                    className="originRightReveal h-[25rem] drop-shadow-xl shadow-red-500/30"
+                                />
+                            </div>
                         </div>
                     </Container>
+
+                    <ArrowDown
+                        size="1.8rem"
+                        role={'button'}
+                        className="mx-auto animate-bounce text-white/70 cursor-pointer"
+                        onClick={() => scrollToSectionId('s-about-me')}
+                    />
                 </section>
 
                 <section className="py-10 bg-red-600">
