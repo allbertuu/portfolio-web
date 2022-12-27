@@ -1,6 +1,5 @@
 import { FunctionComponent, HTMLAttributes } from 'react';
 import imgLogo from '@imgs/logo.svg';
-import { sociais } from '@scripts/aboutMe';
 import Container from '@atoms/Container';
 
 const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
