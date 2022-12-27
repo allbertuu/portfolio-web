@@ -1,13 +1,16 @@
-import { ArrowUp, Container, SectionTitle } from '@atoms/index';
-import { Card } from '@molecules/index';
+import { ArrowUp, Container, SectionTitle, Link } from '@atoms/index';
+import { Card, MySocials } from '@molecules/index';
 import { Header } from '@organisms/index';
-import OngoingPage from './components/pages/Ongoing/index';
-import { GithubLogo, Link } from 'phosphor-react';
+import { ArrowDown, GithubLogo } from 'phosphor-react';
+import imgLogo from '@imgs/logo.svg';
+import { initScrollReveal } from '@scripts/scrollReveal';
+import { useEffect } from 'react';
+import { scrollToSectionId } from './utils';
 
 function App() {
-    const i = true;
-
-    if (i) return <OngoingPage />;
+    useEffect(() => {
+        initScrollReveal();
+    }, []);
 
     return (
         <>
