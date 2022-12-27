@@ -60,7 +60,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
             px-8 py-4 w-full z-10 text-lg border-b-[2px] border-b-red-500
             bg-slate-700 shadow-2xl"
         >
-            <div className="flex items-center gap-2 pointer-events-none">
+            <div className="flex items-center gap-2 pointer-events-none originLeftReveal">
                 <img src={imgLogo} alt="Logo vermelha" className="h-9" />
                 <span className="hidden md:block">Portfólio</span>
             </div>
@@ -79,6 +79,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
                                 'before:-z-10 before:bg-red-500',
                                 'hover:before:w-[130%] hover:shadow-xl hover:shadow-red-500/60',
                                 '[&>svg]:hover:text-white [&>svg]:transition-all [&>svg]:duration-300',
+                                'originRightReveal'
                             )}
                         >
                             {section.icon}
