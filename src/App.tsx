@@ -17,6 +17,7 @@ function App() {
             <Header />
 
             <main className="mt-[4.375rem] overflow-hidden">
+                {/* Introduction Section */}
                 <section className="pb-10 shadow-xl border-b border-b-slate-50/10">
                     <Container>
                         <div className="grid grid-cols-1 lg:grid-cols-2 h-[85vh] gap-8 items-center justify-items-center">
