@@ -1,4 +1,5 @@
 import { classNames } from '@utils/index';
+import { GithubLogo } from 'phosphor-react';
 import { FunctionComponent } from 'react';
 import { ICardProps } from './types';
 
@@ -6,7 +7,7 @@ const Card: FunctionComponent<ICardProps> = () => {
     return (
         <article
             className={classNames(
-                'relative rounded max-w-xs border-2 border-slate-50/10 p-4 bg-slate-700 cursor-pointer',
+                'relative rounded max-w-xs border-2 border-dashed border-slate-50/10 p-4 bg-slate-700',
                 'transition-all duration-300 ease-out',
                 'hover:border-red-500 hover:shadow-xl hover:shadow-red-500/30 hover:transform hover:-translate-y-3',
             )}
@@ -16,8 +17,16 @@ const Card: FunctionComponent<ICardProps> = () => {
             </h4>
             <span className="text-muted text-[85%] italic">Frontend</span>
             <p className="mt-1 leading-snug">Descrição sobre o projeto</p>
-            <div>techs usadas / estilo carrossel de techs da rocketseat </div>
-            <a href="#">Repositório no GitHub</a>
+            {/* estilo carrossel de techs da rocketseat */}
+            <div className="flex justify-between mt-4 ">
+                <a
+                    href="#"
+                    className="flex gap-1 items-center w-fit [&]:hover:text-red-600 transition-all font-semibold"
+                >
+                    <GithubLogo weight='bold' /> GitHub
+                </a>
+                <div>techs</div>
+            </div>
         </article>
     );
 };
