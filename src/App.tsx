@@ -114,7 +114,7 @@ function App() {
                                 href="https://github.com/allbertuu?tab=repositories"
                                 className="[&~svg]:hover:opacity-80"
                             >
-                                Clique aqui para ver mais dos meus projetos
+                                + projetos
                             </Link>
 
                             <GithubLogo size="1.125rem" />
