@@ -3,12 +3,12 @@
         "baseUrl": "./src/",
         "paths": {
             "@styles/*": ["styles/*"],
-            "@atoms/*": ["components/atoms/*"],
-            "@organisms/*": ["components/organisms/*"],
-            "@molecules/*": ["components/molecules/*"],
-            "@imgs/*": ["assets/imgs/*"],
             "@scripts/*": ["assets/scripts/*"],
-            "@utils/*": ["utils/*"]
+            "@components/*": ["components/*"],
+            "@assets/*": ["assets/*"],
+            "@utils/*": ["utils/*"],
+            "@contexts/*": ["contexts/*"],
+            "@hooks/*": ["hooks/*"]
         },
         "target": "ESNext",
         "useDefineForClassFields": true,

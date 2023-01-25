@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import { classNames, scrollToSectionId } from '@utils/index';
-import imgLogo from '@imgs/logo.svg';
+import imgLogo from '@assets/imgs/logo.svg';
 import {
     EnvelopeSimple,
     Folders,

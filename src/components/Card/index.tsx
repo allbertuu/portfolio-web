@@ -1,5 +1,5 @@
 import { classNames } from '@utils/index';
-import GitHubIcon from 'assets/icons/github';
+import GitHubIcon from '@assets/icons/GitHub';
 import { FunctionComponent } from 'react';
 import { ICardProps } from './types';
 

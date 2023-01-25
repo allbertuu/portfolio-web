@@ -1,11 +1,11 @@
-import { ArrowUp, Container, SectionTitle, Link } from '@atoms/index';
-import { Card, MySocials } from '@molecules/index';
-import { Header } from '@organisms/index';
 import { ArrowDown, GithubLogo } from 'phosphor-react';
-import imgLogo from '@imgs/logo.svg';
+import imgLogo from '@assets/imgs/logo.svg';
 import { initScrollReveal } from '@scripts/scrollReveal';
 import { useEffect } from 'react';
 import { scrollToSectionId } from './utils';
+import { Card, Header, MySocials } from '@components/index';
+import { Container } from '@components/layout';
+import { ArrowUp, Link, SectionTitle } from '@components/ui';
 
 function App() {
     useEffect(() => {
@@ -31,7 +31,8 @@ function App() {
                                 </h1>
 
                                 <h2 className="originLeftReveal intervalReveal text-xl lg:text-3xl italic text-muted">
-                                    Desenvolvedor <strong>Frontend Web</strong> e <strong>Mobile</strong>
+                                    Desenvolvedor <strong>Frontend Web</strong>{' '}
+                                    e <strong>Mobile</strong>
                                 </h2>
                                 {/* Container My Socials */}
                                 <MySocials className="mt-4" />
