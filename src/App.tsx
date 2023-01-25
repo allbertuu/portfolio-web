@@ -43,7 +43,7 @@ function App() {
                                 <img
                                     src={imgLogo}
                                     alt="Logo vermelha"
-                                    className="originRightReveal h-[25rem] drop-shadow-xl shadow-red-500/30"
+                                    className="delaySmallReveal md:originRightReveal h-[25rem] drop-shadow-xl shadow-red-500/30"
                                 />
                             </div>
                         </div>
@@ -99,7 +99,7 @@ function App() {
 
                 <section className="py-10">
                     <Container>
-                        <SectionTitle text='' className="text-center">
+                        <SectionTitle text="" className="text-center">
                             Projetos
                         </SectionTitle>
 
