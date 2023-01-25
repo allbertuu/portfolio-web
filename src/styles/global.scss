@@ -28,3 +28,8 @@ body {
         font-size: 105%;
     }
 }
+
+// Custom Styles
+body * {
+    @apply decoration-red-500;
+}
