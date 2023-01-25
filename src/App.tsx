@@ -99,7 +99,7 @@ function App() {
 
                 <section className="py-10">
                     <Container>
-                        <SectionTitle className="text-center">
+                        <SectionTitle text='' className="text-center">
                             Projetos
                         </SectionTitle>
 
