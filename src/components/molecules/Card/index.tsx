@@ -1,5 +1,5 @@
 import { classNames } from '@utils/index';
-import { GithubLogo } from 'phosphor-react';
+import GitHubIcon from 'assets/icons/github';
 import { FunctionComponent } from 'react';
 import { ICardProps } from './types';
 
@@ -7,7 +7,7 @@ const Card: FunctionComponent<ICardProps> = () => {
     return (
         <article
             className={classNames(
-                'relative rounded max-w-xs border-2 border-dashed border-slate-50/10 p-4 bg-slate-700',
+                'relative rounded max-w-xs border-2 border-slate-50/10 p-4 bg-slate-700',
                 'transition-all duration-300 ease-out',
                 'hover:border-red-500 hover:shadow-xl hover:shadow-red-500/30 hover:transform hover:-translate-y-3',
             )}
@@ -23,7 +23,7 @@ const Card: FunctionComponent<ICardProps> = () => {
                     href="#"
                     className="flex gap-1 items-center w-fit [&]:hover:text-red-600 transition-all font-semibold"
                 >
-                    <GithubLogo weight='bold' /> GitHub
+                    <GitHubIcon /> GitHub
                 </a>
                 <div>techs</div>
             </div>
