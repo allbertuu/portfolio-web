@@ -26,7 +26,7 @@ const ArrowUp: FunctionComponent<ArrowUpProps> = ({ ...props }) => {
             onClick={scrollWindowToTop}
             className={classNames(
                 arrowUpVisibility
-                    ? 'visible fixed right-2 bottom-3 md:right-6 md:bottom-6 bg-white rounded-full p-2 text-slate-600 shadow-lg'
+                    ? 'visible fixed right-4 bottom-4 md:right-6 md:bottom-6 bg-white rounded-full p-2 text-slate-600 shadow-lg'
                     : 'invisible',
                 'transition-all duration-300 hover:bg-red-500 hover:text-white',
             )}
