@@ -64,7 +64,7 @@ function App() {
                     <Container className="max-w-[64rem]">
                         <img
                             src={UndrawMoonlightImg}
-                            className="w-3/4 mx-auto pb-6"
+                            className="w-full sm:w-3/4 mx-auto pb-6"
                         />
 
                         <SectionTitle text="Sobre mim" />
