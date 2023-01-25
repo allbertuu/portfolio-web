@@ -6,6 +6,7 @@ import { scrollToSectionId } from './utils';
 import { Card, Header, MySocials } from '@components/index';
 import { Container } from '@components/layout';
 import { ArrowUp, Link, SectionTitle } from '@components/ui';
+import UndrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
 
 function App() {
     useEffect(() => {
@@ -55,22 +56,43 @@ function App() {
                         onClick={() => scrollToSectionId('s-about-me')}
                     />
                 </section>
+                {/* About Me Section */}
+                <section
+                    id="s-about-me"
+                    className="relative py-16 after:block after:absolute after:bottom-0 after:h-[2px] after:shadow-sm after:w-full after:rotate-1 after:bg-red-500"
+                >
+                    <Container className="max-w-[64rem]">
+                        <img
+                            src={UndrawMoonlightImg}
+                            className="w-3/4 mx-auto pb-6"
+                        />
 
-                <section className="py-10 bg-red-600">
-                    <Container>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            <div>Icon</div>
+                        <SectionTitle text="Sobre mim" />
 
-                            <div>
-                                <SectionTitle className="text-left">
-                                    Sobre mim
-                                </SectionTitle>
-
-                                <p>
-                                    Minha história na programação. Objetivo
-                                    profissional.
-                                </p>
-                            </div>
+                        <div className="mt-2">
+                            <p>
+                                Bom, eu tenho 10 meses de experiência como{' '}
+                                <abbr title="Desenvolvedor Frontend: mestre das interfaces">
+                                    Frontend Developer
+                                </abbr>
+                                , desenvolvendo interfaces como: portais de
+                                vagas, sistemas web, landing pages e painéis de
+                                controle administrativo. Possuo experiência em
+                                entregas de software para empresas do ramo de
+                                varejo, e área contábil.
+                            </p>
+                            <hr className="my-4 border-red-500" />
+                            <p>
+                                Me interesso principalmente por web design,
+                                construção de interfaces centradas no usuário
+                                (UI/UX Design), e{' '}
+                                <abbr title="Leia 'Código limpo', de Robert C. Martin">
+                                    clean code
+                                </abbr>
+                                . Também possuo extrema facilidade em aprender
+                                novas tecnologias. Me considero um desenvolvedor
+                                flexível e competente.
+                            </p>
                         </div>
                     </Container>
                 </section>
