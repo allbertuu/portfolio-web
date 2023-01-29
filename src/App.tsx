@@ -78,8 +78,8 @@ function App() {
                             className="mb-4 originLeftReveal intervalReveal"
                         />
 
-                        <div className="mt-2 delayMediumReveal">
-                            <article className="intervalReveal">
+                        <div role={'list'} className="mt-2 delayMediumReveal">
+                            <article role={'listitem'} className="intervalReveal">
                                 <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
                                     <BriefcaseIcon
                                         className="text-xl lg:text-2xl"
@@ -105,7 +105,7 @@ function App() {
 
                             <Separator />
 
-                            <article className="intervalReveal">
+                            <article role={'listitem'} className="intervalReveal">
                                 <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
                                     <HeartIcon
                                         className="text-xl lg:text-2xl"
@@ -131,7 +131,7 @@ function App() {
 
                             <Separator />
 
-                            <article className="intervalReveal">
+                            <article role={'listitem'} className="intervalReveal">
                                 <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
                                     <UserListIcon
                                         className="text-2xl lg:text-3xl"
