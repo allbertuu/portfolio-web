@@ -11,7 +11,7 @@ const Container: FunctionComponent<IContainerProps> = ({
             {...props}
             className={classNames(
                 props.className || '',
-                'container mx-auto px-8',
+                'container mx-auto px-6',
             )}
             data-testid="container"
         >
