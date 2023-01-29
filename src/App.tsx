@@ -1,11 +1,17 @@
-import { ArrowDown, GithubLogo } from 'phosphor-react';
+import {
+    ArrowDown as ArrowDownIcon,
+    GithubLogo as GithubLogoIcon,
+    Briefcase as BriefcaseIcon,
+    Heart as HeartIcon,
+    UserList as UserListIcon,
+} from 'phosphor-react';
 import creatorImg from '@assets/imgs/me.svg';
 import { initScrollReveal } from '@scripts/scrollReveal';
 import { useEffect } from 'react';
 import { scrollToSectionId } from './utils';
 import { Card, Header, MySocials } from '@components/index';
 import { Container } from '@components/layout';
-import { ArrowUp, Link, SectionTitle } from '@components/ui';
+import { ArrowUp, Link, SectionTitle, Separator } from '@components/ui';
 import UndrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
 
 function App() {
@@ -49,7 +55,7 @@ function App() {
                         </div>
                     </Container>
 
-                    <ArrowDown
+                    <ArrowDownIcon
                         size="1.8rem"
                         role={'button'}
                         className="mx-auto animate-bounce text-white/70 cursor-pointer"
@@ -64,35 +70,91 @@ function App() {
                     <Container className="max-w-[64rem]">
                         <img
                             src={UndrawMoonlightImg}
-                            className="w-full sm:w-3/4 mx-auto pb-6"
+                            className="w-full sm:w-3/4 mx-auto pb-6 delaySmallReveal"
                         />
 
-                        <SectionTitle text="Sobre mim" />
+                        <SectionTitle
+                            text="Sobre mim"
+                            className="mb-4 originLeftReveal intervalReveal"
+                        />
 
-                        <div className="mt-2">
-                            <p>
-                                Bom, eu tenho 10 meses de experiência como{' '}
-                                <abbr title="Desenvolvedor Frontend: mestre das interfaces">
-                                    Frontend Developer
-                                </abbr>
-                                , desenvolvendo interfaces como: portais de
-                                vagas, sistemas web, landing pages e painéis de
-                                controle administrativo. Possuo experiência em
-                                entregas de software para empresas do ramo de
-                                varejo, e área contábil.
-                            </p>
-                            <hr className="my-4 border-red-500" />
-                            <p>
-                                Me interesso principalmente por web design,
-                                construção de interfaces centradas no usuário
-                                (UI/UX Design), e{' '}
-                                <abbr title="Leia 'Código limpo', de Robert C. Martin">
-                                    clean code
-                                </abbr>
-                                . Também possuo extrema facilidade em aprender
-                                novas tecnologias. Me considero um desenvolvedor
-                                flexível e competente.
-                            </p>
+                        <div role={'list'} className="mt-2 delayMediumReveal">
+                            <article role={'listitem'} className="intervalReveal">
+                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                    <BriefcaseIcon
+                                        className="text-xl lg:text-2xl"
+                                        weight="fill"
+                                    />
+                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                        Profissão
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Bom, eu tenho 10 meses de experiência como{' '}
+                                    <abbr title="Desenvolvedor Frontend: mestre das interfaces">
+                                        Frontend Developer
+                                    </abbr>
+                                    , desenvolvendo interfaces como: portais de
+                                    vagas, sistemas web, landing pages e painéis
+                                    de controle administrativo. Possuo
+                                    experiência em entregas de software para
+                                    empresas do ramo de varejo, e área contábil.
+                                </p>
+                            </article>
+
+                            <Separator />
+
+                            <article role={'listitem'} className="intervalReveal">
+                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                    <HeartIcon
+                                        className="text-xl lg:text-2xl"
+                                        weight="fill"
+                                    />
+                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                        Interesses
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Me interesso principalmente por web design,
+                                    construção de interfaces centradas no
+                                    usuário (UI/UX Design), e{' '}
+                                    <abbr title="Leia 'Código limpo', de Robert C. Martin">
+                                        clean code
+                                    </abbr>
+                                    . Também possuo extrema facilidade em
+                                    aprender novas tecnologias. Me considero um
+                                    desenvolvedor flexível e competente.
+                                </p>
+                            </article>
+
+                            <Separator />
+
+                            <article role={'listitem'} className="intervalReveal">
+                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                    <UserListIcon
+                                        className="text-2xl lg:text-3xl"
+                                        weight="fill"
+                                    />
+                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                        Quem sou eu
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Nascido em Pernambuco, já morei em muitos
+                                    lugares pelo Brasil. Meu espirito inquieto,
+                                    curioso e inovador, me fizeram desde muito
+                                    novo - 16 anos - escolher, por amor, a área
+                                    de programação. Hoje crio soluções para a
+                                    web e para dispositivos móveis, sempre com
+                                    um olhar diferenciado no design e na
+                                    usabilidade.
+                                    <br /> Atualmente tenho 19 anos, e estou
+                                    cursando Ciência da Computação.
+                                </p>
+                            </article>
                         </div>
                     </Container>
                 </section>
@@ -112,7 +174,7 @@ function App() {
                                 Clique aqui para ver mais projetos
                             </Link>
 
-                            <GithubLogo size="1.125rem" />
+                            <GithubLogoIcon size="1.125rem" />
                         </p>
                     </Container>
                 </section>

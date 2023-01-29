@@ -33,3 +33,7 @@ body {
 body * {
     @apply decoration-red-500;
 }
+
+p {
+    @apply text-white/90;
+}
