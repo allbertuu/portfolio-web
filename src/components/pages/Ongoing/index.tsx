@@ -58,20 +58,18 @@ const OngoingPage: FunctionComponent<OngoingPageProps> = () => {
 
                 <p className="text-lg text-justify">
                     Farei isso utilizando de tecnologias como{' '}
+                    <Link href="https://pt-br.reactjs.org/">ReactJS</Link> +{' '}
+                    <Link href="https://www.typescriptlang.org/">
+                        TypeScript
+                    </Link>
+                    , <Link href="https://vitejs.dev/">Vite</Link>,{' '}
+                    <Link href="https://phosphoricons.com/">Phosphor Icons</Link>,{' '}
                     <Link href="https://www.radix-ui.com/">Radix.ui</Link>,{' '}
                     <Link href="https://tailwindcss.com/">TailwindCSS</Link>,{' '}
-                    <Link href="https://atomicdesign.bradfrost.com/chapter-2/">
-                        Atomic Design Architecture
-                    </Link>
-                    ,{' '}
                     <Link href="https://testing-library.com/docs/react-testing-library/intro/">
                         testes unitários com Testing Library
                     </Link>
-                    , <Link href="https://pt-br.reactjs.org/">ReactJS</Link> +{' '}
-                    <Link href="https://www.typescriptlang.org/">
-                        TypeScript
-                    </Link>{' '}
-                    e <Link href="https://sass-lang.com/">Sass/SCSS</Link>.
+                    , e <Link href="https://sass-lang.com/">Sass/SCSS</Link>.
                 </p>
 
                 <h2
