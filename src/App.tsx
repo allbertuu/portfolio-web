@@ -70,81 +70,91 @@ function App() {
                     <Container className="max-w-[64rem]">
                         <img
                             src={UndrawMoonlightImg}
-                            className="w-full sm:w-3/4 mx-auto pb-6"
+                            className="w-full sm:w-3/4 mx-auto pb-6 delaySmallReveal"
                         />
 
-                        <SectionTitle text="Sobre mim" className="mb-4" />
+                        <SectionTitle
+                            text="Sobre mim"
+                            className="mb-4 originLeftReveal intervalReveal"
+                        />
 
-                        <div className="mt-2">
-                            <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
-                                <BriefcaseIcon
-                                    className="text-xl lg:text-2xl"
-                                    weight="fill"
-                                />
-                                <h3 className="font-light text-lg lg:text-2xl leading-none">
-                                    Profissão
-                                </h3>
-                            </div>
+                        <div className="mt-2 delayMediumReveal">
+                            <article className="intervalReveal">
+                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                    <BriefcaseIcon
+                                        className="text-xl lg:text-2xl"
+                                        weight="fill"
+                                    />
+                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                        Profissão
+                                    </h3>
+                                </div>
 
-                            <p>
-                                Bom, eu tenho 10 meses de experiência como{' '}
-                                <abbr title="Desenvolvedor Frontend: mestre das interfaces">
-                                    Frontend Developer
-                                </abbr>
-                                , desenvolvendo interfaces como: portais de
-                                vagas, sistemas web, landing pages e painéis de
-                                controle administrativo. Possuo experiência em
-                                entregas de software para empresas do ramo de
-                                varejo, e área contábil.
-                            </p>
-
-                            <Separator />
-
-                            <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
-                                <HeartIcon
-                                    className="text-xl lg:text-2xl"
-                                    weight="fill"
-                                />
-                                <h3 className="font-light text-lg lg:text-2xl leading-none">
-                                    Interesses
-                                </h3>
-                            </div>
-
-                            <p>
-                                Me interesso principalmente por web design,
-                                construção de interfaces centradas no usuário
-                                (UI/UX Design), e{' '}
-                                <abbr title="Leia 'Código limpo', de Robert C. Martin">
-                                    clean code
-                                </abbr>
-                                . Também possuo extrema facilidade em aprender
-                                novas tecnologias. Me considero um desenvolvedor
-                                flexível e competente.
-                            </p>
+                                <p>
+                                    Bom, eu tenho 10 meses de experiência como{' '}
+                                    <abbr title="Desenvolvedor Frontend: mestre das interfaces">
+                                        Frontend Developer
+                                    </abbr>
+                                    , desenvolvendo interfaces como: portais de
+                                    vagas, sistemas web, landing pages e painéis
+                                    de controle administrativo. Possuo
+                                    experiência em entregas de software para
+                                    empresas do ramo de varejo, e área contábil.
+                                </p>
+                            </article>
 
                             <Separator />
 
-                            <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
-                                <UserListIcon
-                                    className="text-2xl lg:text-3xl"
-                                    weight="fill"
-                                />
-                                <h3 className="font-light text-lg lg:text-2xl leading-none">
-                                    Quem sou eu
-                                </h3>
-                            </div>
+                            <article className="intervalReveal">
+                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                    <HeartIcon
+                                        className="text-xl lg:text-2xl"
+                                        weight="fill"
+                                    />
+                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                        Interesses
+                                    </h3>
+                                </div>
 
-                            <p>
-                                Nascido em Pernambuco, já morei em muitos
-                                lugares pelo Brasil. Meu espirito inquieto,
-                                curioso e inovador, me fizeram desde muito novo
-                                - 16 anos - escolher, por amor, a área de
-                                programação. Hoje crio soluções para a web e
-                                para dispositivos móveis, sempre com um olhar
-                                diferenciado no design e na usabilidade.
-                                <br /> Atualmente tenho 19 anos, e estou
-                                cursando Ciência da Computação.
-                            </p>
+                                <p>
+                                    Me interesso principalmente por web design,
+                                    construção de interfaces centradas no
+                                    usuário (UI/UX Design), e{' '}
+                                    <abbr title="Leia 'Código limpo', de Robert C. Martin">
+                                        clean code
+                                    </abbr>
+                                    . Também possuo extrema facilidade em
+                                    aprender novas tecnologias. Me considero um
+                                    desenvolvedor flexível e competente.
+                                </p>
+                            </article>
+
+                            <Separator />
+
+                            <article className="intervalReveal">
+                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                    <UserListIcon
+                                        className="text-2xl lg:text-3xl"
+                                        weight="fill"
+                                    />
+                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                        Quem sou eu
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Nascido em Pernambuco, já morei em muitos
+                                    lugares pelo Brasil. Meu espirito inquieto,
+                                    curioso e inovador, me fizeram desde muito
+                                    novo - 16 anos - escolher, por amor, a área
+                                    de programação. Hoje crio soluções para a
+                                    web e para dispositivos móveis, sempre com
+                                    um olhar diferenciado no design e na
+                                    usabilidade.
+                                    <br /> Atualmente tenho 19 anos, e estou
+                                    cursando Ciência da Computação.
+                                </p>
+                            </article>
                         </div>
                     </Container>
                 </section>
