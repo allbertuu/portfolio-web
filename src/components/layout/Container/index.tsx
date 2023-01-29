@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react';
 import { IContainerProps } from './types';
 /**
  * Alinha o conteúdo do container ao centro, com uma largura máxima que depende
- * da largura do dispositivo, e adiciona um padding lateral de 2rem (32px)
+ * da largura do dispositivo, e adiciona um padding lateral de 1.5rem (24px)
  */
 const Container: FunctionComponent<IContainerProps> = ({
     children,
