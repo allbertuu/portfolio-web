@@ -96,25 +96,20 @@ function App() {
                         </div>
                     </Container>
                 </section>
-
-                <section className="py-10">
+                {/* My Projects Section */}
+                <section id="s-projects" className="py-10 mt-8">
                     <Container>
-                        <SectionTitle text="" className="text-center">
-                            Projetos
-                        </SectionTitle>
+                        <SectionTitle text="Projetos" className="mx-auto" />
 
-                        <div className="flex flex-wrap justify-center gap-12 mt-12 mb-6">
+                        <div className="flex flex-wrap justify-center gap-12 mt-12 mb-6 originBottomReveal">
                             <Card />
                             <Card />
                             <Card />
                         </div>
 
                         <p className="text-center text-lg flex gap-1 items-center justify-center">
-                            <Link
-                                href="https://github.com/allbertuu?tab=repositories"
-                                className="[&~svg]:hover:opacity-80"
-                            >
-                                + projetos
+                            <Link href="https://github.com/allbertuu?tab=repositories">
+                                Clique aqui para ver mais projetos
                             </Link>
 
                             <GithubLogo size="1.125rem" />
