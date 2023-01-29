@@ -1,5 +1,5 @@
 import { ArrowDown, GithubLogo } from 'phosphor-react';
-import imgLogo from '@assets/imgs/logo.svg';
+import creatorImg from '@assets/imgs/me.svg';
 import { initScrollReveal } from '@scripts/scrollReveal';
 import { useEffect } from 'react';
 import { scrollToSectionId } from './utils';
@@ -41,9 +41,9 @@ function App() {
                             {/* Container My Logo */}
                             <div className="px-4 hidden lg:block">
                                 <img
-                                    src={imgLogo}
-                                    alt="Logo vermelha"
-                                    className="delaySmallReveal md:originRightReveal h-[25rem] drop-shadow-xl shadow-red-500/30"
+                                    src={creatorImg}
+                                    alt="Criador do website"
+                                    className="delaySmallReveal md:originRightReveal h-[25rem] drop-shadow-xl shadow-red-500/30 border-2 border-red-600/20 rounded-[5.25rem]"
                                 />
                             </div>
                         </div>

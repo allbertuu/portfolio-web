@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import { classNames, scrollToSectionId } from '@utils/index';
-import imgLogo from '@assets/imgs/logo.svg';
+import logoImg from '@assets/imgs/logo.svg';
 import {
     EnvelopeSimple,
     Folders,
@@ -61,7 +61,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
             bg-slate-700/80 shadow-2xl"
         >
             <div className="flex items-center gap-2 pointer-events-none originLeftReveal">
-                <img src={imgLogo} alt="Logo vermelha" className="h-9" />
+                <img src={logoImg} alt="Logo vermelha" className="h-9" />
                 <span className="hidden md:block">Portfólio</span>
             </div>
 
