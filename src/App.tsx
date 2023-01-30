@@ -79,7 +79,10 @@ function App() {
                         />
 
                         <div role={'list'} className="mt-2 delayMediumReveal">
-                            <article role={'listitem'} className="intervalReveal">
+                            <article
+                                role={'listitem'}
+                                className="intervalReveal"
+                            >
                                 <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
                                     <BriefcaseIcon
                                         className="text-xl lg:text-2xl"
@@ -100,12 +103,25 @@ function App() {
                                     de controle administrativo. Possuo
                                     experiência em entregas de software para
                                     empresas do ramo de varejo, e área contábil.
+                                    <br />
+                                    Tenho muita afinidade com{' '}
+                                    <Link href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
+                                        JavaScript
+                                    </Link>{' '}
+                                    e{' '}
+                                    <Link href="https://pt-br.reactjs.org/">
+                                        ReactJS
+                                    </Link>
+                                    .
                                 </p>
                             </article>
 
                             <Separator />
 
-                            <article role={'listitem'} className="intervalReveal">
+                            <article
+                                role={'listitem'}
+                                className="intervalReveal"
+                            >
                                 <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
                                     <HeartIcon
                                         className="text-xl lg:text-2xl"
@@ -131,7 +147,10 @@ function App() {
 
                             <Separator />
 
-                            <article role={'listitem'} className="intervalReveal">
+                            <article
+                                role={'listitem'}
+                                className="intervalReveal"
+                            >
                                 <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
                                     <UserListIcon
                                         className="text-2xl lg:text-3xl"
