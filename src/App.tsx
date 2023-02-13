@@ -12,7 +12,7 @@ import { scrollToSectionId } from './utils';
 import { Card, Header, MySocials } from '@components/index';
 import { Container } from '@components/layout';
 import { ArrowUp, Link, SectionTitle, Separator } from '@components/ui';
-import UndrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
+import undrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
 
 function App() {
     useEffect(() => {
@@ -30,14 +30,15 @@ function App() {
                         <div className="grid grid-cols-1 lg:grid-cols-2 h-[85vh] gap-8 items-center justify-items-center">
                             {/* Container Presentation */}
                             <div className="relative px-4 text-center lg:text-left ">
-                                <h3 className="originLeftReveal intervalReveal text-muted/80 lg:text-xl">
+                                <h3 className="originLeftReveal intervalReveal text-muted/80 text-xl lg:text-2xl">
                                     Olá! Eu me chamo,
                                 </h3>
-                                <h1 className="originLeftReveal intervalReveal text-3xl lg:text-6xl font-bold mb-1">
+
+                                <h1 className="originLeftReveal intervalReveal text-5xl lg:text-6xl font-bold mb-1">
                                     Alberto Santos.
                                 </h1>
 
-                                <h2 className="originLeftReveal intervalReveal text-xl lg:text-3xl italic text-muted">
+                                <h2 className="originLeftReveal intervalReveal text-2xl lg:text-3xl italic text-muted">
                                     Desenvolvedor <strong>Frontend Web</strong>{' '}
                                     e <strong>Mobile</strong>
                                 </h2>
@@ -69,7 +70,7 @@ function App() {
                 >
                     <Container className="max-w-[64rem]">
                         <img
-                            src={UndrawMoonlightImg}
+                            src={undrawMoonlightImg}
                             className="w-full sm:w-3/4 mx-auto pb-6 delaySmallReveal"
                         />
 
@@ -78,19 +79,19 @@ function App() {
                             className="mb-4 originLeftReveal intervalReveal"
                         />
 
-                        <div role={'list'} className="mt-2 delayMediumReveal">
+                        <div role={'group'} className="mt-2 delayMediumReveal">
                             <article
                                 role={'listitem'}
                                 className="intervalReveal"
                             >
-                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                <div className="flex gap-2 items-center text-red-800 mb-2">
                                     <BriefcaseIcon
-                                        className="text-xl lg:text-2xl"
+                                        className="text-2xl"
                                         weight="fill"
                                     />
-                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                    <h4 className="font-semibold leading-none">
                                         Profissão
-                                    </h3>
+                                    </h4>
                                 </div>
 
                                 <p>
@@ -122,14 +123,14 @@ function App() {
                                 role={'listitem'}
                                 className="intervalReveal"
                             >
-                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                <div className="flex gap-2 items-center text-red-800 mb-2">
                                     <HeartIcon
-                                        className="text-xl lg:text-2xl"
+                                        className="text-2xl"
                                         weight="fill"
                                     />
-                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                    <h4 className="font-semibold leading-none">
                                         Interesses
-                                    </h3>
+                                    </h4>
                                 </div>
 
                                 <p>
@@ -151,14 +152,14 @@ function App() {
                                 role={'listitem'}
                                 className="intervalReveal"
                             >
-                                <div className="flex gap-1 lg:gap-2 items-center text-red-800 mb-2">
+                                <div className="flex gap-2 items-center text-red-800 mb-2">
                                     <UserListIcon
-                                        className="text-2xl lg:text-3xl"
+                                        className="text-3xl"
                                         weight="fill"
                                     />
-                                    <h3 className="font-light text-lg lg:text-2xl leading-none">
+                                    <h4 className="font-semibold leading-none">
                                         Quem sou eu
-                                    </h3>
+                                    </h4>
                                 </div>
 
                                 <p>

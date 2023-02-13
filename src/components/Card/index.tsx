@@ -12,13 +12,14 @@ const Card: FunctionComponent<ICardProps> = () => {
                 'hover:border-red-500 hover:shadow-xl hover:shadow-red-500/30 hover:transform hover:-translate-y-3',
             )}
         >
-            <h4 className="text-red-500 text-lg lg:text-xl -mb-2 font-semibold">
-                Nome do projeto
-            </h4>
+            <h4 className="text-red-500 -mb-2 font-semibold">Sneakers</h4>
             <span className="text-muted text-[85%] italic">Frontend</span>
-            <p className="mt-1 leading-snug">Descrição sobre o projeto</p>
+            <p className="mt-1 leading-snug">
+                Essa aplicação foi um projeto colaborativo que gerencia cadastro
+                de usuário em um sistema de saúde.
+            </p>
             {/* estilo carrossel de techs da rocketseat */}
-            <div className="flex justify-between mt-4 ">
+            <div className="flex justify-between mt-4">
                 <a
                     href="#"
                     className="flex gap-1 items-center w-fit [&]:hover:text-red-600 transition-all font-semibold"
