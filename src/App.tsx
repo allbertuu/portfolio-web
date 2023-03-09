@@ -9,7 +9,7 @@ import creatorImg from '@assets/imgs/me.svg';
 import { initScrollReveal } from '@scripts/scrollReveal';
 import { useEffect } from 'react';
 import { scrollToSectionId } from './utils';
-import { Card, Header, MySocials } from '@components/index';
+import { ProjectCard, Header, MySocials } from '@components/index';
 import { Container } from '@components/layout';
 import { ArrowUp, Link, SectionTitle, Separator } from '@components/ui';
 import undrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
@@ -184,9 +184,9 @@ function App() {
                         <SectionTitle text="Projetos" className="mx-auto" />
 
                         <div className="flex flex-wrap justify-center gap-12 mt-12 mb-6 originBottomReveal">
-                            <Card />
-                            <Card />
-                            <Card />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
                         </div>
 
                         <p className="text-center text-lg flex gap-1 items-center justify-center">

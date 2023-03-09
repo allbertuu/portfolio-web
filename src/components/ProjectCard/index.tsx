@@ -1,9 +1,9 @@
 import { classNames } from '@utils/index';
 import GitHubIcon from '@assets/icons/GitHub';
 import { FunctionComponent } from 'react';
-import { ICardProps } from './types';
+import { IProjectCardProps } from './types';
 
-const Card: FunctionComponent<ICardProps> = () => {
+const ProjectCard: FunctionComponent<IProjectCardProps> = () => {
     return (
         <article
             className={classNames(
@@ -32,4 +32,4 @@ const Card: FunctionComponent<ICardProps> = () => {
     );
 };
 
-export default Card;
+export default ProjectCard;
