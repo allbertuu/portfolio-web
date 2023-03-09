@@ -13,7 +13,7 @@ const SectionTitle: FunctionComponent<ISectionTitleProps> = ({
                 props.className || '',
                 'relative w-fit',
                 'text-white font-bold',
-                'after:block after:absolute after:h-[2px] after:w-2/5 after:right-0 after:bottom-2 after:bg-red-500',
+                'after:block after:relative after:h-[2px] after:w-2/5 after:bottom-2 after:bg-red-500',
             )}
         >
             {text}
