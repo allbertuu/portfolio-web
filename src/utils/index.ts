@@ -29,23 +29,13 @@ export const scrollWindowToTop = () => {
     });
 };
 
-export const convertWeekdayNumberToString = (numberWeekday: number) => {
-    switch (numberWeekday) {
-        case 0:
-            return 'Domingo';
-        case 1:
-            return 'Segunda';
-        case 2:
-            return 'Terça';
-        case 3:
-            return 'Quarta';
-        case 4:
-            return 'Quinta';
-        case 5:
-            return 'Sexta';
-        case 6:
-            return 'Sábado';
-        default:
-            break;
-    }
+export const getWeekdayString = (weekdayNumber: number): string => {
+  const weekdays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+  const isWeekdayValid = weekdayNumber >= 0 && weekdayNumber <= 6;
+
+  if (isWeekdayValid) {
+    return weekdays[weekdayNumber];
+  }
+
+  throw new Error('Número de dia da semana inválido. Deve estar entre 0 e 6.');
 };
