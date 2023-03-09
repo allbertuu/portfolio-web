@@ -72,6 +72,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
                             key={section.id}
                             onClick={() => scrollToSectionId(section.id)}
                             role="link"
+                            title={section.name}
                             className={classNames(
                                 'relative text-center cursor-pointer overflow-hidden rounded py-[2px] px-2',
                                 'transition-shadow duration-500 z-0',
