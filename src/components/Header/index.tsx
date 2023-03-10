@@ -2,10 +2,10 @@ import { FunctionComponent } from 'react';
 import { classNames, scrollToSectionId } from '@utils/index';
 import logoImg from '@assets/imgs/logo.svg';
 import {
-    EnvelopeSimple,
-    Folders,
-    IdentificationCard,
-    Lightning,
+    EnvelopeSimple as EnvelopeSimpleIcon,
+    Folders as FoldersIcon,
+    IdentificationCard as IdentificationCardIcon,
+    Lightning as LightningIcon,
 } from 'phosphor-react';
 import { IHeaderProps, ISection } from './types';
 
@@ -15,7 +15,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
             id: 's-about-me',
             name: 'Sobre mim',
             icon: (
-                <IdentificationCard
+                <IdentificationCardIcon
                     weight="fill"
                     className="text-xl text-red-500 inline-block mr-2 -mt-1"
                 />
@@ -25,7 +25,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
             id: 's-projects',
             name: 'Projetos',
             icon: (
-                <Folders
+                <FoldersIcon
                     weight="fill"
                     className="text-xl text-red-500 inline-block mr-2 -mt-1"
                 />
@@ -35,7 +35,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
             id: 's-skills',
             name: 'Habilidades',
             icon: (
-                <Lightning
+                <LightningIcon
                     weight="fill"
                     className="text-xl text-red-500 inline-block mr-2 -mt-1"
                 />
@@ -45,7 +45,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
             id: 's-contact-me',
             name: 'Me mande um e-mail',
             icon: (
-                <EnvelopeSimple
+                <EnvelopeSimpleIcon
                     weight="fill"
                     className="text-xl text-red-500 inline-block mr-2 -mt-1"
                 />
@@ -60,10 +60,14 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
             px-8 py-4 w-full z-10 text-lg border-b-[2px] border-b-red-500
             bg-slate-700/80 shadow-2xl"
         >
-            <div className="flex items-center gap-2 pointer-events-none originLeftReveal">
+            <a
+                title="Marca do meu Portfólio"
+                href="#"
+                className="flex items-center gap-2 originLeftReveal"
+            >
                 <img src={logoImg} alt="Logo vermelha" className="h-9" />
                 <span className="hidden md:block">Portfólio</span>
-            </div>
+            </a>
 
             <nav className="hidden lg:block">
                 <ul className="flex gap-4">
