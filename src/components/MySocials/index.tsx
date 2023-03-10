@@ -1,11 +1,15 @@
 import { socials } from '@scripts/aboutMe';
 import { classNames } from '@utils/index';
-import { GithubLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react';
+import {
+    GithubLogo as GithubLogoIcon,
+    InstagramLogo as InstagramLogoIcon,
+    LinkedinLogo as LinkedinLogoIcon,
+} from 'phosphor-react';
 import { FunctionComponent } from 'react';
 import { IMySocialsProps } from './types';
 
 const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
-    const baseStyles = classNames(
+    const baseButtonStyles = classNames(
         'font-bold',
         'px-2 py-1 rounded-md',
         'flex items-center gap-1',
@@ -16,54 +20,51 @@ const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
     return (
         <div
             {...props}
-            className={classNames(props.className || '', 'flex flex-col items-center sm:flex-row gap-4')}
+            className={classNames(
+                props.className || '',
+                'flex flex-col items-center sm:flex-row gap-4',
+            )}
         >
             <a
                 href={socials.linkedin}
-                className="inline-block intervalReveal mySocialsReveal"
+                title="LinkedIn"
+                className={classNames(
+                    baseButtonStyles,
+                    'border border-sky-600',
+                    'bg-sky-600 text-white',
+                    'intervalReveal mySocialsReveal',
+                )}
             >
-                <button
-                    className={classNames(
-                        baseStyles,
-                        'border border-sky-600',
-                        'bg-sky-600 text-white',
-                    )}
-                >
-                    <LinkedinLogo weight="bold" className="text-lg" />
-                    Linkedin
-                </button>
+                <LinkedinLogoIcon weight="bold" className="text-lg" />
+                Linkedin
             </a>
 
             <a
                 href={socials.github}
-                className="inline-block intervalReveal mySocialsReveal"
+                title="GitHub"
+                className={classNames(
+                    baseButtonStyles,
+                    'border border-white/90',
+                    'bg-white/90 text-[#0c0b0b]',
+                    'intervalReveal mySocialsReveal',
+                )}
             >
-                <button
-                    className={classNames(
-                        baseStyles,
-                        'border border-white/90',
-                        'bg-white/90 text-[#0c0b0b]',
-                    )}
-                >
-                    <GithubLogo className="text-lg" />
-                    GitHub
-                </button>
+                <GithubLogoIcon className="text-lg" />
+                GitHub
             </a>
 
             <a
                 href={socials.instagram.url}
-                className="inline-block intervalReveal mySocialsReveal"
+                title="Instagram"
+                className={classNames(
+                    baseButtonStyles,
+                    'border border-[#f43f5e]',
+                    'bg-white/90 bg-[#f43f5e]',
+                    'intervalReveal mySocialsReveal',
+                )}
             >
-                <button
-                    className={classNames(
-                        baseStyles,
-                        'border border-[#f43f5e]',
-                        'bg-white/90 bg-[#f43f5e]',
-                    )}
-                >
-                    <InstagramLogo className="text-lg" />
-                    Instagram
-                </button>
+                <InstagramLogoIcon className="text-lg" />
+                Instagram
             </a>
         </div>
     );
