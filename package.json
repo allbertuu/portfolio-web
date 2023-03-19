@@ -20,8 +20,6 @@
         "scrollreveal": "^4.0.9"
     },
     "devDependencies": {
-        "@commitlint/cli": "^17.1.2",
-        "@commitlint/config-conventional": "^17.1.0",
         "@semantic-release/changelog": "^6.0.1",
         "@semantic-release/git": "^10.0.1",
         "@testing-library/jest-dom": "^5.16.5",
@@ -32,7 +30,6 @@
         "@types/scrollreveal": "^0.0.8",
         "@vitejs/plugin-react": "^2.1.0",
         "autoprefixer": "^10.4.12",
-        "husky": "^8.0.1",
         "jsdom": "^20.0.3",
         "postcss": "^8.4.16",
         "prettier": "^2.7.1",
