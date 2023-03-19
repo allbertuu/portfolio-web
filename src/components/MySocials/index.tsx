@@ -59,7 +59,7 @@ const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
                 className={classNames(
                     baseButtonStyles,
                     'border border-[#f43f5e]',
-                    'bg-white/90 bg-[#f43f5e]',
+                    'bg-[#f43f5e]',
                     'intervalReveal mySocialsReveal',
                 )}
             >
