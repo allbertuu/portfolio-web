@@ -10,7 +10,7 @@ import { IMySocialsProps } from './types';
 
 const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
     const baseButtonStyles = classNames(
-        'font-bold',
+        'text-lg font-bold',
         'px-2 py-1 rounded-md',
         'flex items-center gap-1',
         'hover:opacity-80 transition-all',
@@ -26,7 +26,7 @@ const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
             )}
         >
             <a
-                href={socials.linkedin}
+                href={socials.linkedin.url}
                 title="LinkedIn"
                 className={classNames(
                     baseButtonStyles,
@@ -35,12 +35,12 @@ const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
                     'intervalReveal mySocialsReveal',
                 )}
             >
-                <LinkedinLogoIcon weight="bold" className="text-lg" />
+                <LinkedinLogoIcon weight="bold" />
                 Linkedin
             </a>
 
             <a
-                href={socials.github}
+                href={socials.github.url}
                 title="GitHub"
                 className={classNames(
                     baseButtonStyles,
@@ -49,7 +49,7 @@ const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
                     'intervalReveal mySocialsReveal',
                 )}
             >
-                <GithubLogoIcon className="text-lg" />
+                <GithubLogoIcon />
                 GitHub
             </a>
 
@@ -63,7 +63,7 @@ const MySocials: FunctionComponent<IMySocialsProps> = ({ ...props }) => {
                     'intervalReveal mySocialsReveal',
                 )}
             >
-                <InstagramLogoIcon className="text-lg" />
+                <InstagramLogoIcon />
                 Instagram
             </a>
         </div>
