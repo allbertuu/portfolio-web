@@ -9,8 +9,8 @@ import creatorImg from '@assets/imgs/me.svg';
 import { initScrollReveal } from '@scripts/scrollReveal';
 import { useEffect } from 'react';
 import { scrollToSectionId } from './utils';
-import { ProjectCard, Header, MySocials } from '@components/index';
-import { Container } from '@components/layout';
+import { ProjectCard, MySocials } from '@components/index';
+import { Container, Header } from '@components/layout';
 import { ArrowUp, Link, SectionTitle, Separator } from '@components/ui';
 import undrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
 
