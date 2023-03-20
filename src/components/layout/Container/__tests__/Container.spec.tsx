@@ -11,7 +11,7 @@ describe('render Container correctly', () => {
     it('should have properly TailwindCSS styles', () => {
         render(<Container />);
         expect(screen.getByTestId('container')).toHaveClass(
-            'container mx-auto px-8',
+            'container mx-auto px-6',
         );
     });
 
