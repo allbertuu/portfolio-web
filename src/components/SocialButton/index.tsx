@@ -14,6 +14,7 @@ const SocialButton = ({ icon, href, name, className }: ISocialButton) => {
       <a
           href={href}
           title={name}
+          target="_blank"
           className={classNames(
               baseButtonStyles,
               'intervalReveal mySocialsReveal',
