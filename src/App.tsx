@@ -23,11 +23,11 @@ function App() {
         <>
             <Header />
 
-            <main className="mt-[4.375rem] overflow-hidden">
+            <main className="overflow-hidden">
                 {/* Introduction Section */}
-                <section className="pb-10 shadow-xl border-b border-b-slate-50/10">
-                    <Container>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 h-[85vh] gap-8 items-center justify-items-center">
+                <section className="shadow-xl border-b border-b-slate-50/10">
+                    <Container className='h-[95vh]'>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-8 items-center justify-items-center">
                             {/* Container Presentation */}
                             <div className="relative px-4 text-center lg:text-left ">
                                 <h3 className="originLeftReveal intervalReveal text-muted/80 text-xl lg:text-2xl">
@@ -56,14 +56,14 @@ function App() {
                                 />
                             </div>
                         </div>
-                    </Container>
 
-                    <ArrowDownIcon
-                        size="1.8rem"
-                        role={'button'}
-                        className="mx-auto animate-bounce text-white/70 cursor-pointer"
-                        onClick={() => scrollToSectionId('s-about-me')}
-                    />
+                        <ArrowDownIcon
+                            size="1.8rem"
+                            role={'button'}
+                            className="mx-auto -mt-16 sm:-mt-10 animate-bounce text-white/70 cursor-pointer"
+                            onClick={() => scrollToSectionId('s-about-me')}
+                        />
+                    </Container>
                 </section>
                 {/* About Me Section */}
                 <section
