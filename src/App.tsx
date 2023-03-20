@@ -43,7 +43,7 @@ function App() {
                                     e <strong>Mobile</strong>
                                 </h2>
                                 {/* Container My Socials */}
-                                <MySocials className="mt-4" />
+                                <MySocials className="mt-8 sm:mt-4" />
                             </div>
                             {/* Container My Logo */}
                             <div className="px-4 hidden lg:block">
