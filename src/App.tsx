@@ -34,7 +34,7 @@ function App() {
                                     Olá! Eu me chamo,
                                 </h3>
 
-                                <h1 className="originLeftReveal intervalReveal text-5xl lg:text-6xl font-bold mb-1">
+                                <h1 className="originLeftReveal intervalReveal text-[2.5rem] lg:text-6xl font-bold mb-1">
                                     Alberto Santos.
                                 </h1>
 
