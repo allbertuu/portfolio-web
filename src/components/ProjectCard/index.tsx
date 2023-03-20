@@ -24,7 +24,7 @@ const ProjectCard: FunctionComponent<IProjectCardProps> = () => {
                     href="#"
                     className="flex gap-1 items-center w-fit [&]:hover:text-red-600 transition-all font-semibold"
                 >
-                    <GitHubIcon /> GitHub
+                    <GitHubIcon fill='#fe355c' /> GitHub
                 </a>
                 <div>techs</div>
             </div>
