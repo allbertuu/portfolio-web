@@ -66,7 +66,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
                 className="flex items-center gap-2 originLeftReveal"
             >
                 <img src={logoImg} alt="Logo vermelha" className="h-9" />
-                <span className="hidden md:block">Portfólio</span>
+                <span>Portfólio</span>
             </a>
 
             <nav className="hidden lg:block">
