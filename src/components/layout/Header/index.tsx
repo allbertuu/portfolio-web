@@ -38,6 +38,14 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
         };
     });
 
+    const sendEmail = () => {
+        const assunto = 'Olá, Alberto! Bom, vamos conversar?';
+        const corpo = 'Seu email...';
+        const destinatario = 'albertovinicius3@gmail.com';
+        const link = `mailto:${destinatario}?subject=${assunto}&body=${corpo}`;
+        window.location.href = link;
+    };
+
     return (
         <header
             {...props}
@@ -56,10 +64,14 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
 
             <nav className="hidden lg:block">
                 <ul className="flex gap-4">
-                    {sectionList.map((section) => (
+                    {sectionList.map((section, i) => (
                         <li
                             key={section.id}
-                            onClick={() => scrollToSectionId(section.id)}
+                            onClick={
+                                i === sectionList.length - 1
+                                    ? () => sendEmail()
+                                    : () => scrollToSectionId(section.id)
+                            }
                             role="link"
                             title={section.name}
                             className={classNames(
