@@ -1,4 +1,4 @@
-import { socials } from '@scripts/aboutMe';
+import aboutMe from '@data/aboutMe.json';
 import { classNames } from '@utils/index';
 import { InstagramLogo, LinkedinLogo } from 'phosphor-react';
 import GitHubLogo from '@assets/icons/GitHub';
@@ -7,6 +7,8 @@ import { IMySocialsProps } from './types';
 import { SocialButton } from '@components/index';
 
 const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
+    const { socials } = aboutMe;
+
     return (
         <div
             {...props}

@@ -68,7 +68,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
                         <li
                             key={section.id}
                             onClick={
-                                i === sectionList.length - 1
+                                i === sectionList.length - 1 // se for o último item da lista
                                     ? () => sendEmail()
                                     : () => scrollToSectionId(section.id)
                             }
