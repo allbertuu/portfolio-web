@@ -20,6 +20,7 @@
         "scrollreveal": "^4.0.9"
     },
     "devDependencies": {
+        "@rocketseat/eslint-config": "^1.2.0",
         "@semantic-release/changelog": "^6.0.1",
         "@semantic-release/git": "^10.0.1",
         "@testing-library/jest-dom": "^5.16.5",
@@ -28,8 +29,12 @@
         "@types/react": "^18.0.17",
         "@types/react-dom": "^18.0.6",
         "@types/scrollreveal": "^0.0.8",
+        "@typescript-eslint/eslint-plugin": "^5.58.0",
+        "@typescript-eslint/parser": "^5.58.0",
         "@vitejs/plugin-react": "^2.1.0",
         "autoprefixer": "^10.4.12",
+        "eslint": "^8.38.0",
+        "eslint-plugin-react": "^7.32.2",
         "jsdom": "^20.0.3",
         "postcss": "^8.4.16",
         "prettier": "^2.7.1",
