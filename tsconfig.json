@@ -8,7 +8,8 @@
             "@assets/*": ["assets/*"],
             "@utils/*": ["utils/*"],
             "@contexts/*": ["contexts/*"],
-            "@hooks/*": ["hooks/*"]
+            "@hooks/*": ["hooks/*"],
+            "@data/*": ["data/*"]
         },
         "target": "ESNext",
         "useDefineForClassFields": true,
