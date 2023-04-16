@@ -3,7 +3,12 @@ import GitHubIcon from '@assets/icons/GitHub';
 import { FunctionComponent } from 'react';
 import { IProjectCardProps } from './types';
 
-const ProjectCard: FunctionComponent<IProjectCardProps> = () => {
+const ProjectCard: FunctionComponent<IProjectCardProps> = ({
+    name,
+    segment,
+    about,
+    githubLink,
+}) => {
     return (
         <article
             className={classNames(
@@ -12,21 +17,20 @@ const ProjectCard: FunctionComponent<IProjectCardProps> = () => {
                 'hover:border-red-500 hover:shadow-xl hover:shadow-red-500/30 hover:transform hover:-translate-y-3',
             )}
         >
-            <h4 className="text-red-500 -mb-2 font-semibold">Sneakers</h4>
-            <span className="text-muted text-[85%] italic">Frontend</span>
-            <p className="mt-1 leading-snug">
-                Essa aplicação foi um projeto colaborativo que gerencia cadastro
-                de usuário em um sistema de saúde.
-            </p>
+            <h4 className="text-red-500 -mb-2 font-semibold">{name}</h4>
+            <span className="text-muted text-[85%] italic">{segment}</span>
+            <p className="mt-1 leading-snug">{about}</p>
             {/* estilo carrossel de techs da rocketseat */}
             <div className="flex justify-between mt-4">
                 <a
-                    href="#"
+                    href={githubLink}
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex gap-1 items-center w-fit [&]:hover:text-red-600 transition-all font-semibold"
                 >
-                    <GitHubIcon fill='#fe355c' /> GitHub
+                    <GitHubIcon fill="#fe355c" /> GitHub
                 </a>
-                <div>techs</div>
+                {/* <div>techs</div> */}
             </div>
         </article>
     );

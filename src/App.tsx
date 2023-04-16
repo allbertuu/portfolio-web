@@ -14,13 +14,14 @@ import { Container, Header } from '@components/layout';
 import { ArrowUp, Link, SectionTitle, Separator } from '@components/ui';
 import undrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
 import aboutMe from '@data/aboutMe.json';
+import profession from '@data/profession.json';
 
 function App() {
     useEffect(() => {
         initScrollReveal();
     }, []);
 
-    const { profession, age, education } = aboutMe;
+    const { age, education } = aboutMe;
 
     return (
         <>
@@ -193,9 +194,15 @@ function App() {
                         <SectionTitle text="Projetos" className="mx-auto" />
 
                         <div className="flex flex-wrap justify-center gap-12 mt-12 mb-6 originBottomReveal">
-                            <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
+                            {profession.projects.map((project) => (
+                                <ProjectCard
+                                    key={project.name}
+                                    name={project.name}
+                                    segment={project.segment}
+                                    githubLink={project.links.github}
+                                    about={project.about}
+                                />
+                            ))}
                         </div>
 
                         <p className="text-center text-lg flex gap-1 items-center justify-center">

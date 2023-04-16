@@ -1,10 +1,4 @@
 {
-    "profession": {
-        "name": "Frontend Developer",
-        "years": 1,
-        "works": "portais de vagas, sistemas web, landing pages e painéis de controle administrativo",
-        "industry_sector": "ramo de varejo, e área contábil"
-    },
     "age": 20,
     "education": {
         "course": "Ciência da Computação",
