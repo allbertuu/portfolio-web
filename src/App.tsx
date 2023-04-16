@@ -13,11 +13,14 @@ import { ProjectCard, MySocials } from '@components/index';
 import { Container, Header } from '@components/layout';
 import { ArrowUp, Link, SectionTitle, Separator } from '@components/ui';
 import undrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
+import aboutMe from '@data/aboutMe.json';
 
 function App() {
     useEffect(() => {
         initScrollReveal();
     }, []);
+
+    const { profession, age, education } = aboutMe;
 
     return (
         <>
@@ -26,7 +29,7 @@ function App() {
             <main className="overflow-hidden">
                 {/* Introduction Section */}
                 <section className="shadow-xl border-b border-b-slate-50/10">
-                    <Container className='h-[95vh]'>
+                    <Container className="h-[95vh]">
                         <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-8 items-center justify-items-center">
                             {/* Container Presentation */}
                             <div className="relative px-4 text-center lg:text-left ">
@@ -74,6 +77,7 @@ function App() {
                         <img
                             src={undrawMoonlightImg}
                             className="w-full sm:w-3/4 mx-auto pb-6 delaySmallReveal"
+                            alt="Ilustração de uma pessoa sentada em frente a uma fogueira em um lugar com árvores e a luz da lua ao fundo"
                         />
 
                         <SectionTitle
@@ -97,15 +101,16 @@ function App() {
                                 </div>
 
                                 <p>
-                                    Bom, eu tenho 10 meses de experiência como{' '}
+                                    Bom, eu tenho {profession.years}{' '}
+                                    {profession.years > 1 ? 'anos' : 'ano'} de
+                                    experiência como{' '}
                                     <abbr title="Desenvolvedor Frontend: mestre das interfaces">
-                                        Frontend Developer
+                                        {profession.name}
                                     </abbr>
-                                    , desenvolvendo interfaces como: portais de
-                                    vagas, sistemas web, landing pages e painéis
-                                    de controle administrativo. Possuo
-                                    experiência em entregas de software para
-                                    empresas do ramo de varejo, e área contábil.
+                                    , desenvolvendo interfaces como:{' '}
+                                    {profession.works}. Possuo experiência em
+                                    entregas de software para empresas do{' '}
+                                    {profession.industry_sector}.
                                     <br />
                                     Tenho muita afinidade com{' '}
                                     <Link href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
@@ -173,8 +178,10 @@ function App() {
                                     web e para dispositivos móveis, sempre com
                                     um olhar diferenciado no design e na
                                     usabilidade.
-                                    <br /> Atualmente tenho 19 anos, e estou
-                                    cursando Ciência da Computação.
+                                    <br /> Atualmente tenho {age} anos, e estou
+                                    cursando {education.course} na{' '}
+                                    {education.institution} desde{' '}
+                                    {education.year}.
                                 </p>
                             </article>
                         </div>

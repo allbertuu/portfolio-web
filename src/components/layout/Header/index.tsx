@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { FunctionComponent } from 'react';
 import { classNames, scrollToSectionId } from '@utils/index';
 import logoImg from '@assets/imgs/logo.svg';
@@ -5,53 +6,37 @@ import {
     EnvelopeSimple as EnvelopeSimpleIcon,
     Folders as FoldersIcon,
     IdentificationCard as IdentificationCardIcon,
-    Lightning as LightningIcon,
+    // Lightning as LightningIcon,
 } from 'phosphor-react';
 import { IHeaderProps, ISection } from './types';
+import navigation from '@data/navigation.json';
 
 const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
-    const sectionList: ISection[] = [
-        {
-            id: 's-about-me',
-            name: 'Sobre mim',
-            icon: (
-                <IdentificationCardIcon
-                    weight="fill"
-                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
-                />
-            ),
-        },
-        {
-            id: 's-projects',
-            name: 'Projetos',
-            icon: (
-                <FoldersIcon
-                    weight="fill"
-                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
-                />
-            ),
-        },
-        {
-            id: 's-skills',
-            name: 'Habilidades',
-            icon: (
-                <LightningIcon
-                    weight="fill"
-                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
-                />
-            ),
-        },
-        {
-            id: 's-contact-me',
-            name: 'Me mande um e-mail',
-            icon: (
-                <EnvelopeSimpleIcon
-                    weight="fill"
-                    className="text-xl text-red-500 inline-block mr-2 -mt-1"
-                />
-            ),
-        },
+    const icons = [
+        <IdentificationCardIcon
+            weight="fill"
+            className="text-xl text-red-500 inline-block mr-2 -mt-1"
+        />,
+        <FoldersIcon
+            weight="fill"
+            className="text-xl text-red-500 inline-block mr-2 -mt-1"
+        />,
+        // <LightningIcon
+        //     weight="fill"
+        //     className="text-xl text-red-500 inline-block mr-2 -mt-1"
+        // />,
+        <EnvelopeSimpleIcon
+            weight="fill"
+            className="text-xl text-red-500 inline-block mr-2 -mt-1"
+        />,
     ];
+
+    const sectionList: ISection[] = navigation.sections.map((item, i) => {
+        return {
+            ...item,
+            icon: icons[i],
+        };
+    });
 
     return (
         <header
