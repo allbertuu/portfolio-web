@@ -1,0 +1,27 @@
+{
+    "name": "Frontend Developer",
+    "years": 1,
+    "works": "portais de vagas, sistemas web, landing pages e painéis de controle administrativo",
+    "industry_sector": "ramo de varejo, e área contábil",
+    "projects": [
+        {
+            "name": "Blog do Alberto",
+            "segment": "Frontend",
+            "links": {
+                "github": "https://github.com/allbertuu/blog-do-alberto"
+            },
+            "about": "🔥 Meu Blog, integrado ao GitHub API. Feito com NextJS.",
+            "technologies": [
+                "NextJS",
+                "ReactJS",
+                "TailwindCSS",
+                "GitHub API",
+                "Phosphor React",
+                "TypeScript",
+                "Axios",
+                "react-markdown",
+                "RadixUI"
+            ]
+        }
+    ]
+}

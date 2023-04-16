@@ -1,0 +1,7 @@
+{
+    "sections": [
+        { "id": "s-about-me", "name": "Sobre mim" },
+        { "id": "s-projects", "name": "Projetos" },
+        { "id": "s-contact-me", "name": "Me mande um e-mail" }
+    ]
+}

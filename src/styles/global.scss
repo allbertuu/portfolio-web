@@ -3,28 +3,73 @@
 @tailwind components;
 @tailwind utilities;
 
-// Scrollbar
+html {
+    font-size: 100%; // 16px
+}
+
 body {
-    ::-webkit-scrollbar {
+    // Scrollbar
+    &::-webkit-scrollbar {
         @apply w-2;
     }
-    ::-webkit-scrollbar-track {
+    &::-webkit-scrollbar-track {
         @apply bg-slate-600;
     }
-    ::-webkit-scrollbar-thumb {
-        @apply bg-red-500 border-[4px] border-slate-600;
+    &::-webkit-scrollbar-thumb {
+        @apply bg-red-500/90 border-[4px] border-slate-600;
     }
+
+    font-size: 1.125rem; // 18px
 }
 
 // Responsiveness
 @media (max-width: 360px) {
     html {
-        font-size: 80%;
+        font-size: 80%; // 12,8px
     }
 }
 
 @media (min-width: 1220px) {
     html {
-        font-size: 105%;
+        font-size: 105%; // 16.8px
     }
+}
+
+// Custom Styles
+body * {
+    @apply decoration-red-500;
+}
+
+p {
+    @apply text-white/90;
+}
+
+// Typography - scale 1.250 Major third
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.2rem; // custom
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+small,
+.small {
+    font-size: 0.8rem;
 }
