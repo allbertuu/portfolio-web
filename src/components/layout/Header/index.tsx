@@ -62,7 +62,7 @@ const Header: FunctionComponent<IHeaderProps> = ({ ...props }) => {
                 <span>Portfólio</span>
             </a>
 
-            <nav className="hidden lg:block">
+            <nav role='navigation' className="hidden lg:block">
                 <ul className="flex gap-4">
                     {sectionList.map((section, i) => (
                         <li
