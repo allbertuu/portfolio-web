@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/allbertuu/portfolio-web/compare/v1.0.0...v1.0.1) (2023-04-29)
+
+
+### Bug Fixes
+
+* **global.scss:** remove media query for small devices ([2a0db48](https://github.com/allbertuu/portfolio-web/commit/2a0db482fa9d16d723ecc24a02e5f2f5c3a4e9e9))
+
 # 1.0.0 (2023-04-16)
 
 
