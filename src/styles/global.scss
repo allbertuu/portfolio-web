@@ -23,12 +23,6 @@ body {
 }
 
 // Responsiveness
-@media (max-width: 360px) {
-    html {
-        font-size: 80%; // 12,8px
-    }
-}
-
 @media (min-width: 1220px) {
     html {
         font-size: 105%; // 16.8px
