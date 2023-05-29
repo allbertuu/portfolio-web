@@ -3,4 +3,5 @@ export interface IProjectCardProps {
     segment: string;
     about: string;
     githubLink: string;
+    liveUrl?: string;
 }

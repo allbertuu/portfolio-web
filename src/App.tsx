@@ -200,6 +200,7 @@ function App() {
                                     name={project.name}
                                     segment={project.segment}
                                     githubLink={project.links.github}
+                                    liveUrl={project.links.site}
                                     about={project.about}
                                 />
                             ))}

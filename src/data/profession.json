@@ -8,7 +8,8 @@
             "name": "Blog do Alberto",
             "segment": "Frontend",
             "links": {
-                "github": "https://github.com/allbertuu/blog-do-alberto"
+                "github": "https://github.com/allbertuu/blog-do-alberto",
+                "site": "https://blog-do-alberto.vercel.app/"
             },
             "about": "🔥 Meu Blog, integrado ao GitHub API. Feito com NextJS.",
             "technologies": [

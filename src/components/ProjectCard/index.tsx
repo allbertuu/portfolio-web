@@ -2,12 +2,14 @@ import { classNames } from '@utils/index';
 import GitHubIcon from '@assets/icons/GitHub';
 import { FunctionComponent } from 'react';
 import { IProjectCardProps } from './types';
+import { Broadcast as BroadcastIcon } from 'phosphor-react';
 
 const ProjectCard: FunctionComponent<IProjectCardProps> = ({
     name,
     segment,
     about,
     githubLink,
+    liveUrl,
 }) => {
     return (
         <article
@@ -20,7 +22,6 @@ const ProjectCard: FunctionComponent<IProjectCardProps> = ({
             <h4 className="text-red-500 -mb-2 font-semibold">{name}</h4>
             <span className="text-muted text-[85%] italic">{segment}</span>
             <p className="mt-1 leading-snug">{about}</p>
-            {/* estilo carrossel de techs da rocketseat */}
             <div className="flex justify-between mt-4">
                 <a
                     href={githubLink}
@@ -30,7 +31,16 @@ const ProjectCard: FunctionComponent<IProjectCardProps> = ({
                 >
                     <GitHubIcon fill="#fe355c" /> GitHub
                 </a>
-                {/* <div>techs</div> */}
+                {liveUrl && (
+                    <a
+                        href={liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex gap-1 items-center w-fit [&]:hover:text-red-600 transition-all font-semibold"
+                    >
+                        <BroadcastIcon color="#fe355c" /> Live
+                    </a>
+                )}
             </div>
         </article>
     );
