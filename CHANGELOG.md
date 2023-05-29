@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/allbertuu/portfolio-web/compare/v1.0.1...v1.1.0) (2023-05-29)
+
+
+### Features
+
+* **App.tsx, ProjectCard:** add support for liveUrl in ProjectCard component and display it in App component ([9f00abb](https://github.com/allbertuu/portfolio-web/commit/9f00abb547abdada69a6b7210d23064b4a8734a0))
+
 ## [1.0.1](https://github.com/allbertuu/portfolio-web/compare/v1.0.0...v1.0.1) (2023-04-29)
 
 
