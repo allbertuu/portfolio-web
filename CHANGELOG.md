@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/allbertuu/portfolio-web/compare/v1.1.1...v1.2.0) (2023-06-30)
+
+
+### Features
+
+* add new projects ([f2596a9](https://github.com/allbertuu/portfolio-web/commit/f2596a9775bf0aae4643fc50c018fa51ce24e2c5))
+
 ## [1.1.1](https://github.com/allbertuu/portfolio-web/compare/v1.1.0...v1.1.1) (2023-06-30)
 
 
