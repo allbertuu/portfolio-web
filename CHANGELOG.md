@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/allbertuu/portfolio-web/compare/v1.1.0...v1.1.1) (2023-06-30)
+
+
+### Bug Fixes
+
+* correct my other role and mysocials container spacing ([570fd20](https://github.com/allbertuu/portfolio-web/commit/570fd20e32abd58a9a38d91bce32709c76f1f12d))
+
 # [1.1.0](https://github.com/allbertuu/portfolio-web/compare/v1.0.1...v1.1.0) (2023-05-29)
 
 
