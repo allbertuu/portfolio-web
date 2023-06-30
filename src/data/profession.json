@@ -11,16 +11,82 @@
                 "github": "https://github.com/allbertuu/blog-do-alberto",
                 "site": "https://blog-do-alberto.vercel.app/"
             },
-            "about": "🔥 Meu Blog, integrado ao GitHub API. Feito com NextJS.",
+            "about": "🔥 Meu Blog onde eu publico posts interessantes e modernos sobre assuntos diversos.",
             "technologies": [
                 "NextJS",
                 "ReactJS",
                 "TailwindCSS",
                 "GitHub API",
-                "Phosphor React",
+                "Phosphor Icons",
                 "TypeScript",
                 "Axios",
                 "react-markdown",
+                "RadixUI"
+            ]
+        },
+        {
+            "name": "NG Cash",
+            "segment": "Fullstack",
+            "links": {
+                "github": "https://github.com/allbertuu/ng-frontend",
+                "site": "https://ng-frontend-allbertuu.vercel.app/"
+            },
+            "about": "💵 APP Frontend de Web Banking para o desafio fullstack da NG Cash.",
+            "technologies": [
+                "NextJS",
+                "TypeScript",
+                "TailwindCSS",
+                "ContextAPI",
+                "Phosphor Icons",
+                "Formik",
+                "Yup"
+            ]
+        },
+        {
+            "name": "My Linktree",
+            "segment": "Frontend",
+            "links": {
+                "github": "https://github.com/allbertuu/my-linktree",
+                "site": "https://my-linktree-allbertuu.vercel.app/"
+            },
+            "about": "🥇 Criei meu próprio Linktree, utilizando Sass/SCSS e metodologia BEM.",
+            "technologies": ["HTML", "CSS", "Sass/SCSS"]
+        },
+        {
+            "name": "Weather Location",
+            "segment": "Frontend",
+            "links": {
+                "github": "https://github.com/allbertuu/weather-location",
+                "site": "https://weather-location-allbertuu.vercel.app/"
+            },
+            "about": "☔ APP web de condições climáticas local, inteligente e bonito, usando geolocalização.",
+            "technologies": [
+                "ReactJS",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "Sass/SCSS",
+                "Phosphor Icons",
+                "OpenWeather API",
+                "Axios",
+                "Date-fns"
+            ]
+        },
+        {
+            "name": "Todo",
+            "segment": "Frontend",
+            "links": {
+                "github": "https://github.com/allbertuu/todo-list",
+                "site": "https://todo-allbertuu.vercel.app/"
+            },
+            "about": "📃 Uma lista de tarefas bonita e útil, com dark mode. Rocketseat 💜.",
+            "technologies": [
+                "ReactJS",
+                "Redux",
+                "TailwindCSS",
+                "JavaScript",
+                "TypeScript",
                 "RadixUI"
             ]
         }
