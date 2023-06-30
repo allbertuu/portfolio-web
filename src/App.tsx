@@ -45,8 +45,8 @@ function App() {
                                 <h2 className="originLeftReveal intervalReveal text-2xl lg:text-3xl italic text-muted leading-7">
                                     Desenvolvedor
                                     <br className="block sm:hidden" />{' '}
-                                    <strong>Frontend Web</strong> e{' '}
-                                    <strong>Mobile</strong>
+                                    <strong>Frontend</strong> e{' '}
+                                    <strong>UX Designer</strong>
                                 </h2>
                                 {/* Container My Socials */}
                                 <MySocials className="mt-8 sm:mt-4" />

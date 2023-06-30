@@ -14,7 +14,7 @@ const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
             {...props}
             className={classNames(
                 props.className || '',
-                'flex flex-col items-center sm:flex-row gap-4',
+                'flex flex-col items-center justify-center lg:justify-start sm:flex-row gap-4',
             )}
         >
             <SocialButton
