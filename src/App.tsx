@@ -102,7 +102,7 @@ function App() {
                                 </div>
 
                                 <p>
-                                    Bom, eu tenho {profession.years}{' '}
+                                    Bom, eu possuo + {profession.years}{' '}
                                     {profession.years > 1 ? 'anos' : 'ano'} de
                                     experiência como{' '}
                                     <abbr title="Desenvolvedor Frontend: mestre das interfaces">
