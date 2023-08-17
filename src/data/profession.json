@@ -1,8 +1,8 @@
 {
     "name": "Frontend Developer",
     "years": 1,
-    "works": "portais de vagas, sistemas web, landing pages e painéis de controle administrativo",
-    "industry_sector": "ramo de varejo, e área contábil",
+    "works": "portais de vagas, sistemas web, landing pages e personalização/releitura de apps para clientes.",
+    "industry_sector": "ramo de varejo, área contábil e setor de autopeças.",
     "projects": [
         {
             "name": "Blog do Alberto",
@@ -11,7 +11,7 @@
                 "github": "https://github.com/allbertuu/blog-do-alberto",
                 "site": "https://blog-do-alberto.vercel.app/"
             },
-            "about": "🔥 Meu Blog onde eu publico posts interessantes e modernos sobre assuntos diversos.",
+            "about": "🔥 Um Blog interessante e conectado ao GitHub API, com um fluxo de postagens diferente... Confira!",
             "technologies": [
                 "NextJS",
                 "ReactJS",
