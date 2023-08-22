@@ -31,6 +31,7 @@ module.exports = {
       black: "#000",
       muted: "#d1d5db",
     },
+
     extend: {
       backgroundImage: {
         "red-gradient": "linear-gradient(70deg, #611d2c, #da0941)",
