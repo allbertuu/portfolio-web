@@ -1,18 +1,18 @@
 {
-    "age": 20,
-    "education": {
-        "course": "Ciência da Computação",
-        "institution": "Estácio de Sá",
-        "year": 2022
+  "age": 20,
+  "education": {
+    "course": "Ciência da Computação",
+    "institution": "Estácio de Sá",
+    "year": 2022
+  },
+  "socials": {
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/albertov-albuquerque"
     },
-    "socials": {
-        "linkedin": {
-            "url": "https://www.linkedin.com/in/albertov-albuquerque"
-        },
-        "github": { "url": "https://github.com/allbertuu" },
-        "instagram": {
-            "url": "https://www.instagram.com/albert.vny/",
-            "user": "@albert.vny"
-        }
+    "github": { "url": "https://github.com/allbertuu" },
+    "instagram": {
+      "url": "https://www.instagram.com/albert.vny/",
+      "user": "@albert.vny"
     }
+  }
 }
