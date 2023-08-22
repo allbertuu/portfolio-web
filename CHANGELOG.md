@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/allbertuu/portfolio-web/compare/v1.2.0...v1.3.0) (2023-08-22)
+
+
+### Bug Fixes
+
+* header position ([b48bd62](https://github.com/allbertuu/portfolio-web/commit/b48bd624bae1444e08474b0f107645fedf48c8e8))
+
+
+### Features
+
+* show my img at mobile ([32a55c2](https://github.com/allbertuu/portfolio-web/commit/32a55c230e98c689d141def9fa055ecf8ea0546e))
+
 # [1.2.0](https://github.com/allbertuu/portfolio-web/compare/v1.1.1...v1.2.0) (2023-06-30)
 
 ### Features
