@@ -29,10 +29,10 @@ function App() {
       <main className="overflow-hidden">
         {/* Introduction Section */}
         <section className="shadow-xl border-b border-b-slate-50/10">
-          <Container className="h-[95vh]">
-            <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-8 items-center justify-items-center">
+          <Container className="h-screen lg:h-[95vh]">
+            <div className="grid grid-cols-1 content-center lg:grid-cols-2 h-full gap-8 items-center justify-items-center">
               {/* Container Presentation */}
-              <div className="relative px-4 text-center lg:text-left ">
+              <div className="order-2 relative px-4 lg:order-1 text-center lg:text-left">
                 <h3 className="originLeftReveal intervalReveal text-muted/80 text-xl lg:text-2xl">
                   Olá! Eu me chamo,
                 </h3>
@@ -49,12 +49,12 @@ function App() {
                 {/* Container My Socials */}
                 <MySocials className="mt-8 sm:mt-4" />
               </div>
-              {/* Container My Logo */}
-              <div className="px-4 hidden lg:block">
+              {/* Container The Creator */}
+              <div className="px-4 order-1 mt-8 lg:mt-0 lg:order-2">
                 <img
                   src={creatorImg}
                   alt="Criador do website"
-                  className="delaySmallReveal md:originRightReveal h-[25rem] drop-shadow-xl shadow-red-500/30 border-2 border-red-600/20 rounded-[5.25rem]"
+                  className="delaySmallReveal md:originRightReveal h-[10rem] lg:h-[25rem] drop-shadow-xl shadow-red-500/30 border-2 border-red-600/40 rounded-[33%_67%_37%_63%_/_66%_37%_63%_34%]"
                 />
               </div>
             </div>
@@ -63,7 +63,7 @@ function App() {
               <ArrowDownIcon
                 size="1.8rem"
                 role={"button"}
-                className="mx-auto -mt-16 sm:-mt-10 animate-bounce text-white/70 cursor-pointer"
+                className="mx-auto -mt-10 animate-bounce text-white/70 cursor-pointer"
               />
             </a>
           </Container>
@@ -156,7 +156,10 @@ function App() {
         {/* My Projects Section */}
         <section id="projects" className="py-10 mt-8">
           <Container>
-            <SectionTitle text="Projetos" className="mx-auto" />
+            <SectionTitle
+              text="Projetos"
+              className="mx-auto originLeftReveal"
+            />
 
             <div className="flex flex-wrap justify-center gap-12 mt-12 mb-6 originBottomReveal">
               {profession.projects.map((project) => (

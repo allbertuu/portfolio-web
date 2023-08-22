@@ -21,7 +21,7 @@ const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
         title="LinkedIn"
         target="_blank"
         rel="noreferrer"
-        className="social-link bg-sky-600 text-white mySocialsReveal"
+        className="social-link bg-sky-600 text-white mySocialsReveal intervalReveal"
       >
         <LinkedinLogo weight="bold" />
         LinkedIn
@@ -32,7 +32,7 @@ const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
         title="Instagram"
         target="_blank"
         rel="noreferrer"
-        className="social-link bg-[#f43f5e] mySocialsReveal"
+        className="social-link bg-[#f43f5e] mySocialsReveal intervalReveal"
       >
         <InstagramLogo weight="bold" />
         Instagram
@@ -43,7 +43,7 @@ const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
         title="GitHub"
         target="_blank"
         rel="noreferrer"
-        className="social-link bg-white/90 text-[#0c0b0b] mySocialsReveal"
+        className="social-link bg-white/90 text-[#0c0b0b] mySocialsReveal intervalReveal"
       >
         <GitHubLogo fill="#000" />
         GitHub
