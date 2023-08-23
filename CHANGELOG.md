@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/allbertuu/portfolio-web/compare/v1.3.0...v1.3.1) (2023-08-23)
+
+
+### Bug Fixes
+
+* fix header section links icons ([35e3042](https://github.com/allbertuu/portfolio-web/commit/35e3042d2494606d93820efdf9d6718d35692c37))
+
 # [1.3.0](https://github.com/allbertuu/portfolio-web/compare/v1.2.0...v1.3.0) (2023-08-22)
 
 
