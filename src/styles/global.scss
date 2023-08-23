@@ -30,6 +30,12 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  html {
+    font-size: 85%; // 12.8px
+  }
+}
+
 // Custom Styles
 body * {
   @apply decoration-red-500;
