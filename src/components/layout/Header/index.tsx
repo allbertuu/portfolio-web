@@ -1,8 +1,9 @@
 import { FC } from "react";
 import logoImg from "@assets/imgs/logo.svg";
 import {
+  EnvelopeSimple as EnvelopeSimpleIcon,
+  Folders as FoldersIcon,
   IdentificationCard as IdentificationCardIcon,
-  // Lightning as LightningIcon,
 } from "phosphor-react";
 import { IHeaderProps } from "./types";
 import { sendEmail } from "@utils/index";
@@ -41,7 +42,7 @@ const Header: FC<IHeaderProps> = ({ ...props }) => {
             title="Projetos"
             className="header__section-link originRightReveal"
           >
-            <IdentificationCardIcon
+            <FoldersIcon
               weight="fill"
               className="text-xl text-red-500 inline-block mr-2 -mt-1"
             />
@@ -53,7 +54,7 @@ const Header: FC<IHeaderProps> = ({ ...props }) => {
             className="originRightReveal"
             onClick={() => sendEmail(email)}
           >
-            <IdentificationCardIcon
+            <EnvelopeSimpleIcon
               weight="fill"
               className="text-xl text-white inline-block mr-2 -mt-1"
             />
