@@ -50,7 +50,7 @@ function App() {
                 <MySocials className="mt-8 sm:mt-4" />
               </div>
               {/* Container The Creator */}
-              <div className="px-4 order-1 mt-8 lg:mt-0 lg:order-2">
+              <div className="px-4 order-1 mt-4 lg:mt-0 lg:order-2">
                 <img
                   src={creatorImg}
                   alt="Criador do website"
