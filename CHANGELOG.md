@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/allbertuu/portfolio-web/compare/v1.3.1...v1.4.0) (2023-09-08)
+
+
+### Features
+
+* **project:** add REST API project ([8e8a32e](https://github.com/allbertuu/portfolio-web/commit/8e8a32e4628ba71b3a5c1b3f69a50924c63ed86d))
+
 ## [1.3.1](https://github.com/allbertuu/portfolio-web/compare/v1.3.0...v1.3.1) (2023-08-23)
 
 
