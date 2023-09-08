@@ -89,6 +89,23 @@
         "TypeScript",
         "RadixUI"
       ]
+    },
+    {
+      "name": "REST API with Node",
+      "segment": "Backend",
+      "links": {
+        "github": "https://github.com/allbertuu/api-rest-nodejs"
+      },
+      "about": "REST API with e2e tests built following TDD principles.",
+      "technologies": [
+        "Node",
+        "TypeScript",
+        "Prisma ORM",
+        "Fastify",
+        "Supertest",
+        "Vitest",
+        "TDD (Test Driven Development)"
+      ]
     }
   ]
 }
