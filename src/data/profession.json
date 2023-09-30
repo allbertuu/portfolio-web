@@ -1,57 +1,8 @@
 {
-  "name": "Frontend Developer",
+  "role": "Frontend Developer",
   "years": 1,
   "works": "portais de vagas, sistemas web, landing pages e personalização/releitura de apps para clientes",
-  "industry_sector": "ramo de varejo, área contábil e setor de autopeças",
   "projects": [
-    {
-      "name": "Blog do Alberto",
-      "segment": "Frontend",
-      "links": {
-        "github": "https://github.com/allbertuu/blog-do-alberto",
-        "site": "https://blog-do-alberto.vercel.app/"
-      },
-      "about": "🔥 Um Blog interessante e conectado ao GitHub API, com um fluxo de postagens diferente... Confira!",
-      "technologies": [
-        "NextJS",
-        "ReactJS",
-        "TailwindCSS",
-        "GitHub API",
-        "Phosphor Icons",
-        "TypeScript",
-        "Axios",
-        "react-markdown",
-        "RadixUI"
-      ]
-    },
-    {
-      "name": "NG Cash",
-      "segment": "Fullstack",
-      "links": {
-        "github": "https://github.com/allbertuu/ng-frontend",
-        "site": "https://ng-frontend-allbertuu.vercel.app/"
-      },
-      "about": "💵 APP Frontend de Web Banking para o desafio fullstack da NG Cash.",
-      "technologies": [
-        "NextJS",
-        "TypeScript",
-        "TailwindCSS",
-        "ContextAPI",
-        "Phosphor Icons",
-        "Formik",
-        "Yup"
-      ]
-    },
-    {
-      "name": "My Linktree",
-      "segment": "Frontend",
-      "links": {
-        "github": "https://github.com/allbertuu/my-linktree",
-        "site": "https://my-linktree-allbertuu.vercel.app/"
-      },
-      "about": "🥇 Criei meu próprio Linktree, utilizando Sass/SCSS e metodologia BEM.",
-      "technologies": ["HTML", "CSS", "Sass/SCSS"]
-    },
     {
       "name": "Weather Location",
       "segment": "Frontend",
@@ -59,7 +10,7 @@
         "github": "https://github.com/allbertuu/weather-location",
         "site": "https://weather-location-allbertuu.vercel.app/"
       },
-      "about": "☔ APP web de condições climáticas local, inteligente e bonito, usando geolocalização.",
+      "about": "☔ App criado pois precisei ter de fácil acesso informações locais importantes do meu momento atual usando Geolocalização em uma interface limpa e direta, funcionando em vários dispositivos. Ajudei familiares e trabalhadores locais.",
       "technologies": [
         "ReactJS",
         "HTML",
@@ -74,37 +25,18 @@
       ]
     },
     {
-      "name": "Todo",
+      "name": "Plataforma de Vagas",
       "segment": "Frontend",
       "links": {
-        "github": "https://github.com/allbertuu/todo-list",
-        "site": "https://todo-allbertuu.vercel.app/"
+        "github": "https://github.com/SouJunior/vagas-frontend"
       },
-      "about": "📃 Uma lista de tarefas bonita e útil, com dark mode. Rocketseat 💜.",
+      "about": "🔥 Contribuição open-source para uma Plataforma de vagas para devs que facilitasse oportunidades para iniciantes em TI, com autenticação, CRUD e busca de vagas. Fui líder da Squad durante um período.",
       "technologies": [
         "ReactJS",
-        "Redux",
+        "TypeScript",
         "TailwindCSS",
-        "JavaScript",
-        "TypeScript",
-        "RadixUI"
-      ]
-    },
-    {
-      "name": "REST API with Node",
-      "segment": "Backend",
-      "links": {
-        "github": "https://github.com/allbertuu/api-rest-nodejs"
-      },
-      "about": "REST API with e2e tests built following TDD principles.",
-      "technologies": [
-        "Node",
-        "TypeScript",
-        "Prisma ORM",
-        "Fastify",
-        "Supertest",
-        "Vitest",
-        "TDD (Test Driven Development)"
+        "Styled-components",
+        "Axios"
       ]
     }
   ]
