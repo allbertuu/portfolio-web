@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/allbertuu/portfolio-web/compare/v1.4.0...v1.5.0) (2023-09-30)
+
+
+### Features
+
+* Footer ([773e1e2](https://github.com/allbertuu/portfolio-web/commit/773e1e2f5e96b98ea28b361c6d7c24f8ed39b3c6))
+* scroll reveal to footer and more projects link ([27d7e59](https://github.com/allbertuu/portfolio-web/commit/27d7e592d2cdc9652927b6cc5c4fefa6e93a3050))
+
 # [1.4.0](https://github.com/allbertuu/portfolio-web/compare/v1.3.1...v1.4.0) (2023-09-08)
 
 
