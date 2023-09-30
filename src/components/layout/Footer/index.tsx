@@ -5,23 +5,33 @@ import Container from "@components/layout/Container";
 const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
   ...props
 }) => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer {...props} className="border-t border-t-red-500 shadow-lg p-5">
-      <Container>
-        <div className="flex justify-around">
-          <p className="flex items-center">
-            <a href="#" className="hover:text-red-500">
-              albertodeveloper.com
-            </a>
+    <footer
+      {...props}
+      data-testid="footer"
+      className="border-t border-t-black/70 shadow-lg p-5 text-muted"
+    >
+      <Container className="flex flex-col items-center justify-around sm:flex-row">
+        <div className="flex justify-center flex-wrap mb-2 sm:mb-0 sm:justify-normal sm:gap-1">
+          <a href="#" className="hover:text-red-500">
+            albertodeveloper.com
+          </a>
+
+          <div className="flex items-center">
             <i className="text-2xl -mb-1 mr-1">&copy;</i>
-            <p>2022 - Todos os direitos reservados.</p>
-          </p>
 
-          <div className="flex items-center gap-2">
-            <p>Powered by</p>
-
-            <img src={imgLogo} alt="Logo branca" className="h-7" />
+            <span data-testid="author-rights" className="text-base sm:text-lg">
+              {currentYear} - Todos os direitos reservados.
+            </span>
           </div>
+        </div>
+
+        <div className="flex gap-2">
+          <span>Powered by</span>
+
+          <img src={imgLogo} alt="Main Logo" className="h-7" />
         </div>
       </Container>
     </footer>

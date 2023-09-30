@@ -9,8 +9,8 @@ import creatorImg from "@assets/imgs/me.svg";
 import { initScrollReveal } from "@scripts/scrollReveal";
 import { useEffect } from "react";
 import { ProjectCard, MySocials } from "@components/index";
-import { Container, Header } from "@components/layout";
-import { ArrowUp, Link, SectionTitle, Separator } from "@components/ui";
+import { Container, Footer, Header } from "@components/layout";
+import { ArrowUp, Link, SectionTitle } from "@components/ui";
 import undrawMoonlightImg from "@assets/icons/undraw_moonlight.svg";
 import aboutMe from "@data/aboutMe.json";
 import profession from "@data/profession.json";
@@ -185,7 +185,7 @@ function App() {
         </section>
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
 
       <ArrowUp />
     </>
