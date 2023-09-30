@@ -28,7 +28,7 @@ function App() {
 
       <main className="overflow-hidden">
         {/* Introduction Section */}
-        <section className="shadow-xl border-b border-b-slate-50/10">
+        <section className="shadow-xl border-b border-b-black/70">
           <Container className="h-screen lg:h-[95vh]">
             <div className="grid grid-cols-1 content-center lg:grid-cols-2 h-full gap-8 items-center justify-items-center">
               {/* Container Presentation */}
@@ -86,7 +86,10 @@ function App() {
             />
 
             <div role={"group"} className="mt-2 delayMediumReveal">
-              <article role={"listitem"} className="intervalReveal">
+              <article
+                role={"listitem"}
+                className="intervalReveal text-justify"
+              >
                 <div className="flex gap-2 items-center text-red-800 mb-2">
                   <BriefcaseIcon className="text-2xl" weight="fill" />
                   <h4 className="font-semibold leading-none">Profissão</h4>
@@ -106,13 +109,14 @@ function App() {
                   <Link href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
                     JavaScript
                   </Link>{" "}
-                  e <Link href="https://pt-br.reactjs.org/">ReactJS</Link>.
+                  e <Link href="https://react.dev/">ReactJS</Link>.
                 </p>
               </article>
 
-              <Separator />
-
-              <article role={"listitem"} className="intervalReveal">
+              <article
+                role={"listitem"}
+                className="intervalReveal text-justify"
+              >
                 <div className="flex gap-2 items-center text-red-800 mb-2">
                   <HeartIcon className="text-2xl" weight="fill" />
                   <h4 className="font-semibold leading-none">Interesses</h4>
@@ -130,9 +134,10 @@ function App() {
                 </p>
               </article>
 
-              <Separator />
-
-              <article role={"listitem"} className="intervalReveal">
+              <article
+                role={"listitem"}
+                className="intervalReveal text-justify"
+              >
                 <div className="flex gap-2 items-center text-red-800 mb-2">
                   <UserListIcon className="text-3xl" weight="fill" />
                   <h4 className="font-semibold leading-none">Quem sou eu</h4>

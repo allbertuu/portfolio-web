@@ -46,7 +46,7 @@ p {
 }
 
 .main-header {
-  @apply flex items-center absolute top-0 justify-around px-8 py-4 w-full z-10 text-lg border-b-[2px] border-b-red-500 bg-slate-700/80 shadow-2xl;
+  @apply flex items-center absolute top-0 justify-around px-8 py-4 w-full z-10 text-lg border-b border-b-red-500 bg-slate-700/80 shadow-2xl;
 }
 
 .header__section-link {
