@@ -14,7 +14,7 @@ const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
       className="border-t border-t-black/70 shadow-lg p-5 text-muted"
     >
       <Container className="flex flex-col items-center justify-around sm:flex-row">
-        <div className="flex justify-center flex-wrap mb-2 sm:mb-0 sm:justify-normal sm:gap-1">
+        <div className="flex justify-center flex-wrap mb-2 sm:mb-0 sm:justify-normal sm:gap-1 originLeftReveal">
           <a href="#" className="hover:text-red-500">
             albertodeveloper.com
           </a>
@@ -28,7 +28,7 @@ const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
           </div>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 originRightReveal">
           <span>Powered by</span>
 
           <img src={imgLogo} alt="Main Logo" className="h-7" />

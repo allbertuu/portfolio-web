@@ -179,7 +179,7 @@ function App() {
               ))}
             </div>
 
-            <p className="text-center text-lg flex gap-1 items-center justify-center">
+            <p className="text-center text-lg flex gap-1 items-center justify-center originBottomReveal">
               <Link href="https://github.com/allbertuu?tab=repositories">
                 Clique aqui para ver mais projetos
               </Link>
