@@ -21,7 +21,9 @@ const ProjectCard: FunctionComponent<IProjectCardProps> = ({
     >
       <h4 className="text-red-500 -mb-2 font-semibold">{name}</h4>
       <span className="text-muted text-[85%] italic">{segment}</span>
-      <p className="mt-1 leading-snug flex-1">{about}</p>
+      <p className="my-1 leading-snug flex-1 text-[90%] text-justify">
+        {about}
+      </p>
       <div className="flex justify-between">
         <a
           href={githubLink}

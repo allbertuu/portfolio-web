@@ -98,12 +98,12 @@ function App() {
                 <p>
                   Bom, eu possuo + {profession.years}{" "}
                   {profession.years > 1 ? "anos" : "ano"} de experiência como{" "}
-                  <abbr title="Desenvolvedor Frontend: mestre das interfaces">
-                    {profession.name}
+                  <abbr title="Sou capaz de criar interfaces de sistemas que sejam agradavéis, úteis e facéis de usar.">
+                    {profession.role}
                   </abbr>
                   , desenvolvendo interfaces como: {profession.works}. Possuo
-                  experiência em entregas de software para empresas do{" "}
-                  {profession.industry_sector}.
+                  experiência entregando software para startups e empresas de
+                  pequeno porte.
                   <br />
                   Tenho muita afinidade com{" "}
                   <Link href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
@@ -158,11 +158,11 @@ function App() {
             </div>
           </Container>
         </section>
-        {/* My Projects Section */}
+        {/* Side-projects Section */}
         <section id="projects" className="py-10 mt-8">
           <Container>
             <SectionTitle
-              text="Projetos"
+              text="Projetos paralelos"
               className="mx-auto originLeftReveal"
             />
 
@@ -181,7 +181,7 @@ function App() {
 
             <p className="text-center text-lg flex gap-1 items-center justify-center originBottomReveal">
               <Link href="https://github.com/allbertuu?tab=repositories">
-                Clique aqui para ver mais projetos
+                Clique aqui e confira (muito) mais
               </Link>
 
               <GithubLogoIcon size="1.125rem" />
