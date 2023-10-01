@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/allbertuu/portfolio-web/compare/v1.5.1...v1.5.2) (2023-10-01)
+
+
+### Bug Fixes
+
+* **Footer:** add more margin-bottom to reveal correctly ([3b2935b](https://github.com/allbertuu/portfolio-web/commit/3b2935b26b94b0837a2cbabcd3dc5d1741535b60))
+
 ## [1.5.1](https://github.com/allbertuu/portfolio-web/compare/v1.5.0...v1.5.1) (2023-09-30)
 
 
