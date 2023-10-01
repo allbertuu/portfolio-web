@@ -29,7 +29,7 @@ const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
           </div>
         </div>
 
-        <div className="flex gap-[0.3125rem] originRightReveal">
+        <div className="flex gap-[0.3125rem] mb-5 sm:mb-0 originRightReveal">
           <span>
             <strong>Powered</strong> by
           </span>
