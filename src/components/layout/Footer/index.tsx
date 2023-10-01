@@ -29,8 +29,10 @@ const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
           </div>
         </div>
 
-        <div className="flex gap-2 originRightReveal">
-          <span>Powered by</span>
+        <div className="flex gap-[0.3125rem] originRightReveal">
+          <span>
+            <strong>Powered</strong> by
+          </span>
 
           <img src={imgLogo} alt="Main Logo" className="h-7" />
         </div>

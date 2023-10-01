@@ -3,90 +3,114 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 100%; // 16px
-  scroll-behavior: smooth;
-}
-
-body {
-  // Scrollbar
-  &::-webkit-scrollbar {
-    @apply w-2;
-  }
-  &::-webkit-scrollbar-track {
-    @apply bg-slate-600;
-  }
-  &::-webkit-scrollbar-thumb {
-    @apply bg-red-500/90 border-[4px] border-slate-600;
-  }
-
-  font-size: 1.125rem; // 18px
-}
-
-// Responsiveness
-@media (min-width: 1220px) {
+@layer base {
   html {
-    font-size: 105%; // 16.8px
+    font-size: 100%; // 16px
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans font-light text-[1.125rem] bg-gradient-to-br from-slate-600 to-slate-800 text-white selection:text-white selection:bg-red-500;
+
+    // Scrollbar
+    &::-webkit-scrollbar {
+      @apply w-2;
+    }
+    &::-webkit-scrollbar-track {
+      @apply bg-slate-600;
+    }
+    &::-webkit-scrollbar-thumb {
+      @apply bg-red-500/90 border-[4px] border-slate-600;
+    }
+  }
+
+  body * {
+    @apply decoration-red-500;
+  }
+
+  button {
+    @apply py-[2px] px-2 bg-red-600 hover:bg-red-500 active:bg-red-700 rounded;
+  }
+
+  p {
+    @apply text-white/90 mb-4;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-titillium;
+  }
+
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  h2 {
+    font-size: 2.2rem; // custom
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  small,
+  .small {
+    font-size: 0.8rem;
+  }
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+
+  i {
+    @apply font-titillium;
+  }
+
+  // Responsiveness
+  @media (min-width: 1220px) {
+    html {
+      font-size: 105%; // 16.8px
+    }
+  }
+
+  @media (max-width: 375px) {
+    html {
+      font-size: 85%; // 12.8px
+    }
   }
 }
 
-@media (max-width: 375px) {
-  html {
-    font-size: 85%; // 12.8px
+@layer components {
+  .main-header {
+    @apply flex items-center absolute top-0 justify-around px-8 py-4 w-full z-10 text-lg border-b border-b-red-500 bg-slate-700/80 shadow-2xl;
   }
-}
 
-// Custom Styles
-body * {
-  @apply decoration-red-500;
-}
+  .header__section-link {
+    @apply relative text-center cursor-pointer overflow-hidden rounded py-[2px] px-2 transition-shadow duration-500 z-0 before:w-0 before:h-[400%] before:absolute before:left-1/2 before:right-1/2 before:transform before:-translate-y-1/2 before:-translate-x-1/2 before:rotate-[20deg] before:transition-all before:duration-1000 before:block before:-z-10 before:bg-red-600 hover:before:w-[130%] hover:shadow-xl hover:shadow-red-500/30 [&>svg]:hover:text-white [&>svg]:transition-all [&>svg]:duration-300;
+  }
 
-p {
-  @apply text-white/90;
-}
+  .social-link {
+    @apply text-lg px-2 py-1 rounded-md flex items-center gap-1 hover:opacity-50 shadow-2xl shadow-black/30 font-normal;
+  }
 
-.main-header {
-  @apply flex items-center absolute top-0 justify-around px-8 py-4 w-full z-10 text-lg border-b border-b-red-500 bg-slate-700/80 shadow-2xl;
-}
+  .section__title {
+    @apply relative w-fit text-white font-bold after:block after:relative after:h-[2px] after:w-2/5 after:bottom-2 after:bg-red-500 after:-z-10;
+  }
 
-.header__section-link {
-  @apply relative text-center cursor-pointer overflow-hidden rounded py-[2px] px-2 transition-shadow duration-500 z-0 before:w-0 before:h-[400%] before:absolute before:left-1/2 before:right-1/2 before:transform before:-translate-y-1/2 before:-translate-x-1/2 before:rotate-[20deg] before:transition-all before:duration-1000 before:block before:-z-10 before:bg-red-600 hover:before:w-[130%] hover:shadow-xl hover:shadow-red-500/30 [&>svg]:hover:text-white [&>svg]:transition-all [&>svg]:duration-300;
-}
-
-button {
-  @apply py-[2px] px-2 bg-red-600 hover:bg-red-500 active:bg-red-700 rounded;
-}
-
-.social-link {
-  @apply text-lg px-2 py-1 rounded-md flex items-center gap-1 hover:opacity-50 shadow-2xl shadow-black/30;
-}
-
-// Typography - scale 1.250 Major third
-p {
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 3.052rem;
-}
-
-h2 {
-  font-size: 2.2rem; // custom
-}
-
-h3 {
-  font-size: 1.953rem;
-}
-
-h4 {
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-small,
-.small {
-  font-size: 0.8rem;
+  .project-card {
+    @apply flex flex-col relative rounded max-w-xs border border-slate-50/10 p-4 bg-slate-700 transition-all duration-300 ease-out hover:border-red-500 hover:shadow-xl hover:shadow-red-500/30;
+  }
 }

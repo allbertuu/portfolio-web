@@ -10,7 +10,7 @@ import { initScrollReveal } from "@scripts/scrollReveal";
 import { useEffect } from "react";
 import { ProjectCard, MySocials } from "@components/index";
 import { Container, Footer, Header } from "@components/layout";
-import { ArrowUp, Link, SectionTitle } from "@components/ui";
+import { ArrowUp, Link } from "@components/ui";
 import undrawMoonlightImg from "@assets/icons/undraw_moonlight.svg";
 import aboutMe from "@data/aboutMe.json";
 import profession from "@data/profession.json";
@@ -20,7 +20,9 @@ function App() {
     initScrollReveal();
   }, []);
 
-  const { age, education } = aboutMe;
+  const { education } = aboutMe;
+
+  const myCurrentAge = new Date().getFullYear() - 2003;
 
   return (
     <>
@@ -80,10 +82,9 @@ function App() {
               alt="Ilustração de uma pessoa sentada em frente a uma fogueira em um lugar com árvores e a luz da lua ao fundo"
             />
 
-            <SectionTitle
-              text="Sobre mim"
-              className="mb-4 originLeftReveal intervalReveal"
-            />
+            <h2 className="section__title mb-4 originLeftReveal intervalReveal">
+              Sobre mim
+            </h2>
 
             <div role={"group"} className="mt-2 delayMediumReveal">
               <article
@@ -150,7 +151,7 @@ function App() {
                   programação. Hoje crio soluções para a web e para dispositivos
                   móveis, sempre com um olhar diferenciado no design e na
                   usabilidade.
-                  <br /> Atualmente tenho {age} anos, e estou cursando{" "}
+                  <br /> Atualmente tenho {myCurrentAge} anos, e estou cursando{" "}
                   {education.course} na {education.institution} desde{" "}
                   {education.year}.
                 </p>
@@ -161,10 +162,9 @@ function App() {
         {/* Side-projects Section */}
         <section id="projects" className="py-10 mt-8">
           <Container>
-            <SectionTitle
-              text="Projetos paralelos"
-              className="mx-auto originLeftReveal"
-            />
+            <h2 className="section__title mx-auto originLeftReveal">
+              Projetos paralelos
+            </h2>
 
             <div className="flex flex-wrap justify-center gap-12 mt-12 mb-6 originBottomReveal">
               {profession.projects.map((project) => (
