@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/allbertuu/portfolio-web/compare/v1.5.0...v1.5.1) (2023-09-30)
+
+
+### Bug Fixes
+
+* about me "profession" writing and projects "about" writing ([3790dae](https://github.com/allbertuu/portfolio-web/commit/3790daea1f3177aac0086c0845686ea63c051981))
+
 # [1.5.0](https://github.com/allbertuu/portfolio-web/compare/v1.4.0...v1.5.0) (2023-09-30)
 
 
