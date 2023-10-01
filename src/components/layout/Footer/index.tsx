@@ -6,6 +6,7 @@ const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
   ...props
 }) => {
   const currentYear = new Date().getFullYear();
+  const siteDomain = window.location.hostname;
 
   return (
     <footer
@@ -15,8 +16,8 @@ const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
     >
       <Container className="flex flex-col items-center justify-around sm:flex-row">
         <div className="flex justify-center flex-wrap mb-2 sm:mb-0 sm:justify-normal sm:gap-1 originLeftReveal">
-          <a href="#" className="hover:text-red-500">
-            albertodeveloper.com
+          <a href="#" data-testid="site-url" className="hover:text-red-500">
+            {siteDomain}
           </a>
 
           <div className="flex items-center">
