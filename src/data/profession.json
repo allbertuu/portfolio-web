@@ -10,7 +10,7 @@
         "github": "https://github.com/allbertuu/weather-location",
         "site": "https://weather-location-allbertuu.vercel.app/"
       },
-      "about": "☔ App criado pois precisei ter de fácil acesso informações locais importantes do meu momento atual usando Geolocalização em uma interface limpa e direta, funcionando em vários dispositivos. Ajudei familiares e trabalhadores locais.",
+      "about": "☔ Criei este app pois precisei ter de fácil acesso importantes informações meteorológicas locais do momento atual usando Geolocalização em uma interface limpa e direta, funcionando em vários dispositivos. Ajudei familiares e trabalhadores locais com este projeto.",
       "technologies": [
         "ReactJS",
         "HTML",
