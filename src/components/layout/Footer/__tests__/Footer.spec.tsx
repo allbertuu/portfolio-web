@@ -13,3 +13,8 @@ it("should be the current year", () => {
     new Date().getFullYear().toString(),
   );
 });
+
+it("should be the current URL domain", () => {
+  render(<Footer />);
+  expect(screen.getByTestId("site-url")).toHaveTextContent("localhost");
+});
