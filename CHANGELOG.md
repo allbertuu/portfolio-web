@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/allbertuu/portfolio-web/compare/v1.5.2...v1.6.0) (2023-10-02)
+
+
+### Features
+
+* seo ([396ee23](https://github.com/allbertuu/portfolio-web/commit/396ee2347f7f322ef8d41c88457022779e48b3fd))
+
 ## [1.5.2](https://github.com/allbertuu/portfolio-web/compare/v1.5.1...v1.5.2) (2023-10-01)
 
 
