@@ -1,32 +1,32 @@
 {
-    "compilerOptions": {
-        "baseUrl": "./src/",
-        "paths": {
-            "@styles/*": ["styles/*"],
-            "@scripts/*": ["assets/scripts/*"],
-            "@components/*": ["components/*"],
-            "@assets/*": ["assets/*"],
-            "@utils/*": ["utils/*"],
-            "@contexts/*": ["contexts/*"],
-            "@hooks/*": ["hooks/*"],
-            "@data/*": ["data/*"]
-        },
-        "target": "ESNext",
-        "useDefineForClassFields": true,
-        "lib": ["DOM", "DOM.Iterable", "ESNext"],
-        "allowJs": false,
-        "skipLibCheck": true,
-        "esModuleInterop": false,
-        "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "module": "ESNext",
-        "moduleResolution": "Node",
-        "resolveJsonModule": true,
-        "isolatedModules": true,
-        "noEmit": true,
-        "jsx": "react-jsx"
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "@styles/*": ["styles/*"],
+      "@scripts/*": ["assets/scripts/*"],
+      "@components/*": ["components/*"],
+      "@assets/*": ["assets/*"],
+      "@utils/*": ["utils/*"],
+      "@contexts/*": ["contexts/*"],
+      "@hooks/*": ["hooks/*"],
+      "@data/*": ["data/*"]
     },
-    "include": ["src"],
-    "references": [{ "path": "./tsconfig.node.json" }]
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,7 +1,7 @@
 {
     "name": "portfolio-web",
     "private": true,
-    "version": "2.0.0",
+    "version": "1.6.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -9,10 +9,10 @@
         "preview": "vite preview",
         "release": "semantic-release",
         "release:dry": "semantic-release --dry-run",
-        "test": "vitest"
+        "test": "vitest",
+        "format": "prettier --write ."
     },
     "dependencies": {
-        "@radix-ui/react-progress": "^1.0.1",
         "date-fns": "^2.29.3",
         "phosphor-react": "^1.4.1",
         "react": "^18.2.0",
@@ -37,9 +37,10 @@
         "eslint-plugin-react": "^7.32.2",
         "jsdom": "^20.0.3",
         "postcss": "^8.4.16",
-        "prettier": "^2.7.1",
+        "prettier": "^3.0.2",
+        "prettier-plugin-tailwindcss": "^0.5.3",
         "sass": "^1.56.2",
-        "semantic-release": "^19.0.5",
+        "semantic-release": "^21.0.9",
         "tailwindcss": "^3.1.8",
         "typescript": "^4.6.4",
         "vite": "^3.1.0",

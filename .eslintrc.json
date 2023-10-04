@@ -1,7 +1,7 @@
 {
-    "extends": "@rocketseat/eslint-config/react",
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": "off"
-    }
+  "extends": "@rocketseat/eslint-config/react",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "off"
+  }
 }
