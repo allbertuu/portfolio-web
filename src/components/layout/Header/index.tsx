@@ -23,7 +23,7 @@ const Header: FC<IHeaderProps> = ({ ...props }) => {
         className="h-9 originLeftReveal"
       />
 
-      <nav className="hidden lg:block">
+      <nav role="navigation" className="hidden lg:block">
         <ul className="flex gap-4">
           <a
             href="#about-me"
