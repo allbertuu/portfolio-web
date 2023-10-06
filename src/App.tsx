@@ -4,16 +4,16 @@ import {
   Briefcase as BriefcaseIcon,
   Heart as HeartIcon,
   UserList as UserListIcon,
-} from "phosphor-react";
-import creatorImg from "@assets/imgs/me.svg";
-import { initScrollReveal } from "@scripts/scrollReveal";
-import { useEffect } from "react";
-import { ProjectCard, MySocials } from "@components/index";
-import { Container, Footer, Header } from "@components/layout";
-import { ArrowUp, Link } from "@components/ui";
-import undrawMoonlightImg from "@assets/icons/undraw_moonlight.svg";
-import aboutMe from "@data/aboutMe.json";
-import profession from "@data/profession.json";
+} from 'phosphor-react';
+import creatorImg from '@assets/imgs/me.svg';
+import { initScrollReveal } from '@scripts/scrollReveal';
+import { useEffect } from 'react';
+import { ProjectCard, MySocials } from '@components/index';
+import { Container, Footer, Header } from '@components/layout';
+import { ArrowUp, Link } from '@components/ui';
+import undrawMoonlightImg from '@assets/icons/undraw_moonlight.svg';
+import aboutMe from '@data/aboutMe.json';
+import profession from '@data/profession.json';
 
 function App() {
   useEffect(() => {
@@ -45,7 +45,7 @@ function App() {
 
                 <h2 className="originLeftReveal intervalReveal text-2xl lg:text-3xl italic text-muted leading-7">
                   Desenvolvedor
-                  <br className="block sm:hidden" /> <strong>Frontend</strong> e{" "}
+                  <br className="block sm:hidden" /> <strong>Frontend</strong> e{' '}
                   <strong>UX Designer</strong>
                 </h2>
                 {/* Container My Socials */}
@@ -64,7 +64,7 @@ function App() {
             <a href="#about-me">
               <ArrowDownIcon
                 size="1.8rem"
-                role={"button"}
+                role={'button'}
                 className="mx-auto -mt-10 animate-bounce text-white/70 cursor-pointer"
               />
             </a>
@@ -86,9 +86,9 @@ function App() {
               Sobre mim
             </h2>
 
-            <div role={"group"} className="mt-2 delayMediumReveal">
+            <div role={'group'} className="mt-2 delayMediumReveal">
               <article
-                role={"listitem"}
+                role={'listitem'}
                 className="intervalReveal text-justify"
               >
                 <div className="flex gap-2 items-center text-red-800 mb-2">
@@ -97,8 +97,8 @@ function App() {
                 </div>
 
                 <p>
-                  Bom, eu possuo + {profession.years}{" "}
-                  {profession.years > 1 ? "anos" : "ano"} de experiência como{" "}
+                  Bom, eu possuo + {profession.years}{' '}
+                  {profession.years > 1 ? 'anos' : 'ano'} de experiência como{' '}
                   <abbr title="Sou capaz de criar interfaces de sistemas que sejam agradavéis, úteis e facéis de usar.">
                     {profession.role}
                   </abbr>
@@ -106,16 +106,16 @@ function App() {
                   experiência entregando software para startups e empresas de
                   pequeno porte.
                   <br />
-                  Tenho muita afinidade com{" "}
+                  Tenho muita afinidade com{' '}
                   <Link href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
                     JavaScript
-                  </Link>{" "}
+                  </Link>{' '}
                   e <Link href="https://react.dev/">ReactJS</Link>.
                 </p>
               </article>
 
               <article
-                role={"listitem"}
+                role={'listitem'}
                 className="intervalReveal text-justify"
               >
                 <div className="flex gap-2 items-center text-red-800 mb-2">
@@ -125,7 +125,7 @@ function App() {
 
                 <p>
                   Me interesso principalmente por web design, construção de
-                  interfaces centradas no usuário (UI/UX Design), e{" "}
+                  interfaces centradas no usuário (UI/UX Design), e{' '}
                   <abbr title="Leia 'Código limpo', de Robert C. Martin">
                     clean code
                   </abbr>
@@ -136,7 +136,7 @@ function App() {
               </article>
 
               <article
-                role={"listitem"}
+                role={'listitem'}
                 className="intervalReveal text-justify"
               >
                 <div className="flex gap-2 items-center text-red-800 mb-2">
@@ -151,8 +151,8 @@ function App() {
                   programação. Hoje crio soluções para a web e para dispositivos
                   móveis, sempre com um olhar diferenciado no design e na
                   usabilidade.
-                  <br /> Atualmente tenho {myCurrentAge} anos, e estou cursando{" "}
-                  {education.course} na {education.institution} desde{" "}
+                  <br /> Atualmente tenho {myCurrentAge} anos, e estou cursando{' '}
+                  {education.course} na {education.institution} desde{' '}
                   {education.year}.
                 </p>
               </article>

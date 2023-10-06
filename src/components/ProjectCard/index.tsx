@@ -1,9 +1,9 @@
-import GitHubIcon from "@assets/icons/GitHub";
-import { FunctionComponent } from "react";
-import { IProjectCardProps } from "./types";
-import { Broadcast as BroadcastIcon } from "phosphor-react";
+import GitHubIcon from '@assets/icons/GitHub';
+import { FC } from 'react';
+import { IProjectCardProps } from './types';
+import { Broadcast as BroadcastIcon } from 'phosphor-react';
 
-const ProjectCard: FunctionComponent<IProjectCardProps> = ({
+const ProjectCard: FC<IProjectCardProps> = ({
   name,
   segment,
   about,

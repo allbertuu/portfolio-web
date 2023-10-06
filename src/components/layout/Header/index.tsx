@@ -1,18 +1,18 @@
-import { FC } from "react";
-import logoImg from "@assets/imgs/logo.svg";
+import { FC } from 'react';
+import logoImg from '@assets/imgs/logo.svg';
 import {
   EnvelopeSimple as EnvelopeSimpleIcon,
   Folders as FoldersIcon,
   IdentificationCard as IdentificationCardIcon,
-} from "phosphor-react";
-import { IHeaderProps } from "./types";
-import { sendEmail } from "@utils/index";
+} from 'phosphor-react';
+import { IHeaderProps } from './types';
+import { sendEmail } from '@utils/index';
 
 const Header: FC<IHeaderProps> = ({ ...props }) => {
   const email = {
-    subject: "Olá, Alberto! Acabo de ver seu portfólio, vamos conversar?",
-    body: "Seu email...",
-    recipient: "albertovinicius3@gmail.com",
+    subject: 'Olá, Alberto! Acabo de ver seu portfólio, vamos conversar?',
+    body: 'Seu email...',
+    recipient: 'albertovinicius3@gmail.com',
   };
 
   return (

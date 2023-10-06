@@ -1,4 +1,4 @@
-import { FunctionComponent, SVGProps } from "react";
+import { FunctionComponent, SVGProps } from 'react';
 
 interface GitHubProps extends SVGProps<SVGSVGElement> {}
 

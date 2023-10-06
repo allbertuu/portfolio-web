@@ -1,6 +1,6 @@
-import { FunctionComponent, HTMLAttributes } from "react";
-import imgLogo from "@assets/imgs/logo.svg";
-import Container from "@components/layout/Container";
+import { FunctionComponent, HTMLAttributes } from 'react';
+import imgLogo from '@assets/imgs/logo.svg';
+import Container from '@components/layout/Container';
 
 const Footer: FunctionComponent<HTMLAttributes<HTMLElement>> = ({
   ...props

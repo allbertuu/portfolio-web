@@ -1,9 +1,9 @@
-import aboutMe from "@data/aboutMe.json";
-import { classNames } from "@utils/index";
-import { InstagramLogo, LinkedinLogo } from "phosphor-react";
-import GitHubLogo from "@assets/icons/GitHub";
-import { FC } from "react";
-import { IMySocialsProps } from "./types";
+import aboutMe from '@data/aboutMe.json';
+import { classNames } from '@utils/index';
+import { InstagramLogo, LinkedinLogo } from 'phosphor-react';
+import GitHubLogo from '@assets/icons/GitHub';
+import { FC } from 'react';
+import { IMySocialsProps } from './types';
 
 const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
   const { socials } = aboutMe;
@@ -12,8 +12,8 @@ const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
     <div
       {...props}
       className={classNames(
-        props.className || "",
-        "flex flex-col items-center justify-center lg:justify-start sm:flex-row gap-4",
+        props.className || '',
+        'flex flex-col items-center justify-center lg:justify-start sm:flex-row gap-4'
       )}
     >
       <a

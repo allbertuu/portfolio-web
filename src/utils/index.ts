@@ -4,24 +4,24 @@
  * Exemplo: secondary ? 'bg-red-500' : 'bg-blue-500'
  * @returns Um array de string concatenadas.
  */
-const classNames = (...classes: string[]) => classes.filter(Boolean).join(" ");
+const classNames = (...classes: string[]) => classes.filter(Boolean).join(' ');
 
 const scrollWindowToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: 'smooth',
   });
 };
 
 const getWeekdayString = (weekdayNumber: number): string => {
   const weekdays = [
-    "Domingo",
-    "Segunda",
-    "Terça",
-    "Quarta",
-    "Quinta",
-    "Sexta",
-    "Sábado",
+    'Domingo',
+    'Segunda',
+    'Terça',
+    'Quarta',
+    'Quinta',
+    'Sexta',
+    'Sábado',
   ];
   const isWeekdayValid = weekdayNumber >= 0 && weekdayNumber <= 6;
 
@@ -29,7 +29,7 @@ const getWeekdayString = (weekdayNumber: number): string => {
     return weekdays[weekdayNumber];
   }
 
-  throw new Error("Número de dia da semana inválido. Deve estar entre 0 e 6.");
+  throw new Error('Número de dia da semana inválido. Deve estar entre 0 e 6.');
 };
 
 const sendEmail = ({

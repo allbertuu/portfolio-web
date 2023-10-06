@@ -1,57 +1,49 @@
 # [1.6.0](https://github.com/allbertuu/portfolio-web/compare/v1.5.2...v1.6.0) (2023-10-02)
 
-
 ### Features
 
-* seo ([396ee23](https://github.com/allbertuu/portfolio-web/commit/396ee2347f7f322ef8d41c88457022779e48b3fd))
+- seo ([396ee23](https://github.com/allbertuu/portfolio-web/commit/396ee2347f7f322ef8d41c88457022779e48b3fd))
 
 ## [1.5.2](https://github.com/allbertuu/portfolio-web/compare/v1.5.1...v1.5.2) (2023-10-01)
 
-
 ### Bug Fixes
 
-* **Footer:** add more margin-bottom to reveal correctly ([3b2935b](https://github.com/allbertuu/portfolio-web/commit/3b2935b26b94b0837a2cbabcd3dc5d1741535b60))
+- **Footer:** add more margin-bottom to reveal correctly ([3b2935b](https://github.com/allbertuu/portfolio-web/commit/3b2935b26b94b0837a2cbabcd3dc5d1741535b60))
 
 ## [1.5.1](https://github.com/allbertuu/portfolio-web/compare/v1.5.0...v1.5.1) (2023-09-30)
 
-
 ### Bug Fixes
 
-* about me "profession" writing and projects "about" writing ([3790dae](https://github.com/allbertuu/portfolio-web/commit/3790daea1f3177aac0086c0845686ea63c051981))
+- about me "profession" writing and projects "about" writing ([3790dae](https://github.com/allbertuu/portfolio-web/commit/3790daea1f3177aac0086c0845686ea63c051981))
 
 # [1.5.0](https://github.com/allbertuu/portfolio-web/compare/v1.4.0...v1.5.0) (2023-09-30)
 
-
 ### Features
 
-* Footer ([773e1e2](https://github.com/allbertuu/portfolio-web/commit/773e1e2f5e96b98ea28b361c6d7c24f8ed39b3c6))
-* scroll reveal to footer and more projects link ([27d7e59](https://github.com/allbertuu/portfolio-web/commit/27d7e592d2cdc9652927b6cc5c4fefa6e93a3050))
+- Footer ([773e1e2](https://github.com/allbertuu/portfolio-web/commit/773e1e2f5e96b98ea28b361c6d7c24f8ed39b3c6))
+- scroll reveal to footer and more projects link ([27d7e59](https://github.com/allbertuu/portfolio-web/commit/27d7e592d2cdc9652927b6cc5c4fefa6e93a3050))
 
 # [1.4.0](https://github.com/allbertuu/portfolio-web/compare/v1.3.1...v1.4.0) (2023-09-08)
 
-
 ### Features
 
-* **project:** add REST API project ([8e8a32e](https://github.com/allbertuu/portfolio-web/commit/8e8a32e4628ba71b3a5c1b3f69a50924c63ed86d))
+- **project:** add REST API project ([8e8a32e](https://github.com/allbertuu/portfolio-web/commit/8e8a32e4628ba71b3a5c1b3f69a50924c63ed86d))
 
 ## [1.3.1](https://github.com/allbertuu/portfolio-web/compare/v1.3.0...v1.3.1) (2023-08-23)
 
-
 ### Bug Fixes
 
-* fix header section links icons ([35e3042](https://github.com/allbertuu/portfolio-web/commit/35e3042d2494606d93820efdf9d6718d35692c37))
+- fix header section links icons ([35e3042](https://github.com/allbertuu/portfolio-web/commit/35e3042d2494606d93820efdf9d6718d35692c37))
 
 # [1.3.0](https://github.com/allbertuu/portfolio-web/compare/v1.2.0...v1.3.0) (2023-08-22)
 
-
 ### Bug Fixes
 
-* header position ([b48bd62](https://github.com/allbertuu/portfolio-web/commit/b48bd624bae1444e08474b0f107645fedf48c8e8))
-
+- header position ([b48bd62](https://github.com/allbertuu/portfolio-web/commit/b48bd624bae1444e08474b0f107645fedf48c8e8))
 
 ### Features
 
-* show my img at mobile ([32a55c2](https://github.com/allbertuu/portfolio-web/commit/32a55c230e98c689d141def9fa055ecf8ea0546e))
+- show my img at mobile ([32a55c2](https://github.com/allbertuu/portfolio-web/commit/32a55c230e98c689d141def9fa055ecf8ea0546e))
 
 # [1.2.0](https://github.com/allbertuu/portfolio-web/compare/v1.1.1...v1.2.0) (2023-06-30)
 
