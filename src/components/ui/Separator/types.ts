@@ -1,3 +1,3 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes } from 'react';
 
-export interface ISeparatorProps extends HTMLAttributes<HTMLHRElement> {}
+export type SeparatorProps = HTMLAttributes<HTMLHRElement>;

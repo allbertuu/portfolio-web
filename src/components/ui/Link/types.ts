@@ -1,5 +1,5 @@
-import { AnchorHTMLAttributes } from "react";
+import { AnchorHTMLAttributes } from 'react';
 
-export interface ILinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   secondary?: boolean;
 }

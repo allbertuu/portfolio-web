@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes } from 'react';
 
 export interface ISection {
   id: string;
@@ -6,4 +6,4 @@ export interface ISection {
   icon: JSX.Element;
 }
 
-export interface IHeaderProps extends HTMLAttributes<HTMLElement> {}
+export type IHeaderProps = HTMLAttributes<HTMLElement>;

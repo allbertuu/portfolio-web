@@ -1,3 +1,3 @@
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from 'react';
 
-export interface ArrowUpProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+export type ArrowUpProps = ButtonHTMLAttributes<HTMLButtonElement>;

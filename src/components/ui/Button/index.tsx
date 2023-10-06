@@ -1,9 +1,9 @@
-import { FunctionComponent } from "react";
-import { IButtonProps } from "./types";
+import { FC } from 'react';
+import { ButtonProps } from './types';
 
-const Button: FunctionComponent<IButtonProps> = ({ children, ...props }) => {
+const Button: FC<ButtonProps> = ({ children, ...props }) => {
   return (
-    <button {...props} role={"button"}>
+    <button {...props} role={'button'}>
       {children}
     </button>
   );
