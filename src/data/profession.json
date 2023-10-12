@@ -4,13 +4,13 @@
   "works": "portais de vagas, sistemas web, landing pages e personalização/releitura de apps para clientes",
   "projects": [
     {
-      "name": "Weather Location",
+      "name": "Weather Wiz",
       "segment": "Frontend",
       "links": {
-        "github": "https://github.com/allbertuu/weather-location",
-        "site": "https://weather-location-allbertuu.vercel.app/"
+        "github": "https://github.com/allbertuu/WeatherWiz",
+        "site": "https://weather-wiz-allbertuu.vercel.app/"
       },
-      "about": "☔ Criei este app pois precisei ter de fácil acesso importantes informações meteorológicas locais do momento atual usando Geolocalização em uma interface limpa e direta, funcionando em vários dispositivos. Ajudei familiares e trabalhadores locais com este projeto.",
+      "about": "☔ App web responsivo de informações climáticas usando geolocalização. Com Dark mode (em breve).",
       "technologies": [
         "ReactJS",
         "HTML",
@@ -30,7 +30,7 @@
       "links": {
         "github": "https://github.com/SouJunior/vagas-frontend"
       },
-      "about": "🔥 Contribuição open-source para uma Plataforma de vagas para devs que facilitasse oportunidades para iniciantes em TI, com autenticação, CRUD e busca de vagas. Fui líder da Squad durante um período.",
+      "about": "🔥 Plataforma de vagas focada em iniciantes na TI, facilitando o acesso a oportunidades no mercado de trabalho. Contribuição open-source.",
       "technologies": [
         "ReactJS",
         "TypeScript",
