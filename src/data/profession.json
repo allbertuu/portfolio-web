@@ -4,6 +4,25 @@
   "works": "portais de vagas, sistemas web, landing pages e personalização/releitura de apps para clientes",
   "projects": [
     {
+      "name": "Sneakers",
+      "segment": "Frontend",
+      "links": {
+        "github": "https://github.com/allbertuu/sneakers",
+        "site": "https://sneakers-allbertuu.vercel.app/"
+      },
+      "about": "🛒 Página de produto simples mas completa para um e-commerce fictício chamado Sneakers.",
+      "technologies": [
+        "Redux",
+        "ReactJS",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Styled-components",
+        "Sass/SCSS"
+      ]
+    },
+    {
       "name": "Weather Wiz",
       "segment": "Frontend",
       "links": {
