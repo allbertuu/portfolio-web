@@ -38,7 +38,7 @@ function App() {
       <main className="overflow-hidden">
         {/* Introduction Section */}
         <section className="shadow-xl border-b border-b-accent">
-          <div className="container mx-auto px-4 h-screen lg:h-[90vh]">
+          <div className="container mx-auto px-4 h-[85vh] md:h-[90vh]">
             <div className="grid grid-cols-1 content-center lg:grid-cols-2 h-full gap-8 md:gap-2 items-center justify-items-center">
               {/* <div className="flex flex-wrap h-full gap-8 md:gap-2 items-center justify-center content-center"> */}
               {/* Container Presentation */}
@@ -123,7 +123,7 @@ function App() {
                 </p>
               </article>
 
-              <div className="separator my-4" />
+              <div className="separator my-4 intervalReveal" />
 
               <article role="listitem" className="intervalReveal">
                 <div className="flex gap-2 items-center text-accent mb-2">
@@ -146,7 +146,7 @@ function App() {
                 </p>
               </article>
 
-              <div className="separator my-4" />
+              <div className="separator my-4 intervalReveal" />
 
               <article role="listitem" className="intervalReveal">
                 <div className="flex gap-2 items-center text-accent mb-2">

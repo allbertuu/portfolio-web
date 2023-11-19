@@ -113,7 +113,7 @@
   }
 
   .separator {
-    @apply from-transparent to-transparent mx-auto w-[80%] bg-gradient-to-r via-secondary/10 p-[1px];
+    @apply from-transparent to-transparent mx-auto w-[80%] bg-gradient-to-r via-primary/20 p-[1px];
   }
 }
 
