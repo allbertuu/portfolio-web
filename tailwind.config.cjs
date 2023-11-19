@@ -3,34 +3,21 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      sans: ['Lato', 'sans-serif'],
-      titillium: ['Titillium Web', 'sans-serif'],
+      sans: ['DM Sans', 'sans-serif'],
+      serif: ['DM Serif Display', 'serif'],
     },
     colors: {
-      red: {
-        50: '#fff0f1',
-        100: '#ffe2e6',
-        200: '#ffcad2',
-        300: '#ff9fad',
-        400: '#ff6983',
-        500: '#fe355c',
-        600: '#ec1247',
-        700: '#da0941',
-        800: '#a70a39',
+      accent: '#fe355c',
+      primary: '#041a27',
+      secondary: '#e2e8f0',
+      blue: {
+        light: '#0ea5e9',
+        DEFAULT: '#0284c7',
       },
-      slate: {
-        50: '#f8fafc',
-        600: '#041a27',
-        700: '#041722',
-        800: '#04131c',
-      },
-      sky: {
-        500: '#0ea5e9',
-        600: '#0284c7',
-      },
-      white: '#FFF',
       black: '#000',
-      muted: '#d1d5db',
+      white: '#FFF',
+      muted: '#e2e8f080',
+      transparent: 'transparent',
     },
 
     extend: {

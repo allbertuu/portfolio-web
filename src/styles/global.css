@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 100%; /* 16px */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-secondary/95 bg-primary font-sans text-[1.125rem] selection:bg-accent selection:text-secondary;
+
+    &::-webkit-scrollbar {
+      @apply w-2;
+    }
+    &::-webkit-scrollbar-track {
+      @apply bg-primary;
+    }
+    &::-webkit-scrollbar-thumb {
+      @apply border-[4px] border-primary bg-accent/90;
+    }
+  }
+
+  body * {
+    @apply decoration-accent;
+  }
+
+  button {
+    @apply rounded bg-accent px-2 py-[2px] hover:bg-accent/90 active:bg-accent/70;
+  }
+
+  a {
+    @apply underline hover:opacity-80;
+  }
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+}
+/* Responsiveness */
+@layer base {
+  @media (min-width: 1220px) {
+    html {
+      font-size: 105%; /* 16.8px */
+    }
+  }
+}
+
+/* Typography */
+@layer base {
+  p {
+    @apply mb-2 leading-6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  small,
+  .small {
+    font-size: 0.8rem;
+  }
+}
+
+@layer components {
+  .social-link {
+    @apply flex items-center gap-1 rounded-md px-2 py-1 text-lg font-normal shadow-2xl shadow-black/30 hover:opacity-50;
+  }
+
+  .section__title {
+    @apply relative w-fit font-semibold after:relative after:bottom-2 after:-z-10 after:block after:h-[2px] after:w-2/5 after:bg-accent;
+  }
+
+  .project-card {
+    @apply border-secondary/20 bg-primary relative flex max-w-xs flex-col rounded border 
+    p-4 transition-all duration-300 ease-out hover:border-accent 
+    hover:shadow-xl hover:shadow-accent/30;
+  }
+
+  .animated-underline {
+    @apply relative z-0 overflow-hidden after:absolute
+    after:left-1/2 after:right-1/2 after:-z-10 after:block 
+    after:h-[2px] after:w-1 after:-translate-x-1/2
+    after:bg-accent after:transition-all after:duration-500 after:ease-out 
+    hover:after:w-full;
+  }
+
+  .separator {
+    @apply from-transparent to-transparent mx-auto w-[80%] bg-gradient-to-r via-primary/20 p-[1px];
+  }
+}
+
+header a {
+  @apply no-underline hover:opacity-100;
+}

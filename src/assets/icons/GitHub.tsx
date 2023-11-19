@@ -1,8 +1,6 @@
-import { FunctionComponent, SVGProps } from 'react';
+type TGitHubProps = React.SVGProps<SVGSVGElement>;
 
-interface GitHubProps extends SVGProps<SVGSVGElement> {}
-
-const GitHub: FunctionComponent<GitHubProps> = ({ fill, className }) => {
+const GitHub: React.FC<TGitHubProps> = ({ fill, className }) => {
   return (
     <svg
       width="20"
