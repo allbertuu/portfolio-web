@@ -1,12 +1,13 @@
-import aboutMe from '@data/aboutMe.json';
-import { classNames } from '@utils/index';
-import { InstagramLogo, LinkedinLogo } from 'phosphor-react';
-import GitHubLogo from '@assets/icons/GitHub';
-import { FC } from 'react';
-import { IMySocialsProps } from './types';
+import GitHubLogo from '@/assets/icons/GitHub';
+import aboutMe from '@/data/aboutMe.json';
+import { classNames } from '@/utils/index';
+import { FileText, LinkedinLogo } from 'phosphor-react';
+import { ExternalLink } from '../ExternalLink';
 
-const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
-  const { socials } = aboutMe;
+type TMySocialsProps = React.HTMLAttributes<HTMLDivElement>;
+
+export const MySocials: React.FC<TMySocialsProps> = ({ ...props }) => {
+  const { links } = aboutMe;
 
   return (
     <div
@@ -16,40 +17,32 @@ const MySocials: FC<IMySocialsProps> = ({ ...props }) => {
         'flex flex-col items-center justify-center lg:justify-start sm:flex-row gap-4'
       )}
     >
-      <a
-        href={socials.linkedin.url}
+      <ExternalLink
+        href={links.linkedin.url}
         title="LinkedIn"
-        target="_blank"
-        rel="noreferrer"
-        className="social-link bg-sky-600 text-white mySocialsReveal intervalReveal"
+        className="social-link no-underline bg-blue hover:bg-blue-light text-white mySocialsReveal intervalReveal"
       >
         <LinkedinLogo weight="bold" />
         LinkedIn
-      </a>
+      </ExternalLink>
 
-      <a
-        href={socials.instagram.url}
-        title="Instagram"
-        target="_blank"
-        rel="noreferrer"
-        className="social-link bg-[#f43f5e] mySocialsReveal intervalReveal"
-      >
-        <InstagramLogo weight="bold" />
-        Instagram
-      </a>
-
-      <a
-        href={socials.github.url}
+      <ExternalLink
+        href={links.github.url}
         title="GitHub"
-        target="_blank"
-        rel="noreferrer"
-        className="social-link bg-white/90 text-[#0c0b0b] mySocialsReveal intervalReveal"
+        className="social-link no-underline bg-white/90 hover:bg-white/70 text-[#0c0b0b] mySocialsReveal intervalReveal"
       >
         <GitHubLogo fill="#000" />
         GitHub
-      </a>
+      </ExternalLink>
+
+      <ExternalLink
+        href={links.cv.url}
+        title="Currículo"
+        className="social-link no-underline bg-accent hover:bg-accent/80 text-white mySocialsReveal intervalReveal"
+      >
+        <FileText weight="bold" />
+        Currículo
+      </ExternalLink>
     </div>
   );
 };
-
-export default MySocials;

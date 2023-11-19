@@ -4,7 +4,7 @@
     "institution": "Estácio de Sá",
     "year": 2022
   },
-  "socials": {
+  "links": {
     "linkedin": {
       "url": "https://www.linkedin.com/in/albertov-albuquerque"
     },
@@ -12,6 +12,9 @@
     "instagram": {
       "url": "https://www.instagram.com/albert.vny/",
       "user": "@albert.vny"
+    },
+    "cv": {
+      "url": "https://docs.google.com/document/d/11uc5510HdzNnE5OwgTQXVWL724GZdWch-QhtZYt8lls/edit?usp=drive_link"
     }
   }
 }

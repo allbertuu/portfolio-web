@@ -1,48 +1,52 @@
-import GitHubIcon from '@assets/icons/GitHub';
-import { FC } from 'react';
-import { IProjectCardProps } from './types';
+import GitHubIcon from '@/assets/icons/GitHub';
 import { Broadcast as BroadcastIcon } from 'phosphor-react';
+import { ExternalLink } from '../ExternalLink';
+import { classNames } from '@/utils';
 
-const ProjectCard: FC<IProjectCardProps> = ({
+interface IProjectCardProps extends React.HTMLAttributes<HTMLElement> {
+  name: string;
+  segment: string;
+  about: string;
+  githubLink: string;
+  liveUrl?: string;
+}
+
+export const ProjectCard: React.FC<IProjectCardProps> = ({
   name,
   segment,
   about,
   githubLink,
   liveUrl,
+  ...props
 }) => {
   return (
-    <article className="project-card">
-      <h4 className="text-red-500 -mb-2 font-semibold">{name}</h4>
+    <article
+      {...props}
+      className={classNames(props.className || '', 'project-card')}
+    >
+      <h4 className="text-accent -mb-2">{name}</h4>
 
-      <span className="text-muted text-[85%] italic">{segment}</span>
+      <span className="text-secondary/70 text-[85%] italic">{segment}</span>
 
-      <p className="my-1 leading-snug flex-1 text-[90%] text-justify">
-        {about}
-      </p>
+      <p className="my-1 leading-snug flex-1 text-[90%]">{about}</p>
 
       <div className="flex justify-between">
-        <a
+        <ExternalLink
           href={githubLink}
-          target="_blank"
-          rel="noreferrer"
           className="flex gap-1 items-center w-fit hover:opacity-70 transition-all font-normal"
         >
           <GitHubIcon fill="#fe355c" /> GitHub
-        </a>
+        </ExternalLink>
 
         {liveUrl && (
-          <a
+          <ExternalLink
             href={liveUrl}
-            target="_blank"
-            rel="noreferrer"
             className="flex gap-1 items-center w-fit hover:opacity-70 transition-all font-normal"
           >
             <BroadcastIcon color="#fe355c" /> Live
-          </a>
+          </ExternalLink>
         )}
       </div>
     </article>
   );
 };
-
-export default ProjectCard;
