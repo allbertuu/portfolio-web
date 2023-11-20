@@ -35,12 +35,11 @@ function App() {
     <>
       <Header />
 
-      <main className="overflow-hidden">
+      <main>
         {/* Introduction Section */}
         <section className="shadow-xl border-b border-b-accent">
-          <div className="container mx-auto px-4 h-[85vh] md:h-[90vh]">
+          <div className="container mx-auto px-4 min-h-screen h-[calc(100vh_-_1rem)]">
             <div className="grid grid-cols-1 content-center lg:grid-cols-2 h-full gap-8 md:gap-2 items-center justify-items-center">
-              {/* <div className="flex flex-wrap h-full gap-8 md:gap-2 items-center justify-center content-center"> */}
               {/* Container Presentation */}
               <div className="order-2 relative px-4 lg:order-1 text-center lg:text-left">
                 <h3 className="originLeftReveal intervalReveal text-muted/80 text-xl lg:text-2xl">
