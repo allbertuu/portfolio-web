@@ -8,7 +8,7 @@ export const Header: React.FC<THeaderProps> = ({ ...props }) => {
   return (
     <header
       {...props}
-      className="z-20 sticky top-0 flex w-full items-center justify-around border-b border-b-accent bg-primary px-8 py-4 text-lg"
+      className="z-10 fixed top-0 flex w-full items-center justify-around border-b border-b-accent bg-primary px-8 py-4 text-lg"
       data-testid="header"
     >
       <img
