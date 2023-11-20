@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/allbertuu/portfolio-web/compare/v2.0.0...v2.0.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* container height in App component ([18ecb89](https://github.com/allbertuu/portfolio-web/commit/18ecb890b5dd0c9b8da3b5d3da7c5b522616f133))
+* header position to fixed ([ae5fc14](https://github.com/allbertuu/portfolio-web/commit/ae5fc14f67db41eb3aada19fa1a084356da5ed8d))
+
 # [1.6.0](https://github.com/allbertuu/portfolio-web/compare/v1.5.2...v1.6.0) (2023-10-02)
 
 ### Features
