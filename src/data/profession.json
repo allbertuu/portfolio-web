@@ -4,23 +4,13 @@
   "works": "portais de vagas, sistemas web, landing pages e personalização/releitura de apps para clientes",
   "projects": [
     {
-      "name": "Sneakers",
+      "name": "Blog do Alberto",
       "segment": "Frontend",
       "links": {
-        "github": "https://github.com/allbertuu/sneakers",
-        "site": "https://sneakers-allbertuu.vercel.app/"
+        "github": "https://github.com/allbertuu/blog-do-alberto",
+        "site": "https://blog-do-alberto.vercel.app/"
       },
-      "about": "🛒 Página de produto simples mas completa para um e-commerce fictício chamado Sneakers.",
-      "technologies": [
-        "Redux",
-        "ReactJS",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "Styled-components",
-        "Sass/SCSS"
-      ]
+      "about": "🔥 Um lugar para hospedar dicas, ideias, ou coisas interessantes que amei aprender."
     },
     {
       "name": "Weather Wiz",
@@ -29,19 +19,7 @@
         "github": "https://github.com/allbertuu/WeatherWiz",
         "site": "https://weather-wiz-allbertuu.vercel.app/"
       },
-      "about": "☔ App web responsivo de informações climáticas usando geolocalização. Com Dark mode (em breve).",
-      "technologies": [
-        "ReactJS",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "Sass/SCSS",
-        "Phosphor Icons",
-        "OpenWeather API",
-        "Axios",
-        "Date-fns"
-      ]
+      "about": "☔ App web responsivo de informações climáticas usando geolocalização. Muda conforme o período do dia."
     },
     {
       "name": "Plataforma de Vagas",
@@ -49,14 +27,7 @@
       "links": {
         "github": "https://github.com/SouJunior/vagas-frontend"
       },
-      "about": "🔥 Plataforma de vagas focada em iniciantes na TI, facilitando o acesso a oportunidades no mercado de trabalho. Contribuição open-source.",
-      "technologies": [
-        "ReactJS",
-        "TypeScript",
-        "TailwindCSS",
-        "Styled-components",
-        "Axios"
-      ]
+      "about": "🔥 Plataforma de vagas focada em iniciantes na TI, facilitando o acesso a oportunidades no mercado de trabalho. Contribuição open-source."
     }
   ]
 }
