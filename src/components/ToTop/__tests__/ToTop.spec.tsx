@@ -9,7 +9,7 @@ vi.mock('@/utils', () => ({
 }));
 
 describe('ToTop component', () => {
-  test.todo('renders button with correct initial visibility', () => {
+  test.skip('renders button with correct initial visibility', () => {
     const { getByRole } = render(<ToTop />);
     // TODO: assert is not working out correctly,
     // 'cause the element is for sure invisible to the user
