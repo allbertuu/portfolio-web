@@ -6,7 +6,6 @@ import profession from '@/data/profession.json';
 import {
   ArrowDown as ArrowDownIcon,
   Briefcase as BriefcaseIcon,
-  GithubLogo as GithubLogoIcon,
   Heart as HeartIcon,
   UserList as UserListIcon,
 } from 'phosphor-react';
@@ -17,6 +16,7 @@ import { Header } from './components/Header';
 import { MySocials } from './components/MySocials';
 import { ProjectCard } from './components/ProjectCard';
 import { ToTop } from './components/ToTop';
+import GitHubIcon from '@/assets/icons/GitHub';
 
 function App() {
   useEffect(() => {
@@ -220,7 +220,7 @@ function App() {
                 Clique aqui e confira (muito) mais
               </ExternalLink>
 
-              <GithubLogoIcon size="1.125rem" />
+              <GitHubIcon fill="rgb(226 232 240 / 0.95)" />
             </p>
           </div>
         </section>
