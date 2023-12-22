@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/allbertuu/portfolio-web/compare/v2.0.1...v2.0.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* typescript errors with vitest ([797e5c9](https://github.com/allbertuu/portfolio-web/commit/797e5c96406380c6af627d6b66719dc895673be4))
+
 ## [2.0.1](https://github.com/allbertuu/portfolio-web/compare/v2.0.0...v2.0.1) (2023-11-20)
 
 ### Bug Fixes
