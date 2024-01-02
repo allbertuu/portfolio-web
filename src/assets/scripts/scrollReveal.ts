@@ -6,7 +6,7 @@ export const initScrollReveal = () => {
   const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2000,
+    duration: 1200,
   });
 
   sr.reveal('.delaySmallReveal', { delay: 200 });
@@ -24,6 +24,6 @@ export const initScrollReveal = () => {
     delay: 200,
     origin: 'bottom',
     distance: '30px',
-    duration: 1000,
+    duration: 900,
   });
 };
