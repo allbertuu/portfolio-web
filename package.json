@@ -38,12 +38,13 @@
         "@typescript-eslint/parser": "^6.17.0",
         "@vitejs/plugin-react": "^4.2.1",
         "autoprefixer": "^10.4.16",
+        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-jest-dom": "^5.1.0",
         "eslint-plugin-react": "^7.33.2",
-        "husky": "^8.0.3",
+        "eslint-plugin-testing-library": "^6.2.0",
         "jsdom": "^23.0.1",
-        "lint-staged": "^15.2.0",
         "postcss": "^8.4.32",
         "prettier": "^3.1.1",
         "prettier-plugin-tailwindcss": "^0.5.10",
@@ -55,7 +56,9 @@
         "vite-tsconfig-paths": "^4.2.3",
         "vitest": "^1.1.1"
     },
-    "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
