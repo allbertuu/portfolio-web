@@ -7,6 +7,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
     "@rocketseat/eslint-config/react",
     "prettier"
   ],
@@ -15,7 +17,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["@typescript-eslint", "react", "testing-library", "jest-dom"],
   "rules": {
     "prettier/prettier": "off"
   }
