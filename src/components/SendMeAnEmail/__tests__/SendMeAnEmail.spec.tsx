@@ -1,6 +1,5 @@
 import { sendEmail } from '@/utils';
-import { fireEvent, render } from '@/utils/testUtils';
-import { vi } from 'vitest';
+import { fireEvent, render, screen } from '@/utils/testUtils';
 import { SendMeAnEmail, draftEmail } from '..';
 
 vi.mock('@/utils', () => ({
@@ -8,14 +7,15 @@ vi.mock('@/utils', () => ({
 }));
 
 test('renders button with correct text', () => {
-  const { getByText } = render(<SendMeAnEmail />);
-  expect(getByText('Me mande um e-mail')).toBeInTheDocument();
+  render(<SendMeAnEmail />);
+
+  expect(screen.getByText('Me mande um e-mail')).toBeInTheDocument();
 });
 
 test('call sendEmail function when button is clicked', () => {
-  const { getByText } = render(<SendMeAnEmail />);
+  render(<SendMeAnEmail />);
 
-  fireEvent.click(getByText('Me mande um e-mail'));
+  fireEvent.click(screen.getByText('Me mande um e-mail'));
   expect(sendEmail).toHaveBeenCalledTimes(1);
   expect(sendEmail).toHaveBeenCalledWith(draftEmail);
 });
