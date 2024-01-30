@@ -11,7 +11,7 @@
         "release:dry": "semantic-release --dry-run",
         "test": "vitest",
         "format": "prettier --write .",
-        "format:check": "prettier --write .",
+        "format:check": "prettier --check .",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "lint:fix": "eslint . --fix",
         "prepare": "husky install"
