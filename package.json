@@ -13,8 +13,7 @@
         "format": "prettier --write .",
         "format:check": "prettier --check .",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "lint:fix": "eslint . --fix",
-        "prepare": "husky install"
+        "lint:fix": "eslint . --fix"
     },
     "dependencies": {
         "@radix-ui/react-tooltip": "^1.0.7",
