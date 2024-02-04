@@ -16,7 +16,7 @@ export const Header: React.FC<THeaderProps> = ({ ...props }) => {
         alt="Logotipo vermelha"
         width={28}
         height={28}
-        className="originLeftReveal"
+        className="originLeftReveal load-hidden"
         data-testid="logo-image"
       />
 
@@ -25,7 +25,7 @@ export const Header: React.FC<THeaderProps> = ({ ...props }) => {
           <a
             href="#about-me"
             title="Sobre mim"
-            className="header-link animated-underline originRightReveal rounded px-2 py-[2px] text-center hover:shadow-xl hover:shadow-accent/30"
+            className="header-link animated-underline originRightReveal load-hidden rounded px-2 py-[2px] text-center hover:shadow-xl hover:shadow-accent/30"
           >
             <IdentificationCard
               weight="fill"
@@ -37,7 +37,7 @@ export const Header: React.FC<THeaderProps> = ({ ...props }) => {
           <a
             href="#projects"
             title="Projetos"
-            className="header-link animated-underline originRightReveal rounded px-2 py-[2px] text-center hover:shadow-xl hover:shadow-accent/30"
+            className="header-link animated-underline originRightReveal load-hidden rounded px-2 py-[2px] text-center hover:shadow-xl hover:shadow-accent/30"
           >
             <Folders
               weight="fill"

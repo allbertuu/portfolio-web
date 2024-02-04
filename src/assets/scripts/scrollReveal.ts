@@ -1,5 +1,3 @@
-import ScrollReveal from 'scrollreveal';
-
 export const sr = ScrollReveal();
 
 export const initScrollReveal = () => {

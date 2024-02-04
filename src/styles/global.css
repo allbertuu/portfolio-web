@@ -3,9 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  html.sr .load-hidden {
+    visibility: hidden;
+  }
+}
+
+@layer base {
   html {
     font-size: 100%; /* 16px */
     scroll-behavior: smooth;
+  }
+
+  /* scroll reveal class */
+  html.sr .load-hidden {
+    visibility: hidden;
   }
 
   body {

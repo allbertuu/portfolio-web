@@ -20,7 +20,7 @@ export const MySocials: React.FC<TMySocialsProps> = ({ ...props }) => {
       <ExternalLink
         href={links.linkedin.url}
         title="LinkedIn"
-        className="social-link no-underline bg-blue hover:bg-blue-light text-white mySocialsReveal intervalReveal"
+        className="social-link no-underline bg-blue hover:bg-blue-light text-white mySocialsReveal load-hidden intervalReveal"
       >
         <LinkedinLogo weight="bold" />
         LinkedIn
@@ -29,7 +29,7 @@ export const MySocials: React.FC<TMySocialsProps> = ({ ...props }) => {
       <ExternalLink
         href={links.github.url}
         title="GitHub"
-        className="social-link no-underline bg-white/90 hover:bg-white/70 text-[#0c0b0b] mySocialsReveal intervalReveal"
+        className="social-link no-underline bg-white/90 hover:bg-white/70 text-[#0c0b0b] mySocialsReveal load-hidden intervalReveal"
       >
         <GitHubLogo fill="#000" />
         GitHub
@@ -38,7 +38,7 @@ export const MySocials: React.FC<TMySocialsProps> = ({ ...props }) => {
       <ExternalLink
         href={links.cv.url}
         title="Currículo"
-        className="social-link no-underline bg-accent hover:bg-accent/80 text-white mySocialsReveal intervalReveal"
+        className="social-link no-underline bg-accent hover:bg-accent/80 text-white mySocialsReveal load-hidden intervalReveal"
       >
         <FileText weight="bold" />
         Currículo

@@ -1,3 +1,4 @@
+import GitHubIcon from '@/assets/icons/GitHub';
 import undrawMoonlightImg from '@/assets/icons/undraw_moonlight.svg';
 import creatorImg from '@/assets/imgs/me.svg';
 import { initScrollReveal } from '@/assets/scripts/scrollReveal';
@@ -16,7 +17,6 @@ import { Header } from './components/Header';
 import { MySocials } from './components/MySocials';
 import { ProjectCard } from './components/ProjectCard';
 import { ToTop } from './components/ToTop';
-import GitHubIcon from '@/assets/icons/GitHub';
 
 function App() {
   useEffect(() => {
@@ -42,15 +42,15 @@ function App() {
             <div className="grid grid-cols-1 content-center lg:grid-cols-2 h-full gap-8 md:gap-2 items-center justify-items-center">
               {/* Container Presentation */}
               <div className="order-2 relative px-4 lg:order-1 text-center lg:text-left">
-                <h3 className="originLeftReveal intervalReveal text-muted/80 text-xl lg:text-2xl">
+                <h3 className="originLeftReveal load-hidden intervalReveal text-muted/80 text-xl lg:text-2xl">
                   Olá! Eu me chamo,
                 </h3>
 
-                <h1 className="originLeftReveal intervalReveal text-[2.5rem] lg:text-6xl font-bold mb-1">
+                <h1 className="originLeftReveal load-hidden intervalReveal text-[2.5rem] lg:text-6xl font-bold mb-1">
                   Alberto Santos.
                 </h1>
 
-                <h2 className="originLeftReveal intervalReveal text-2xl lg:text-3xl italic text-secondary/80 leading-7">
+                <h2 className="originLeftReveal load-hidden intervalReveal text-2xl lg:text-3xl italic text-secondary/80 leading-7">
                   Desenvolvedor
                   <br className="block sm:hidden" /> <strong>Frontend</strong> e{' '}
                   <strong>UX Designer</strong>
@@ -63,12 +63,15 @@ function App() {
                 <img
                   src={creatorImg}
                   alt="Criador do website"
-                  className="delaySmallReveal md:originRightReveal h-[10rem] lg:h-[25rem] drop-shadow-xl border-2 border-accent/40 rounded-[33%_67%_37%_63%_/_66%_37%_63%_34%]"
+                  className="delaySmallReveal md:originRightReveal load-hidden h-[10rem] lg:h-[25rem] drop-shadow-xl border-2 border-accent/40 rounded-[33%_67%_37%_63%_/_66%_37%_63%_34%]"
                 />
               </div>
             </div>
 
-            <a href="#about-me">
+            <a
+              href="#about-me"
+              className="delayMediumReveal intervalReveal load-hidden"
+            >
               <ArrowDownIcon
                 size="1.8rem"
                 role={'button'}
@@ -80,7 +83,7 @@ function App() {
         {/* About Me Section */}
         <section
           id="about-me"
-          className="bg-secondary overflow-hidden relative py-16 after:block after:absolute after:bottom-0 after:h-[2px] after:shadow-sm after:w-full after:bg-accent"
+          className="bg-secondary overflow-hidden relative pb-16 pt-24 after:block after:absolute after:bottom-0 after:h-[2px] after:shadow-sm after:w-full after:bg-accent"
         >
           <div className="container mx-auto px-4 max-w-[64rem]">
             <img
