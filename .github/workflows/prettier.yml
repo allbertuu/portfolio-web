@@ -14,9 +14,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
       - name: Prettify code
         uses: creyD/prettier_action@v4.3
         with:
           prettier_options: --write **/*.{js,jsx,ts,tsx,tailwind.config.cjs,json,html,md}
-          commit_message: 'style: run prettier'
+          same_commit: true
