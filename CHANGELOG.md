@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/allbertuu/portfolio-web/compare/v3.0.1...v3.0.2) (2024-02-04)
+
+
+### Performance Improvements
+
+* **scrollreveal:** improve `UX` preventing flickering ([c524c8d](https://github.com/allbertuu/portfolio-web/commit/c524c8d18c964a1927ef1e1e74b59ea1c415cd7f))
+
 ## [2.0.2](https://github.com/allbertuu/portfolio-web/compare/v2.0.1...v2.0.2) (2023-12-22)
 
 ### Bug Fixes
