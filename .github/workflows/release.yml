@@ -23,7 +23,11 @@ jobs:
       - name: Install deps
         run: npm install
 
+      - name: Run tests
+        run: npm test
+
       - name: Release
+        if: ${{ success() }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
