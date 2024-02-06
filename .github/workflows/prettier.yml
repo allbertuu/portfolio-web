@@ -12,9 +12,6 @@ jobs:
       - name: Check-out repo
         uses: actions/checkout@v4
 
-      - name: Install deps
-        run: npm install
-
       - name: Format code
         uses: creyD/prettier_action@v4.3
         with:
