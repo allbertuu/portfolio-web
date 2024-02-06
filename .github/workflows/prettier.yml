@@ -10,19 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Check-out repo
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm install
 
       - name: Check formatting
-        run: |
-          npm run format:check
-          exit_code=$?
-          echo "::set-env name=EXIT_CODE::$exit_code" # Armazena o Exit Code em uma variável de ambiente
+        run: npm run format:check
 
       - name: Format if isn't already
-        if: ${{ env.EXIT_CODE == 1 }} # Prettier: 1 Something wasn’t formatted properly
+        if: ${{ failure() }}
         run: npm run format
 
