@@ -18,6 +18,5 @@ jobs:
       - name: Format code
         uses: creyD/prettier_action@v4.3
         with:
-          prettier_options: --write .
-          prettier_version: "^3.1.1"
+          prettier_options: --write **/*.{js,jsx,ts,tsx,tailwind.config.cjs,json,html,md}
           commit_message: "style: run prettier"
