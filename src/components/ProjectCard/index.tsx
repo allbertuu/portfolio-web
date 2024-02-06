@@ -1,5 +1,5 @@
 import GitHubIcon from '@/assets/icons/GitHub';
-import { Broadcast as BroadcastIcon } from 'phosphor-react';
+import { Broadcast as BroadcastIcon } from '@phosphor-icons/react';
 import { ExternalLink } from '../ExternalLink';
 import { classNames } from '@/utils';
 

@@ -1,7 +1,7 @@
 import GitHubLogo from '@/assets/icons/GitHub';
 import aboutMe from '@/data/aboutMe.json';
 import { classNames } from '@/utils/index';
-import { FileText, LinkedinLogo } from 'phosphor-react';
+import { FileText, LinkedinLogo } from '@phosphor-icons/react';
 import { ExternalLink } from '../ExternalLink';
 
 type TMySocialsProps = React.HTMLAttributes<HTMLDivElement>;

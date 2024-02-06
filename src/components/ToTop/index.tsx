@@ -1,5 +1,5 @@
 import { classNames, scrollWindowToTop } from '@/utils';
-import { ArrowUp as ArrowUpIcon } from 'phosphor-react';
+import { ArrowUp as ArrowUpIcon } from '@phosphor-icons/react';
 import { useEffect, useState } from 'react';
 
 type TToTopProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
