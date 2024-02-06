@@ -22,4 +22,3 @@ jobs:
       - name: Format if isn't already
         if: ${{ failure() }}
         run: npm run format
-
