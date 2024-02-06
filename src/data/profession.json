@@ -1,7 +1,5 @@
 {
-  "role": "Frontend Developer",
-  "years": 1,
-  "works": "portais de vagas, sistemas web, landing pages e personalização/releitura de apps para clientes",
+  "startDate": 1656644400000,
   "projects": [
     {
       "name": "Blog do Alberto",

@@ -7,9 +7,15 @@ import profession from '@/data/profession.json';
 import {
   ArrowDown as ArrowDownIcon,
   Briefcase as BriefcaseIcon,
+  ClockCountdown,
+  GlobeHemisphereWest,
   Heart as HeartIcon,
+  Toolbox,
   UserList as UserListIcon,
+  Wrench,
 } from '@phosphor-icons/react';
+import { formatDistanceToNow } from 'date-fns/formatDistanceToNow';
+import { ptBR } from 'date-fns/locale';
 import { useEffect } from 'react';
 import { ExternalLink } from './components/ExternalLink';
 import { Footer } from './components/Footer';
@@ -25,7 +31,8 @@ function App() {
 
   const { education } = aboutMe;
 
-  const myCurrentAge = new Date().getFullYear() - 2003;
+  const currentYear = new Date().getFullYear();
+  const myCurrentAge = currentYear - 2003;
   const techLinks = {
     react: 'https://react.dev/',
     javascript: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',
@@ -51,12 +58,11 @@ function App() {
                 </h1>
 
                 <h2 className="originLeftReveal load-hidden intervalReveal text-2xl lg:text-3xl italic text-secondary/80 leading-7">
-                  Desenvolvedor
-                  <br className="block sm:hidden" /> <strong>Frontend</strong> e{' '}
-                  <strong>UX Designer</strong>
+                  Software Developer
+                  <br className="block sm:hidden" /> <strong>(FE-heavy)</strong>
                 </h2>
                 {/* Container My Socials */}
-                <MySocials className="mt-8 sm:mt-4" />
+                <MySocials className="mt-8" />
               </div>
               {/* Container The Creator */}
               <div className="px-4 order-1 mt-4 lg:mt-0 lg:order-2">
@@ -114,37 +120,44 @@ function App() {
                 </p>
 
                 <p>
-                  Hoje crio soluções para a web e para dispositivos móveis,
-                  sempre com um olhar diferenciado no design e na usabilidade.
+                  Quero poder trabalhar remoto, viajando pelo mundo{' '}
+                  <GlobeHemisphereWest
+                    className="text-accent inline-block"
+                    weight="fill"
+                  />{' '}
+                  e vivendo novas experiências junto a minha esposa, atualmente
+                  namorada (<em>for a while</em>...). <br />A tecnologia{' '}
+                  <strong>me possibilita</strong> esse sonho.
+                </p>
+
+                <p>
+                  <HeartIcon
+                    className="text-accent inline-block"
+                    weight="fill"
+                  />{' '}
+                  Me interesso principalmente por <em>web design</em>,
+                  construção de interfaces centradas no usuário (
+                  <em>UI/UX Design</em>), e{' '}
+                  <em>
+                    <abbr title="Leia 'Código limpo', de Robert C. Martin">
+                      clean code
+                    </abbr>
+                  </em>
+                  . Gosto e tenho aptidão em criar soluções, resolver problemas
+                  reais decompondo-os{' '}
+                  <Wrench className="text-accent inline-block" weight="fill" />{' '}
+                  em partes menores e mais simples, pouco importa a tecnologia
+                  usada para isso.
                 </p>
 
                 <p>
                   Atualmente tenho {myCurrentAge} anos, e estou cursando{' '}
-                  {education.course} na {education.institution} desde{' '}
-                  {education.year}.
-                </p>
-              </article>
-
-              <div className="separator my-4 intervalReveal" />
-
-              <article role="listitem" className="intervalReveal">
-                <div className="flex gap-2 items-center text-accent mb-2">
-                  <HeartIcon className="text-2xl" weight="fill" />
-                  <h4 className="leading-none">Interesses</h4>
-                </div>
-
-                <p>
-                  Me interesso principalmente por web design, construção de
-                  interfaces centradas no usuário (UI/UX Design), e{' '}
-                  <abbr title="Leia 'Código limpo', de Robert C. Martin">
-                    clean code
-                  </abbr>
-                </p>
-
-                <p>
-                  Sou apaixonado em criar soluções, resolver problemas reais,
-                  pouco importa a tecnologia usada para isso. Eu gosto e quero
-                  impactar a vida de pessoas.
+                  <strong>{education.course}</strong> na {education.institution}{' '}
+                  {formatDistanceToNow(education.startDate, {
+                    addSuffix: true,
+                    locale: ptBR,
+                  })}
+                  .
                 </p>
               </article>
 
@@ -157,25 +170,38 @@ function App() {
                 </div>
 
                 <p>
-                  Bom, eu possuo + {profession.years}{' '}
-                  {profession.years > 1 ? 'anos' : 'ano'} de experiência como{' '}
+                  Com{' '}
+                  <strong>
+                    {formatDistanceToNow(profession.startDate, {
+                      locale: ptBR,
+                    })}
+                  </strong>{' '}
+                  de experiência em <strong>desenvolvimento de software</strong>
+                  , comecei minha carreira como{' '}
                   <abbr title="Sou capaz de criar interfaces de sistemas que sejam agradavéis, úteis e facéis de usar.">
-                    <em>{profession.role}</em>
+                    <em>Frontend Developer</em>
                   </abbr>
-                  , desenvolvendo interfaces como: {profession.works}. Possuo
-                  experiência entregando software para startups e empresas de
-                  pequeno porte.
+                  , desenvolvendo interfaces como portais de vagas, sistemas de
+                  contabilidade, landing pages e criação de software
+                  personalizado. Já atuei tanto para startups, quanto empresas
+                  de pequeno porte.
                 </p>
 
                 <p>
-                  Quero poder trabalhar remoto, viajando pelo mundo e vivendo
-                  novas experiências junto a minha esposa, atualmente namorada (
-                  <em>for a while</em>...). <br />A tecnologia me possibilita
-                  esse sonho.
+                  <ClockCountdown
+                    className="text-accent inline-block"
+                    weight="fill"
+                  />{' '}
+                  Hoje em dia desenvolvo soluções para a web, como aplicações de
+                  ponta a ponta <em>backend</em> + <em>frontend</em>, estáveis e
+                  perfomáticas. Sempre com um olhar apurado para o design e
+                  usabilidade.
                 </p>
 
                 <p>
-                  Minha stack de ferramentas principais são{' '}
+                  Minha stack de ferramentas{' '}
+                  <Toolbox className="text-accent inline-block" weight="fill" />{' '}
+                  principais são{' '}
                   <ExternalLink href={techLinks.javascript}>
                     <em>JavaScript</em>
                   </ExternalLink>{' '}
@@ -196,10 +222,10 @@ function App() {
               Projetos paralelos
             </h2>
 
-            <p className="text-base sm:text-lg mx-auto text-center originBottomReveal intervalReveal delaySmallReveal">
+            {/* <p className="text-base sm:text-lg mx-auto text-center originBottomReveal intervalReveal delaySmallReveal">
               Em breve estarão aqui 2 dos meus <strong>maiores projetos</strong>
               , dentre os + 70 já feitos.
-            </p>
+            </p> */}
 
             <div
               role="group"
