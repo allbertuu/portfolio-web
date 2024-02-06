@@ -2,23 +2,18 @@ name: Code formatting
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
+  prettier:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check-out repo
         uses: actions/checkout@v4
 
-      - name: Install deps
-        run: npm install
-
-      - name: Check formatting
-        run: npm run format:check
-
-      - name: Format if isn't already
-        if: ${{ failure() }}
-        run: npm run format
+      - name: Format code
+        uses: creyD/prettier_action@v4.3
+        with:
+          prettier_options: --write **/*.{js,jsx,ts,tsx,tailwind.config.cjs,json,html,md}
+          commit_message: 'style: run prettier'
