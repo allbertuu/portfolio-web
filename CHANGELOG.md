@@ -1,15 +1,13 @@
 ## [3.0.3](https://github.com/allbertuu/portfolio-web/compare/v3.0.2...v3.0.3) (2024-02-06)
 
-
 ### Bug Fixes
 
-* **externallink:** make `href` attr required ([e3b5bf5](https://github.com/allbertuu/portfolio-web/commit/e3b5bf5fb4e06f5df9f79ab4b1eb874995fac2d3))
-
+- **externallink:** make `href` attr required ([e3b5bf5](https://github.com/allbertuu/portfolio-web/commit/e3b5bf5fb4e06f5df9f79ab4b1eb874995fac2d3))
 
 ### Performance Improvements
 
-* **icons:** update imports from `phosphor-react` to use `@phosphor-icons/react` ([6e5c51e](https://github.com/allbertuu/portfolio-web/commit/6e5c51e5c4a8c7e4c396225aa359940e3707a70b))
-* **icons:** update imports from `phosphor-react` to use `@phosphor-icons/react` ([3d44335](https://github.com/allbertuu/portfolio-web/commit/3d44335d05600a010e6f42df0b8ec4585f4c67a2))
+- **icons:** update imports from `phosphor-react` to use `@phosphor-icons/react` ([6e5c51e](https://github.com/allbertuu/portfolio-web/commit/6e5c51e5c4a8c7e4c396225aa359940e3707a70b))
+- **icons:** update imports from `phosphor-react` to use `@phosphor-icons/react` ([3d44335](https://github.com/allbertuu/portfolio-web/commit/3d44335d05600a010e6f42df0b8ec4585f4c67a2))
 
 ## [3.0.2](https://github.com/allbertuu/portfolio-web/compare/v3.0.1...v3.0.2) (2024-02-04)
 
