@@ -1,6 +1,6 @@
 import imgLogo from '@/assets/imgs/logo.svg';
 import { SendMeAnEmail } from '@/components/SendMeAnEmail';
-import { Folders, IdentificationCard } from 'phosphor-react';
+import { Folders, IdentificationCard } from '@phosphor-icons/react';
 
 type THeaderProps = React.HTMLAttributes<HTMLElement>;
 

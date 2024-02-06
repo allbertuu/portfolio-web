@@ -9,7 +9,7 @@ import {
   Briefcase as BriefcaseIcon,
   Heart as HeartIcon,
   UserList as UserListIcon,
-} from 'phosphor-react';
+} from '@phosphor-icons/react';
 import { useEffect } from 'react';
 import { ExternalLink } from './components/ExternalLink';
 import { Footer } from './components/Footer';

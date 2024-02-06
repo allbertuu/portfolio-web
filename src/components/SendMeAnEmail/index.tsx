@@ -1,5 +1,5 @@
 import { sendEmail } from '@/utils';
-import { EnvelopeSimple } from 'phosphor-react';
+import { EnvelopeSimple } from '@phosphor-icons/react';
 
 export const draftEmail = {
   subject: 'Olá, Alberto! Acabo de ver seu portfólio, vamos conversar?',
