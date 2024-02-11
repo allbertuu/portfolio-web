@@ -1,4 +1,5 @@
 import * as RadixTooltip from '@radix-ui/react-tooltip';
+import styles from './styles.module.css';
 
 interface TTooltipProps {
   content: React.ReactNode;
@@ -7,13 +8,13 @@ interface TTooltipProps {
 
 export const Tooltip: React.FC<TTooltipProps> = ({ children, content }) => {
   return (
-    <RadixTooltip.Provider delayDuration={350}>
+    <RadixTooltip.Provider delayDuration={350} skipDelayDuration={0}>
       <RadixTooltip.Root>
         <RadixTooltip.Trigger asChild>{children}</RadixTooltip.Trigger>
         <RadixTooltip.Portal>
           <RadixTooltip.Content
-            className="rounded-md text-white bg-accent px-3 py-2 text-sm leading-none shadow-lg"
-            sideOffset={5}
+            className={`${styles.TooltipContent} rounded-md text-white bg-accent px-3 py-2 text-sm leading-none shadow-lg TooltipContent`}
+            sideOffset={1}
             side="top"
             align="center"
           >
