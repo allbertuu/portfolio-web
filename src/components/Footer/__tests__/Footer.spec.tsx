@@ -3,36 +3,22 @@ import { Footer } from '..';
 
 test('renders correctly', () => {
   render(<Footer />);
-  expect(screen.getByTestId('footer')).toBeInTheDocument();
+  expect(screen.getByRole('contentinfo')).toBeInTheDocument();
 });
 
-describe('Author rights', () => {
-  const currentYear = new Date().getFullYear();
+test('renders Author rights', () => {
   const domain = 'albertosantos.dev';
+  render(<Footer />);
 
-  test('renders the domain', () => {
-    render(<Footer />);
-    expect(screen.getByText(domain)).toBeInTheDocument();
-  });
-  test('renders the current year', () => {
-    render(<Footer />);
-    expect(screen.getByTestId('author-rights')).toHaveTextContent(
-      `©${currentYear} - Todos os direitos reservados.`
-    );
-  });
+  expect(screen.getByText(domain)).toBeInTheDocument();
+  expect(screen.getByText(/2024 - todos os direitos reservados/i));
 });
 
-describe('Powered by', () => {
-  test('renders the text', () => {
-    render(<Footer />);
-    expect(screen.getByText('Powered')).toBeInTheDocument();
-  });
+test('renders Powered by and logo', () => {
+  render(<Footer />);
 
-  test('renders the logo', () => {
-    render(<Footer />);
-    const logoImage = screen.getByTestId('logo-image');
-    expect(logoImage).toBeInTheDocument();
-    expect(logoImage.tagName).toBe('IMG');
-    expect(logoImage).toHaveAttribute('alt', 'Logotipo vermelha');
-  });
+  expect(screen.getByText('Powered')).toBeInTheDocument();
+  expect(
+    screen.getByRole('img', { name: 'Logotipo vermelha' })
+  ).toBeInTheDocument();
 });

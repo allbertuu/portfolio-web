@@ -10,7 +10,6 @@ export const Footer: React.FC<TFooterProps> = ({ ...props }) => {
   return (
     <footer
       {...props}
-      data-testid="footer"
       className="select-none flex w-full flex-col items-center justify-around border-t-2 border-t-accent bg-secondary p-5 px-4 text-primary sm:flex-row"
     >
       <div className="originLeftReveal mb-2 flex flex-wrap justify-center sm:mb-0 sm:justify-normal sm:gap-1">
@@ -18,7 +17,7 @@ export const Footer: React.FC<TFooterProps> = ({ ...props }) => {
           <span className="font-semibold text-accent font-serif">{domain}</span>
         </Tooltip>
 
-        <div className="flex items-center" data-testid="author-rights">
+        <div className="flex items-center">
           <span className="mr-1 text-xl">&copy;</span>
           <span className="text-base sm:text-lg">
             {currentYear} - Todos os direitos reservados.
