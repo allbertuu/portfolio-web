@@ -1,5 +1,5 @@
 import imgLogo from '@/assets/imgs/logo.svg';
-import { SendMeAnEmail } from '@/components/SendMeAnEmail';
+import { BudgetContact } from '@/components/BudgetContact';
 import { Folders, IdentificationCard } from '@phosphor-icons/react';
 
 type THeaderProps = React.HTMLAttributes<HTMLElement>;
@@ -46,7 +46,7 @@ export const Header: React.FC<THeaderProps> = ({ ...props }) => {
             Projetos
           </a>
 
-          <SendMeAnEmail />
+          <BudgetContact />
         </ul>
       </nav>
     </header>

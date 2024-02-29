@@ -37,10 +37,6 @@
     @apply decoration-accent;
   }
 
-  button {
-    @apply rounded bg-accent px-2 py-[2px] hover:bg-accent/90 active:bg-accent/70;
-  }
-
   a {
     @apply underline hover:opacity-80;
   }
@@ -101,8 +97,13 @@
 }
 
 @layer components {
-  .social-link {
-    @apply flex items-center gap-1 rounded-md px-2 py-1 text-lg font-normal shadow-2xl shadow-black/30 hover:opacity-50;
+  button,
+  .btn {
+    @apply rounded px-2 py-1;
+  }
+
+  .btn-accent {
+    @apply bg-accent hover:bg-accent/90 active:bg-accent/70;
   }
 
   .section__title {
