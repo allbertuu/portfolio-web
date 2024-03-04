@@ -1,9 +1,8 @@
 ## [3.0.4](https://github.com/allbertuu/portfolio-web/compare/v3.0.3...v3.0.4) (2024-03-04)
 
-
 ### Bug Fixes
 
-* **budgetemail.json:** sum up email texts for the maito link works ([9f31f9f](https://github.com/allbertuu/portfolio-web/commit/9f31f9fd5c03cc3f19f443770cd790212fdc20d0))
+- **budgetemail.json:** sum up email texts for the maito link works ([9f31f9f](https://github.com/allbertuu/portfolio-web/commit/9f31f9fd5c03cc3f19f443770cd790212fdc20d0))
 
 ## [3.0.3](https://github.com/allbertuu/portfolio-web/compare/v3.0.2...v3.0.3) (2024-02-06)
 
