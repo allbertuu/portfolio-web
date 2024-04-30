@@ -2,6 +2,15 @@
   "startDate": 1656644400000,
   "projects": [
     {
+      "name": "Tela Calma",
+      "role": "Líder técnico e Analista de requisitos",
+      "links": {
+        "github": "",
+        "site": ""
+      },
+      "about": "App mobile focado no cuidado à saúde mental, de forma anônima e humanizada, obtendo conforto apenas usando o seu celular. 💜🧠"
+    },
+    {
       "name": "Blog do Alberto",
       "role": "Desenvolvedor Front-end",
       "links": {
