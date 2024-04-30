@@ -1,7 +1,7 @@
 {
     "name": "portfolio-web",
     "private": true,
-    "version": "3.0.4",
+    "version": "3.1.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -11,7 +11,7 @@
         "lint": "eslint . --fix",
         "lint:check": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "commit": "npm run lint:check && cz && git push"
-      },
+    },
     "dependencies": {
         "@phosphor-icons/react": "^2.0.15",
         "@radix-ui/react-tooltip": "^1.0.7",
