@@ -13,6 +13,13 @@ const scrollWindowToTop = () => {
   });
 };
 
+export const regexWebsiteURL =
+  /(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})(\.[a-zA-Z0-9]{2,})?/;
+
+const isWebsiteURLValid = (urlHref: string) => {
+  return regexWebsiteURL.test(urlHref);
+};
+
 const getWeekdayString = (weekdayNumber: number): string => {
   const weekdays = [
     'Domingo',
@@ -45,4 +52,10 @@ const sendEmail = ({
   window.location.href = link;
 };
 
-export { scrollWindowToTop, classNames, getWeekdayString, sendEmail };
+export {
+  scrollWindowToTop,
+  classNames,
+  getWeekdayString,
+  sendEmail,
+  isWebsiteURLValid,
+};
