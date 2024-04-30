@@ -31,12 +31,14 @@ export const ProjectCard: React.FC<IProjectCardProps> = ({
       <p className="my-2 leading-snug flex-1 text-[90%]">{about}</p>
 
       <div className="flex justify-between">
-        <ExternalLink
-          href={githubLink}
-          className="flex gap-1 items-center w-fit hover:opacity-70 transition-all font-normal"
-        >
-          <GitHubIcon fill="#fe355c" /> GitHub
-        </ExternalLink>
+        {githubLink && (
+          <ExternalLink
+            href={githubLink}
+            className="flex gap-1 items-center w-fit hover:opacity-70 transition-all font-normal"
+          >
+            <GitHubIcon fill="#fe355c" /> GitHub
+          </ExternalLink>
+        )}
 
         {liveUrl && (
           <ExternalLink
