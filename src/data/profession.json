@@ -3,29 +3,29 @@
   "projects": [
     {
       "name": "Blog do Alberto",
-      "segment": "Frontend",
+      "role": "Desenvolvedor Front-end",
       "links": {
         "github": "https://github.com/allbertuu/blog-do-alberto",
         "site": "https://blog-do-alberto.vercel.app/"
       },
-      "about": "🔥 Um lugar para hospedar dicas, ideias, ou coisas interessantes que amei aprender."
+      "about": "Um lugar para hospedar dicas, ideias, ou coisas interessantes que eu, Alberto, gostei muito de aprender. Feito com 💗 e Next.js 🚀"
     },
     {
       "name": "Weather Wiz",
-      "segment": "Frontend",
+      "role": "Desenvolvedor Front-end",
       "links": {
         "github": "https://github.com/allbertuu/WeatherWiz",
         "site": "https://weather-wiz-allbertuu.vercel.app/"
       },
-      "about": "☔ App web responsivo de informações climáticas usando geolocalização. Muda conforme o período do dia."
+      "about": "App React.js responsivo de informações climáticas usando geolocalização. Se adapta conforme o período do dia. ☁"
     },
     {
       "name": "Plataforma de Vagas",
-      "segment": "Frontend",
+      "role": "Desenvolvedor Front-end",
       "links": {
         "github": "https://github.com/SouJunior/vagas-frontend"
       },
-      "about": "🔥 Plataforma de vagas focada em iniciantes na TI, facilitando o acesso a oportunidades no mercado de trabalho. Contribuição open-source."
+      "about": "Plataforma de vagas focada em iniciantes na TI, facilitando o acesso a oportunidades no mercado de trabalho. Contribuição open-source. 💙"
     }
   ]
 }

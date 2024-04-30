@@ -11,11 +11,6 @@ export const SideProjectsSection = () => {
           Projetos paralelos
         </h2>
 
-        {/* <p className="text-base sm:text-lg mx-auto text-center originBottomReveal intervalReveal delaySmallReveal">
-          Em breve estarão aqui 2 dos meus <strong>maiores projetos</strong>,
-          dentre os + 70 já feitos.
-        </p> */}
-
         <div
           role="group"
           className="flex flex-wrap justify-center gap-12 mt-8 mb-6 originBottomReveal"
@@ -24,7 +19,7 @@ export const SideProjectsSection = () => {
             <ProjectCard
               key={project.name}
               name={project.name}
-              segment={project.segment}
+              myRole={project.role}
               githubLink={project.links.github}
               liveUrl={project.links.site}
               about={project.about}
