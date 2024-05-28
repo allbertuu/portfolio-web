@@ -1,14 +1,12 @@
 # [3.1.0](https://github.com/allbertuu/portfolio-web/compare/v3.0.4...v3.1.0) (2024-04-30)
 
-
 ### Bug Fixes
 
-* **projectcard:** add condition when github link is not avaliable ([7b085de](https://github.com/allbertuu/portfolio-web/commit/7b085de46c2f843418f79e218a2b743489570b39))
-
+- **projectcard:** add condition when github link is not avaliable ([7b085de](https://github.com/allbertuu/portfolio-web/commit/7b085de46c2f843418f79e218a2b743489570b39))
 
 ### Features
 
-* create `isWebsiteURLValid` function to validate urls ([61298c6](https://github.com/allbertuu/portfolio-web/commit/61298c6a3cfcb96ff00a72902d8954d08556048e))
+- create `isWebsiteURLValid` function to validate urls ([61298c6](https://github.com/allbertuu/portfolio-web/commit/61298c6a3cfcb96ff00a72902d8954d08556048e))
 
 ## [3.0.4](https://github.com/allbertuu/portfolio-web/compare/v3.0.3...v3.0.4) (2024-03-04)
 
