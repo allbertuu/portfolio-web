@@ -1,10 +1,10 @@
 import { render, screen } from '@/utils/testUtils';
-import { ProjectCard } from '..';
+import { IProjectCardProps, ProjectCard } from '..';
 import { regexWebsiteURL } from '@/utils';
 
-const mockProps = {
+const mockProps: IProjectCardProps = {
   name: 'Test Project',
-  myRole: 'Test Role',
+  stack: ['Test stack 1', 'Test stack 2'],
   about: 'This is a test project.',
   githubLink: 'https://github.com/test',
   liveUrl: 'https://www.freecodecamp.org',
@@ -17,34 +17,35 @@ test('renders project name', () => {
   expect(projectName).toBeInTheDocument();
 });
 
-describe('renders my role in the project', () => {
-  test('with role', () => {
-    render(<ProjectCard {...mockProps} />);
+describe('renders project stack', () => {
+  test('renders the stack correctly', () => {
+    const stack = ['React', 'Node.js', 'Express', 'MongoDB'];
 
-    expect(screen.getByText(mockProps.myRole)).toBeInTheDocument();
+    render(<ProjectCard {...mockProps} stack={stack} />);
+
+    // Verificando se o texto esperado está no documento
+    expect(
+      screen.getByText((content) => content.startsWith('Stack:'))
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText('React - Node.js - Express - MongoDB')
+    ).toBeInTheDocument();
   });
 
-  test('without role', () => {
-    render(<ProjectCard {...mockProps} myRole={undefined} />);
+  test('renders correctly with an empty stack', () => {
+    const stack: string[] = [];
 
-    expect(screen.getByText(/sem cargo/i)).toBeInTheDocument();
+    render(<ProjectCard {...mockProps} stack={stack} />);
+
+    // Verificando se o texto 'Stack:' está presente e a junção do stack vazio não apresenta erro
+    expect(screen.getByText('N/A')).toBeInTheDocument();
   });
 });
 
-describe('renders project about', () => {
-  test('with about', () => {
-    render(<ProjectCard {...mockProps} />);
+test('renders project about', () => {
+  render(<ProjectCard {...mockProps} />);
 
-    expect(screen.getByText(mockProps.about)).toBeInTheDocument();
-  });
-
-  test('without about', () => {
-    render(<ProjectCard {...mockProps} about={undefined} />);
-
-    expect(
-      screen.getByText(/me consulte para mais informações/i)
-    ).toBeInTheDocument();
-  });
+  expect(screen.getByText(mockProps.about)).toBeInTheDocument();
 });
 
 describe('renders GitHub link', () => {

@@ -19,7 +19,7 @@ export const SideProjectsSection = () => {
             <ProjectCard
               key={project.name}
               name={project.name}
-              myRole={project.role}
+              stack={project.stack}
               githubLink={project.links.github}
               liveUrl={project.links.site}
               about={project.about}

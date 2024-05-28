@@ -3,7 +3,12 @@
   "projects": [
     {
       "name": "Tela Calma",
-      "role": "Líder técnico e Analista de requisitos",
+      "stack": [
+        "Liderança",
+        "Gestão de projetos",
+        "Gestão de tarefas",
+        "Levantamento e análise de requisitos"
+      ],
       "links": {
         "github": "",
         "site": ""
@@ -12,7 +17,12 @@
     },
     {
       "name": "Blog do Alberto",
-      "role": "Desenvolvedor Front-end",
+      "stack": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "GitHub Actions (Pipelines CI)"
+      ],
       "links": {
         "github": "https://github.com/allbertuu/blog-do-alberto",
         "site": "https://blog-do-alberto.vercel.app/"
@@ -21,7 +31,15 @@
     },
     {
       "name": "Weather Wiz",
-      "role": "Desenvolvedor Front-end",
+      "stack": [
+        "React",
+        "TypeScript",
+        "HTML5",
+        "CSS",
+        "Vite",
+        "SCSS/Sass",
+        "Axios"
+      ],
       "links": {
         "github": "https://github.com/allbertuu/WeatherWiz",
         "site": "https://weather-wiz-allbertuu.vercel.app/"
@@ -30,7 +48,13 @@
     },
     {
       "name": "Plataforma de Vagas",
-      "role": "Desenvolvedor Front-end",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Styled-components",
+        "Webpack"
+      ],
       "links": {
         "github": "https://github.com/SouJunior/vagas-frontend"
       },
