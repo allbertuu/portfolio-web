@@ -3,18 +3,18 @@ import { classNames, isWebsiteURLValid } from '@/utils';
 import { Broadcast as BroadcastIcon } from '@phosphor-icons/react';
 import { ExternalLink } from '../ExternalLink';
 
-interface IProjectCardProps extends React.HTMLAttributes<HTMLElement> {
-  name?: string;
-  myRole?: string;
-  about?: string;
+export interface IProjectCardProps extends React.HTMLAttributes<HTMLElement> {
+  name: string;
+  stack: string[];
+  about: string;
   githubLink?: string;
   liveUrl?: string;
 }
 
 export const ProjectCard: React.FC<IProjectCardProps> = ({
-  name = 'Projeto sem nome',
-  myRole = 'Sem cargo',
-  about = 'Me consulte para mais informações.',
+  name,
+  stack,
+  about,
   githubLink = '',
   liveUrl = '',
   ...props
@@ -24,13 +24,15 @@ export const ProjectCard: React.FC<IProjectCardProps> = ({
       {...props}
       className={classNames(props.className || '', 'project-card')}
     >
-      <h4 className="text-accent -mb-2">{name}</h4>
+      <h4 className="text-accent truncate mb-1">{name}</h4>
 
-      <span className="mt-1 text-secondary/70 text-[85%] italic">{myRole}</span>
+      <p className="mb-2 leading-snug flex-1 text-[90%] break-words">{about}</p>
 
-      <p className="my-2 leading-snug flex-1 text-[90%]">{about}</p>
+      <span className="text-secondary/70 text-sm">
+        <strong>Stack:</strong> {stack.length > 0 ? stack.join(' - ') : 'N/A'}
+      </span>
 
-      <div className="flex justify-between">
+      <div className="mt-2 flex justify-between">
         {isWebsiteURLValid(githubLink) && (
           <ExternalLink
             href={githubLink}
