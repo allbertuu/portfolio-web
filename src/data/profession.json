@@ -26,7 +26,7 @@
         "github": "https://github.com/allbertuu/WeatherWiz",
         "site": "https://weather-wiz-allbertuu.vercel.app/"
       },
-      "about": "App React.js responsivo de informações climáticas usando geolocalização. Se adapta conforme o período do dia. ☁"
+      "about": "Web app de clima usando a sua geolocalização, com informações precisas e em tempo real (atualização automática). Adapta o fundo do site conforme o período do dia. ☁"
     },
     {
       "name": "Plataforma de Vagas",
