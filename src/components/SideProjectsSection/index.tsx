@@ -29,7 +29,7 @@ export const SideProjectsSection = () => {
         </div>
 
         <p className="text-center text-lg flex gap-1 items-center justify-center originBottomReveal">
-          <ExternalLink href="https://github.com/allbertuu?tab=repositories">
+          <ExternalLink href="https://github.com/allbertuu?tab=repositories&q=&type=&language=&sort=stargazers">
             Clique aqui e confira (muito) mais
           </ExternalLink>
 
