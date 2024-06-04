@@ -8,7 +8,7 @@ export const SideProjectsSection = () => {
     <section id="projects" className="py-16 mt-6">
       <div className="container mx-auto px-4">
         <h2 className="section__title mx-auto originLeftReveal">
-          Projetos paralelos
+          Projetos que participei/desenvolvi
         </h2>
 
         <div
