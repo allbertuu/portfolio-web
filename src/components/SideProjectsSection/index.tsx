@@ -8,7 +8,7 @@ export const SideProjectsSection = () => {
     <section id="projects" className="py-16 mt-6">
       <div className="container mx-auto px-4">
         <h2 className="section__title mx-auto originLeftReveal">
-          Projetos paralelos
+          Meus projetos
         </h2>
 
         <div
@@ -29,7 +29,7 @@ export const SideProjectsSection = () => {
         </div>
 
         <p className="text-center text-lg flex gap-1 items-center justify-center originBottomReveal">
-          <ExternalLink href="https://github.com/allbertuu?tab=repositories">
+          <ExternalLink href="https://github.com/allbertuu?tab=repositories&q=&type=&language=&sort=stargazers">
             Clique aqui e confira (muito) mais
           </ExternalLink>
 
