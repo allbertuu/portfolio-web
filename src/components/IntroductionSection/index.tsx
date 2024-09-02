@@ -17,7 +17,7 @@ export const IntroductionSection = () => {
               Alberto Santos
             </h1>
 
-            <h2 className="originLeftReveal load-hidden intervalReveal text-2xl lg:text-3xl leading-7 mt-6">
+            <h2 className="originLeftReveal load-hidden intervalReveal text-2xl lg:text-3xl leading-7 mt-1 lg:mt-6">
               Sou <strong>Desenvolvedor de Software Front-end</strong>
               <br className="block sm:hidden" />
             </h2>
