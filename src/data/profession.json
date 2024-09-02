@@ -2,18 +2,21 @@
   "startDate": 1656644400000,
   "projects": [
     {
-      "name": "Tela Calma",
+      "name": "Sistema de Cadastro de Localidades",
       "stack": [
-        "Liderança",
-        "Gestão de projetos",
-        "Gestão de tarefas",
-        "Levantamento e análise de requisitos"
+        "React",
+        "Google Firebase",
+        "TypeScript",
+        "Tailwind CSS",
+        "Leaflet",
+        "HTML5",
+        "CSS"
       ],
       "links": {
-        "github": "",
-        "site": ""
+        "github": "https://github.com/allbertuu/sistema-de-cadastro-de-localidades",
+        "site": "https://desafio-leaflet.vercel.app/"
       },
-      "about": "App mobile focado no cuidado à saúde mental, de forma anônima e humanizada, obtendo conforto apenas usando o seu celular. 💜🧠"
+      "about": "Todo mundo tem um lugar preferido na terra, com esse app você pode compartilhar ele com o mundo ou descobrir qual a sua próxima viagem! 🗺"
     },
     {
       "name": "Blog do Alberto",
