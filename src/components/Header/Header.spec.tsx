@@ -1,5 +1,5 @@
 import { render, screen } from '@/utils/testUtils';
-import { Header } from '..';
+import { Header } from '.';
 
 test('renders correctly', () => {
   render(<Header />);

@@ -1,6 +1,6 @@
 import aboutMe from '@/data/aboutMe.json';
 import { render, screen } from '@/utils/testUtils';
-import { MySocials } from '..';
+import { MySocials } from '.';
 
 test('renders LinkedIn link with correct href and title', () => {
   render(<MySocials />);

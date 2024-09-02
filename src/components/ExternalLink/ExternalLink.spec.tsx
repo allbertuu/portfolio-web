@@ -1,5 +1,5 @@
 import { render, screen } from '@/utils/testUtils';
-import { ExternalLink } from '..';
+import { ExternalLink } from '.';
 
 test('renders link text (children) correctly', () => {
   render(<ExternalLink href="http://test.com">Test Link</ExternalLink>);

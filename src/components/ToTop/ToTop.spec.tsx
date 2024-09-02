@@ -1,6 +1,6 @@
 import { scrollWindowToTop } from '@/utils';
 import { fireEvent, render, screen } from '@/utils/testUtils';
-import { ToTop } from '..';
+import { ToTop } from '.';
 
 vi.mock('@/utils', () => ({
   scrollWindowToTop: vi.fn(),

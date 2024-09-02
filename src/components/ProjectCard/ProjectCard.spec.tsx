@@ -1,5 +1,5 @@
 import { render, screen } from '@/utils/testUtils';
-import { IProjectCardProps, ProjectCard } from '..';
+import { IProjectCardProps, ProjectCard } from '.';
 import { regexWebsiteURL } from '@/utils';
 
 const mockProps: IProjectCardProps = {

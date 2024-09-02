@@ -1,6 +1,6 @@
 import budgetEmail from '@/data/budgetEmail.json';
 import { render, screen } from '@/utils/testUtils';
-import { BudgetContact } from '..';
+import { BudgetContact } from '.';
 
 test('button have the budget email link to reach me out', async () => {
   render(<BudgetContact />);
