@@ -18,8 +18,8 @@ function App() {
 
       <main>
         <IntroductionSection />
-        <AboutMeSection />
         <SideProjectsSection />
+        <AboutMeSection />
       </main>
 
       <Footer />

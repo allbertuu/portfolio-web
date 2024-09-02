@@ -5,7 +5,7 @@ import { ProjectCard } from '../ProjectCard';
 
 export const SideProjectsSection = () => {
   return (
-    <section id="projects" className="py-16 mt-6">
+    <section id="projects" className="py-16 mt-6 border-b-2 border-b-accent">
       <div className="container mx-auto px-4">
         <h2 className="section__title mx-auto originLeftReveal">
           Meus projetos

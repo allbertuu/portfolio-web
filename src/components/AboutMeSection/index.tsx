@@ -30,7 +30,7 @@ export const AboutMeSection = () => {
   return (
     <section
       id="about-me"
-      className="bg-secondary overflow-hidden relative pb-16 pt-24 after:block after:absolute after:bottom-0 after:h-[2px] after:shadow-sm after:w-full after:bg-accent"
+      className="bg-secondary overflow-hidden relative pb-16 pt-24"
     >
       <div className="container mx-auto px-4 max-w-[64rem]">
         <img
