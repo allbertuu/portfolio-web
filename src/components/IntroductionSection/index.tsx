@@ -35,7 +35,7 @@ export const IntroductionSection = () => {
         </div>
 
         <a
-          href="#about-me"
+          href="#projects"
           className="delayMediumReveal intervalReveal load-hidden"
         >
           <ArrowDownIcon
