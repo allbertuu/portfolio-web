@@ -41,7 +41,7 @@ export const IntroductionSection = () => {
           <ArrowDownIcon
             size="1.8rem"
             role={'button'}
-            className="mx-auto -mt-10 animate-bounce text-white/70 cursor-pointer"
+            className="mx-auto -mt-10 animate-bounce text-primary cursor-pointer"
           />
         </a>
       </div>
