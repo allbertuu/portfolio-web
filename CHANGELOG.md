@@ -1,9 +1,8 @@
 ## [3.1.1](https://github.com/allbertuu/portfolio-web/compare/v3.1.0...v3.1.1) (2024-08-20)
 
-
 ### Bug Fixes
 
-* **aboutMe.json:** update CV url ([e678aed](https://github.com/allbertuu/portfolio-web/commit/e678aed71e7bc7af900fc40fb94d77690d5ddeee))
+- **aboutMe.json:** update CV url ([e678aed](https://github.com/allbertuu/portfolio-web/commit/e678aed71e7bc7af900fc40fb94d77690d5ddeee))
 
 # [3.1.0](https://github.com/allbertuu/portfolio-web/compare/v3.0.4...v3.1.0) (2024-04-30)
 
