@@ -7,11 +7,14 @@ module.exports = {
       serif: ['DM Serif Display', 'serif'],
     },
     colors: {
-      accent: '#fe355c',
+      accent: {
+        light: '#fa3c61',
+        DEFAULT: '#fe355c',
+      },
       primary: '#041a27',
       secondary: '#e2e8f0',
       blue: {
-        light: '#0ea5e9',
+        light: '#0793db',
         DEFAULT: '#0284c7',
       },
       black: '#000',
@@ -26,7 +29,7 @@ module.exports = {
         'slate-gradient': 'linear-gradient(240deg, #041722, #041a27)',
       },
       dropShadow: {
-        xl: '0 40px 70px rgb(218 9 65 / 0.5)',
+        DEFAULT: '10px 10px 25px #041a2790',
       },
     },
   },

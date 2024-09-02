@@ -4,45 +4,47 @@ import { classNames } from '@/utils/index';
 import { FileText, LinkedinLogo } from '@phosphor-icons/react';
 import { ExternalLink } from '../ExternalLink';
 
-type TMySocialsProps = React.HTMLAttributes<HTMLDivElement>;
-
-export const MySocials: React.FC<TMySocialsProps> = ({ ...props }) => {
+export const MySocials = ({
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => {
   const { links } = aboutMe;
 
   return (
-    <div
-      {...props}
-      className={classNames(
-        props.className || '',
-        'flex flex-col items-center justify-center lg:justify-start sm:flex-row gap-4'
-      )}
-    >
-      <ExternalLink
-        href={links.linkedin.url}
-        title="LinkedIn"
-        className="btn flex items-center gap-1 rounded-md text-lg font-normal shadow-2xl shadow-black/30 hover:opacity-50 no-underline bg-blue hover:bg-blue-light text-white mySocialsReveal load-hidden intervalReveal"
-      >
-        <LinkedinLogo weight="bold" />
-        LinkedIn
-      </ExternalLink>
+    <div {...props} className={classNames(props.className || '')}>
+      <h4 className="text-lg lg:text-xl originLeftReveal load-hidden intervalReveal mb-2">
+        E essas são{' '}
+        <span className="text-accent/80 font-semibold">minhas redes</span> e{' '}
+        <span className="text-accent/80 font-semibold">currículo</span>:
+      </h4>
 
-      <ExternalLink
-        href={links.github.url}
-        title="GitHub"
-        className="btn flex items-center gap-1 rounded-md text-lg font-normal shadow-2xl shadow-black/30 hover:opacity-50 no-underline bg-white/90 hover:bg-white/70 text-[#0c0b0b] mySocialsReveal load-hidden intervalReveal"
-      >
-        <GitHubLogo fill="#000" />
-        GitHub
-      </ExternalLink>
+      <div className="flex flex-col items-center justify-center lg:justify-start sm:flex-row gap-4">
+        <ExternalLink
+          href={links.linkedin.url}
+          title="LinkedIn"
+          className="btn gap-1 lg:w-full text-lg no-underline bg-white hover:bg-white/70 text-blue mySocialsReveal load-hidden intervalReveal"
+        >
+          <LinkedinLogo weight="fill" className="text-blue" />
+          LinkedIn
+        </ExternalLink>
 
-      <ExternalLink
-        href={links.cv.url}
-        title="Currículo"
-        className="btn flex items-center gap-1 rounded-md text-lg font-normal shadow-2xl shadow-black/30 hover:opacity-50 no-underline bg-accent hover:bg-accent/80 text-white mySocialsReveal load-hidden intervalReveal"
-      >
-        <FileText weight="bold" />
-        Currículo
-      </ExternalLink>
+        <ExternalLink
+          href={links.github.url}
+          title="GitHub"
+          className="btn lg:w-full gap-1 text-lg no-underline bg-white/90 hover:bg-white/70 text-black mySocialsReveal load-hidden intervalReveal"
+        >
+          <GitHubLogo fill="#000" />
+          GitHub
+        </ExternalLink>
+
+        <ExternalLink
+          href={links.cv.url}
+          title="Currículo"
+          className="btn lg:w-full gap-1 text-lg no-underline bg-white hover:bg-white/70 text-accent mySocialsReveal load-hidden intervalReveal"
+        >
+          <FileText weight="fill" className="text-accent" />
+          Currículo
+        </ExternalLink>
+      </div>
     </div>
   );
 };

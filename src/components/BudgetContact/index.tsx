@@ -7,13 +7,10 @@ export const BudgetContact: React.FC = () => {
   return (
     <a
       title="Contato"
-      className="originRightReveal btn btn-accent"
+      className="originRightReveal btn btn-accent gap-2"
       href={emailLink}
     >
-      <EnvelopeSimple
-        weight="fill"
-        className="-mt-1 mr-2 inline-block text-xl text-white"
-      />
+      <EnvelopeSimple weight="fill" className="text-xl text-white" />
       Obtenha um Orçamento Agora
     </a>
   );
