@@ -23,6 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-## TEMPORARY - Delete before deploy
-readme.md
-App.tsx
+# Others
+*.tldr
