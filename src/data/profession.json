@@ -30,7 +30,7 @@
         "github": "https://github.com/allbertuu/blog-do-alberto",
         "site": "https://blog-do-alberto.vercel.app/"
       },
-      "about": "💬 Um espaço para hospedar dicas, ideias, ou coisas interessantes que gostei muito de aprender e gostaria de compartilhar com vocês."
+      "about": "💬 Um espaço para hospedar dicas, ideias, ou coisas interessantes que gostei muito de aprender e gostaria de compartilhar."
     },
     {
       "name": "Weather Wiz",
@@ -59,9 +59,10 @@
         "Webpack"
       ],
       "links": {
-        "github": "https://github.com/SouJunior/vagas-frontend"
+        "github": "https://github.com/SouJunior/vagas-frontend",
+        "site": "https://vagas.soujunior.tech/"
       },
-      "about": "Plataforma de vagas focada em iniciantes na TI, facilitando o acesso a oportunidades no mercado de trabalho. Contribuição open-source. 💙"
+      "about": "Plataforma de vagas focada em iniciantes na TI, facilitando o acesso a oportunidades no mercado de trabalho. 💙"
     }
   ]
 }
