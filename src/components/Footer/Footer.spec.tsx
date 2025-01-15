@@ -8,10 +8,15 @@ test('renders correctly', () => {
 
 test('renders Author rights', () => {
   const domain = 'albertosantos.dev';
+  const currentYear = new Date().getFullYear();
   render(<Footer />);
 
   expect(screen.getByText(domain)).toBeInTheDocument();
-  expect(screen.getByText(/2024 - todos os direitos reservados/i));
+  expect(
+    screen.getByText(
+      new RegExp(`${currentYear} - todos os direitos reservados`, 'i')
+    )
+  ).toBeInTheDocument();
 });
 
 test('renders Powered by and logo', () => {
