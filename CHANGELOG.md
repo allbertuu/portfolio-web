@@ -1,9 +1,8 @@
 # [3.2.0](https://github.com/allbertuu/portfolio-web/compare/v3.1.1...v3.2.0) (2025-01-15)
 
-
 ### Features
 
-* **profession.json:** site link to 'plataforma de vagas' ([98158e7](https://github.com/allbertuu/portfolio-web/commit/98158e7d3c1aa18795f449ba70451d3c2b620cb4))
+- **profession.json:** site link to 'plataforma de vagas' ([98158e7](https://github.com/allbertuu/portfolio-web/commit/98158e7d3c1aa18795f449ba70451d3c2b620cb4))
 
 ## [3.1.1](https://github.com/allbertuu/portfolio-web/compare/v3.1.0...v3.1.1) (2024-08-20)
 
