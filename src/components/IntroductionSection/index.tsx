@@ -1,8 +1,11 @@
 import creatorImg from '@/assets/imgs/me.svg';
 import { ArrowDown as ArrowDownIcon } from '@phosphor-icons/react';
 import { MySocials } from '../MySocials';
+import profession from '@/data/profession.json';
 
 export const IntroductionSection = () => {
+  const { role: myRole, fullName: myName } = profession;
+
   return (
     <section className="shadow-xl border-b-2 border-b-accent bg-secondary text-primary/85">
       <div className="container mx-auto px-4 min-h-screen h-[calc(100vh_-_1rem)]">
@@ -14,11 +17,11 @@ export const IntroductionSection = () => {
             </h3>
 
             <h1 className="originLeftReveal load-hidden intervalReveal text-[2.5rem] lg:text-6xl font-bold mb-1">
-              Alberto Santos
+              {myName}
             </h1>
 
-            <h2 className="originLeftReveal load-hidden intervalReveal text-2xl lg:text-3xl leading-7 mt-1 lg:mt-6">
-              Sou <strong>Desenvolvedor de Software Front-end</strong>
+            <h2 className="originLeftReveal load-hidden intervalReveal text-2xl lg:text-3xl leading-7 mt-1 sm:mb-2 lg:mt-6">
+              Sou <strong>{myRole}</strong>
               <br className="block sm:hidden" />
             </h2>
             {/* Container My Socials */}
