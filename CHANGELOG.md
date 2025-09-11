@@ -1,9 +1,8 @@
 # [3.3.0](https://github.com/allbertuu/portfolio-web/compare/v3.2.0...v3.3.0) (2025-09-11)
 
-
 ### Features
 
-* **introduction-section:** integrate dynamic role and name from profession data ([ec579e9](https://github.com/allbertuu/portfolio-web/commit/ec579e9e6d8fb2c3e18b95f03d9a2b06cea90546))
+- **introduction-section:** integrate dynamic role and name from profession data ([ec579e9](https://github.com/allbertuu/portfolio-web/commit/ec579e9e6d8fb2c3e18b95f03d9a2b06cea90546))
 
 # [3.2.0](https://github.com/allbertuu/portfolio-web/compare/v3.1.1...v3.2.0) (2025-01-15)
 
