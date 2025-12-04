@@ -1,5 +1,4 @@
-interface TExternalLinkProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface TExternalLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   /** If it's an external link, you must provide a href attr, right? */
   href: string;
 }
